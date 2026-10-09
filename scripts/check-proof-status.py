@@ -53,6 +53,21 @@ FOUNDATIONS = (
     "FalconerThetaGauge.logarithmicFourierEnergy_ne_top",
     "FalconerThetaGauge.volume_distanceSet_pos_of_crossDistanceMeasure_absolutelyContinuous",
     "FalconerThetaGauge.summable_filterMassError",
+    "FalconerThetaGauge.regularDyadicPartMeasure_isRegularThrough",
+    "FalconerThetaGauge.regular_decomposition",
+    "FalconerThetaGauge.ae_orthogonalProjectionDensity_L2",
+    "FalconerThetaGauge.compProd_orthogonalProjectionKernel_eq_withDensity",
+    "FalconerThetaGauge.integral_canonical_density_level_le_charFun_tail",
+    "FalconerThetaGauge.logarithmic_amplitude_layer_le",
+    "FalconerThetaGauge.lintegral_orliczQuadratic_canonical_le",
+    "FalconerThetaGauge.map_inverse_distance_radialProjection_withDensity_eq",
+    "FalconerThetaGauge.continuousOn_radialProjection_of_separated",
+    "FalconerThetaGauge.absolutelyContinuous_of_tendsto_of_uniform_orlicz",
+    "FalconerThetaGauge.lintegral_orliczQuadratic_orthogonalProjectionDensity_le",
+    "FalconerThetaGauge.lintegral_circle_lineLogFourierEnergy_eq",
+    "FalconerThetaGauge.measure_rnDeriv_tail_le",
+    "FalconerThetaGauge.weak_limit_orlicz_density",
+    "FalconerThetaGauge.regularMeasureExcess_normalizedRestrict_properties",
 )
 DECLARATION_NAME = re.compile(r"[A-Za-z_][A-Za-z_0-9']*(?:\.[A-Za-z_][A-Za-z_0-9']*)*")
 AXIOM_REPORT = re.compile(

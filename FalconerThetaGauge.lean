@@ -15,4 +15,11 @@ public import FalconerThetaGauge.OrliczEnergyKernel
 public import FalconerThetaGauge.OrliczEnergyFourier
 public import FalconerThetaGauge.FourierReconstruction
 public import FalconerThetaGauge.ReconstructionDensity
+public import FalconerThetaGauge.RegularDecompositionMeasures
+public import FalconerThetaGauge.RegularMeasureExcessGauge
+public import FalconerThetaGauge.OrthogonalProjection
+public import FalconerThetaGauge.RadialProjectionOrlicz
+public import FalconerThetaGauge.RadialProjectionContinuity
+public import FalconerThetaGauge.RadialProjectionLimit
+public import FalconerThetaGauge.RadialProjectionLimitOrlicz
 public import FalconerThetaGauge.Main

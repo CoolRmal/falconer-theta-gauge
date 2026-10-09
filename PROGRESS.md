@@ -50,6 +50,23 @@ Challenge has one specification hole. No helper definitions or lemmas may use ho
 - `DistanceScaling/DistanceMeasure.lean`: exact distance-set Lebesgue scaling
   under preparation, and absolute continuity of the actual product-distance
   pushforward implies the positive-length conclusion.
+- `RegularDecomposition*.lean`: full Lemma 5.8, actual original heavy-cell
+  bottom-up types, exact rounded schedule and type count, whole-type discards,
+  disjoint Borel terminal-cell carriers, retained mass thresholds, discarded
+  mass bound, and regular normalized probabilities at every depth through `N`.
+- `OrthogonalProjection*.lean` and `OrliczDuality*.lean`: full Lemma 5.3,
+  the exact averaged quadratic Orlicz bound, polar Fourier identity,
+  actual joint measurable L² projection densities, exact Plancherel fibers,
+  smooth low-pass decomposition, density-level Fourier tail control, and the
+  logarithmic quadratic Orlicz estimate on the line at the literal exponent.
+- `RegularMeasureExcess*.lean`: actual maximal cell masses, exact successor
+  bounds, and full Lemma 5.10, including normalization, Lipschitz constant,
+  upper depth bound and gauge-derived lower gain bound.
+- `RadialProjection*.lean`: genuine circle arc length, exact inverse-distance
+  weighted polar density identity, full-line and smooth Orlicz transfer, radial
+  continuity on separated supports, and an absolute-continuity theorem for
+  weak limits with uniformly bounded positive logarithmic moments, and finite
+  lower Orlicz moments for the actual RN density from a stronger uniform bound.
 
 ## Verification and publishing
 
@@ -66,12 +83,12 @@ skeleton as a completed proof.
 
 ## Next concrete mathematical work
 
-1. Complete Lemma 5.3 and Theorem 5.4: averaged orthogonal-projection Orlicz
-   density bounds and transfer to radial projections.
+1. Complete Theorem 5.4: actual smooth radial joint measures, weak convergence,
+   and transfer from the completed averaged orthogonal-projection Orlicz bound.
    Since the gauge supplies every logarithmic energy, stronger Orlicz bounds can
    replace Dunford--Pettis/Mazur with an open-set uniform-integrability limit
    argument, if the resulting exact endpoint theorem is proved.
-2. Implement the quantitative regular decomposition, mask geometry, four energy
+2. Implement mask geometry, four energy
    estimates, budget scheduling and induction, and final shell estimate. The
    existing fixed-parameter Falconer development cannot simply be retuned.
 3. Remove the sole Main proof hole, pass sandboxed Comparator on the exact public

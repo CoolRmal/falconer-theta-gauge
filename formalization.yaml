@@ -11,7 +11,11 @@ project:
     2/3 < theta < 1, has a distance set of positive Lebesgue measure.
     The exact statement, gauge Frostman measure, finite logarithmic critical
     energies, weighted Fourier energy, full parameter budgets, and full
-    summable Fourier reconstruction are proved. The main geometric proof is unfinished.
+    summable Fourier reconstruction and regular decomposition are proved.
+    The averaged orthogonal-projection Orlicz estimate is proved.
+    The exact maximal-cell excess-function bounds are proved.
+    The radial endpoint transfer is under development.
+    The main geometric proof is unfinished.
   authors:
     - "Yongxi Lin"
   license: "Apache-2.0"
@@ -48,7 +52,9 @@ status:
     the manuscript's parameter interval, compactness hypothesis, positive
     gauge-Hausdorff-measure hypothesis, and unpinned distance-set conclusion.
     Gauge Frostman, logarithmic critical and Fourier energy, full parameter
-    budgets, separated-measure geometry, and summable reconstruction are proved.
+    budgets, separated-measure geometry, summable reconstruction, and full
+    finite-depth regular decomposition are proved. Concrete orthogonal
+    densities and the full averaged Orlicz bound are also proved.
     The theorem still contains a proof hole. These counts exclude the
     independent Challenge's deliberate specification hole.
   sorry_count: 1

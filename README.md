@@ -47,6 +47,16 @@ energies are now proved. The actual rounded filter error is summable.
 All four budget groups of Lemma 2.2 and the weighted Fourier energy estimate
 of Lemma 5.2 are proved. The separated probability preparation retains the
 specified unit-square geometry, gauge bounds, and finite energies.
+Lemma 5.8 is proved for the actual original cell weights: disjoint terminal-cell
+carriers retain mass at least `2^(-κN/2)`, discard at most `2·2^(-κN/4)`, and
+give normalized probabilities regular at every depth from zero through `N`.
+Lemma 5.10's excess-function bounds are proved from actual maximal cell masses
+and the original gauge bound, including the exact Lipschitz constant and gain.
+Lemma 5.3 is proved, including joint measurable L² densities and the exact
+averaged logarithmic Orlicz estimate. The radial development
+includes the exact weighted polar identity, its smooth Orlicz transfer, and
+absolute continuity of weak limits under uniform logarithmic bounds, with
+finite lower Orlicz moments for their actual Radon–Nikodym densities.
 
 The summable reconstruction foundation proves that dyadic frequency shells
 overlap at most three times, obtains the finite-overlap quadratic L² bound,

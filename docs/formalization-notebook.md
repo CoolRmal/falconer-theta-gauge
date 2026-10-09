@@ -236,11 +236,128 @@ $$
 The actual product-distance probability has mass one on the all-pairs distance
 set. Its absolute continuity therefore implies positive Lebesgue length.
 
+## Verified projection foundations
+
+The orthogonal-projection development constructs a jointly Borel nonnegative
+density for almost every direction whenever the weighted Fourier energy is
+finite. Its fibers are the actual projection densities and satisfy the exact
+one-dimensional Plancherel identity. A smooth low-pass decomposition bounds
+the squared-density mass above an amplitude threshold by the corresponding
+high-frequency Fourier tail. Summing the logarithmic amplitude layers proves
+the literal one-dimensional estimate
+
+$$
+\int_{\mathbb R} f(t)^2\log^\gamma(e+f(t))\,dt
+\le C_\gamma\int_{\mathbb R}|\widehat\nu(r)|^2
+\log^\gamma(e+|r|)\,dr,\qquad\gamma\ge1,
+$$
+
+for the actual density of a probability with square-integrable Fourier
+transform. These estimates have no extra logarithmic exponent. Polar Fourier
+integration now gives the full averaged Lemma 5.3:
+
+$$
+\int_{S^1}\int_{\mathbb R} F(w,t)^2\log^\gamma(e+F(w,t))\,dt\,dw
+\le C_\gamma E_\gamma(\mu).
+$$
+
+The jointly Borel density is the actual orthogonal projection density for
+almost every direction.
+
+For radial projections, the inverse-distance-weighted smooth source has an
+exact ray-density identity with respect to circle arc length. The polar
+Jacobian cancels the inverse-distance factor. Extending rays to whole lines
+and applying the orthogonal density estimate gives the smooth transfer.
+Uniform logarithmic bounds also imply the actual cutoff estimate
+
+$$
+\sigma_n(A)\le H\lambda(A)+\frac{K}{\log^p(e+H)},\qquad p>0.
+$$
+
+Portmanteau transfers this estimate to a weak probability limit. Outer
+regularity extends it from open sets to arbitrary sets. Letting the cutoff
+grow proves absolute continuity of the limit. A uniform moment of order two
+greater than the desired exponent also gives finite lower Orlicz moments for
+the limit's actual Radon–Nikodym density. The full radial endpoint and
+prepared spread-direction bounds are still under construction.
+
+## Verified regular decomposition
+
+Lemma 5.8 is proved for the original measure weights. The actual half-open
+unit square has exactly the required terminal-cell count. The construction
+discards light terminal cells, assigns bottom-up types using original masses,
+and discards whole light type fibers. The floor and ceiling schedule is exact:
+
+$$
+\Delta=\lfloor\varepsilon N/4\rfloor,\qquad
+w=\lfloor\varepsilon N/8\rfloor,\qquad
+k=\lceil N/\Delta\rceil.
+$$
+
+Actual parent-child counts bound each class drop, yielding at most ten choices
+per sampled level. The type count and (P2) give
+
+$$
+\#\{\text{types}\}\le(48/\varepsilon+1)10^{8/\varepsilon+1}
+\le2^{\kappa N/4}.
+$$
+
+Each retained Borel carrier is a union of original positive-mass terminal
+cells. The carriers are disjoint and have the exact bounds
+
+$$
+\mu(G_t)\ge2^{-\kappa N/2},\qquad
+\mu\left([0,1)^2\setminus\bigcup_tG_t\right)\le2\,2^{-\kappa N/4}.
+$$
+
+Restricting to a carrier preserves each retained terminal-cell weight.
+Every coarser restricted cell mass equals the corresponding original-weight
+fiber sum. The sampled-level comparisons interpolate to every depth through
+the terminal scale, and normalization multiplies all masses by one factor:
+
+$$
+\rho_t(Q)\le2^{\varepsilon N}\rho_t(P)
+\quad(0\le n\le N,\ P,Q\text{ depth-}n\text{ cells},\ \rho_t(P)>0),
+\qquad\rho_t=\frac{\mu|_{G_t}}{\mu(G_t)}.
+$$
+
+This is the manuscript's regularity condition under its finite-depth
+convention. All carriers, measures, counts, and mass estimates are concrete.
+
+## Verified maximal-cell excess bounds
+
+The maximal cell mass is an actual attained maximum over the finite cells of
+the unit square. For every probability carried there, its successive values
+satisfy
+
+$$
+M(0)=1,\qquad M(n+1)\le M(n)\le4M(n+1),\qquad M(n)>0.
+$$
+
+The source's excess function is defined from these actual masses by
+
+$$
+M(n)=2^{-n}2^{-NA(n)}.
+$$
+
+The successor bounds give its exact Lipschitz constant. The retained-part mass
+threshold and the original gauge bound give the lower excess estimate. Each
+cell fits in a ball of radius exactly its side length about its midpoint, so
+no extra radius factor enters this argument. Under the manuscript's constant
+budget, all four conclusions of Lemma 5.10 are proved:
+
+$$
+A(0)=0,\qquad |A(n)-A(m)|\le\frac{|n-m|}{N},\qquad
+g(n)-\kappa\le A(n)\le\frac nN.
+$$
+
+The bounds concern the actual normalized restriction, with no independently
+postulated excess function.
+
 ## Remaining proof obligations
 
-The manuscript's proof still requires orthogonal and radial Orlicz projection bounds,
-regular decomposition
-with explicit parameter dependence, four uniform energy estimates, and the
+The manuscript's proof still requires the radial endpoint assembly,
+spread-direction preparation, four uniform energy estimates, and the
 multiscale budget induction. Fixed-parameter theorems cannot be used at
 scale-dependent parameters without proving the needed uniform dependence.
 
