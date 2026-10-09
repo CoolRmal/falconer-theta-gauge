@@ -1,7 +1,8 @@
-# Theorem 1.1: formal statement and initial verified lemmas
+# Theorem 1.1: formal statement and verified foundations
 
 October 8, 2026. This notebook records an incomplete formalization. The main
 theorem remains a proof obligation and is not comparator certified.
+Author and responsible maintainer: Yongxi Lin.
 
 ## Exact target
 
@@ -109,10 +110,97 @@ $$
 These are scalar results. The geometric estimates that supply the corresponding
 shell energies and filter errors remain to be proved.
 
+## Verified gauge Frostman measure and logarithmic energies
+
+For the stronger range of exponents below, the full gauge Frostman construction
+is proved:
+
+$$
+0<\theta\le1,\quad E\text{ compact},\quad\mathcal H^{h_\theta}(E)>0
+\quad\Longrightarrow\quad
+\exists\mu,C>0:\ \mu(E)=1,\ \operatorname{supp}\mu\subseteq E,
+\quad \mu(\overline B(x,r))\le C h_\theta(r)\quad(0<r<1).
+$$
+
+The proof first converts positive Hausdorff gauge measure to positive gauge
+content. Finite dyadic trees supply nonnegative weights with positive total
+mass and saturated covering bounds. After normalization, the atomic probability
+measures lie on the compact set. Compactness in the weak topology provides a
+subsequence and a probability limit. Portmanteau transfers the open-ball bounds;
+dyadic radius comparison and gauge doubling yield all the closed-ball bounds.
+
+This measure has no atoms. For every fixed logarithmic exponent, it has finite
+critical logarithmic energy:
+
+$$
+J_\gamma(\mu)=\iint
+\frac{(1+\log^+(1/\lVert x-y\rVert))^\gamma}{\lVert x-y\rVert}
+\,d\mu(x)\,d\mu(y)<\infty,\qquad \gamma\ge1.
+$$
+
+The formal kernel is infinite on the diagonal. Its finiteness is proved by
+dyadic annuli, with each annular potential bounded by a constant times
+
+$$
+(n+1)^\gamma\exp(-c n^\theta).
+$$
+
+Polynomial factors are absorbed by half of the stretched exponential, giving
+a summable majorant. This establishes the genuine energy, including the
+diagonal, rather than a totalized real quotient which would vanish at zero.
+
+The actual dyadic Gaussian kernel also satisfies
+
+$$
+K_\gamma(r)=\sum_{n\ge0}(n+1)^\gamma 2^n e^{-4^n r^2}
+\le C_\gamma\frac{(1+\log(1/r))^\gamma}{r},\qquad0<r<1,\quad\gamma\ge0.
+$$
+
+Splitting at the dyadic scale nearest the inverse radius controls the finite
+prefix and compares the shifted tail with the convergent kernel at radius one.
+The Fourier-energy identity connecting this scalar kernel to measures remains
+to be established.
+
+## Verified reconstruction bridges
+
+Dyadic frequency shells overlap at most three times. The resulting quadratic
+L² bound proves convergence of square-summable shell pieces. The actual smooth
+low-pass kernels preserve mass; their differences have uniformly bounded L¹
+norm and the precise dyadic Fourier support. Convolving a removed measure with
+these differences gives an L¹ error bounded by a constant times its removed
+mass. Low-pass convolutions converge to the original measure on Schwartz tests.
+
+The final absolute-continuity implication is also proved. If a finite positive
+measure satisfies, for an integrable function and an L² function,
+
+$$
+\int\varphi\,d\alpha
+=\int\varphi f\,dx+\int(\mathcal F^{-1}\varphi)g\,d\xi,
+\qquad f\in L^1,\quad g\in L^2,
+$$
+
+then Cauchy–Schwarz and Plancherel bound this pairing by
+
+$$
+\int|\varphi|\,d\sigma+\lVert g\rVert_2\lVert\varphi\rVert_2,
+\qquad d\sigma=|f|\,dx.
+$$
+
+Smooth cutoffs on compact subsets of an open set yield
+
+$$
+\alpha(U)\le\sigma(U)+\lVert g\rVert_2|U|^{1/2}.
+$$
+
+Outer regularity provides open covers with both terms tending to zero for any
+Lebesgue-null set. Hence the measure is absolutely continuous. Constructing
+the actual L² shell pieces and identifying the telescoped series pairing is
+still in progress.
+
 ## Remaining proof obligations
 
-The manuscript's proof requires a gauge Frostman measure, endpoint Orlicz
-radial projection bounds, summable Fourier reconstruction, regular decomposition
+The manuscript's proof still requires endpoint Orlicz radial projection bounds,
+the remaining summable Fourier reconstruction steps, regular decomposition
 with explicit parameter dependence, four uniform energy estimates, and the
 multiscale budget induction. Fixed-parameter theorems cannot be used at
 scale-dependent parameters without proving the needed uniform dependence.

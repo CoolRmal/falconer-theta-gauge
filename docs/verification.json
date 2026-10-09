@@ -18,7 +18,7 @@
     "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55"
   },
   "snapshot": {
-    "basis": "Final local source SHA-256 hashes for the first checkpoint; local build passed, proof audit and preliminary Comparator rejected the unfinished target. Hosted verification is separate.",
+    "basis": "Source hashes checked against the first public commit. Hosted evidence below applies to this immutable snapshot; later source changes require another run.",
     "files_sha256": {
       "Challenge.lean": "6fdbae1e75d62084453dab63d82cd8f9cebfe0339a502d28acae99694f995e48",
       "Solution.lean": "e590c2bcc095cb7a77e59a067ebc3bf94d86cf641035bfa3e53f182a890c47ae",
@@ -39,7 +39,9 @@
       "scripts/verify-comparator.sh": "ab5e9c2590fb3e8cf86ab65c9f112666247dd6535b4a798040728bd84c9bfdfb",
       "scripts/check-proof-status.py": "16400d4e0ae79c0b45263651be941c27feda9d9d3e57cf409405ad7374bafa86",
       ".github/workflows/verify.yml": "6c8aa09208ec4985a108df853ff9a4cce91e6e92e0f06f6c431630335f597446"
-    }
+    },
+    "repository": "CoolRmal/falconer-theta-gauge",
+    "commit": "ae750701edb4727a9456fdb09d17b8b8d62cdaef"
   },
   "preliminary_comparator": {
     "command": "./scripts/verify-comparator.sh --preliminary",
@@ -225,10 +227,33 @@
     "scope_note": "Axiom-dependency audit only; full sandboxed Comparator verification is separate."
   },
   "hosted_verification": {
-    "status": "pending",
+    "status": "rejected",
+    "repository": "CoolRmal/falconer-theta-gauge",
+    "commit": "ae750701edb4727a9456fdb09d17b8b8d62cdaef",
     "workflow": ".github/workflows/verify.yml",
-    "run_url": null,
-    "note": "The build job includes a proof-status gate that rejects the current main theorem; Comparator separately verifies the same final theorem."
+    "run_id": 37873255378,
+    "run_url": "https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37873255378",
+    "conclusion": "failure",
+    "dependency_setup": "passed for both jobs",
+    "lean_modules_build": "passed",
+    "proof_status_gate": {
+      "status": "rejected",
+      "error": "FAIL FalconerThetaGauge.theorem_one_one: forbidden axioms sorryAx",
+      "foundations": "All twelve audited foundational declarations report standard axioms only.",
+      "job_url": "https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37873255378/job/113635879228"
+    },
+    "comparator": {
+      "status": "rejected",
+      "sandbox_enabled": true,
+      "sandbox_setup": "passed",
+      "challenge_build": "passed with intentional statement-hole warning",
+      "solution_build": "passed with unfinished main-theorem warning",
+      "error": "Illegal axiom detected: 'sorryAx'",
+      "job_url": "https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37873255378/job/113635879413",
+      "scope_note": "Successful statement comparison or independent proof replay is not claimed for this rejected run."
+    },
+    "full_palomar_preflight": "Not dispatched: the manual workflow jobs were skipped on this push.",
+    "note": "Infrastructure setup and compilation passed. Both verification gates reject the actual unfinished target rather than silently verifying only foundations."
   },
   "palomar": {
     "full_mechanical_preflight": "pending",

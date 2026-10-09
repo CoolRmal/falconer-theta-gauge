@@ -10,9 +10,9 @@
 \setlength{\parskip}{7pt}
 \begin{document}
 \begin{center}
-{\Large\bfseries Theorem 1.1: formal statement\\[3pt] and initial verified lemmas}\\[9pt]
+{\Large\bfseries Theorem 1.1: formal statement\\[3pt] and verified foundations}\\[9pt]
 Falconer distance-gauge formalization project\\
-October 8, 2026
+Yongxi Lin\quad---\quad October 8, 2026
 \end{center}
 
 \textbf{Status.} This is an incomplete formalization notebook. The main theorem
@@ -110,13 +110,119 @@ These results justify scalar convergence once suitable shell energies and
 filter errors are supplied. They do not establish the geometric estimates
 that produce those bounds.
 
+\section*{The exact rounded parameters}
+The gain has the proved exact form $\beta_N=c_\theta N^{\theta-1}$, with
+$c_\theta>0$. The ceiling definitions are retained in the block parameter
+$\kappa_N$ and tolerance $\varepsilon_N$. The verified lower bounds imply
+\[
+\varepsilon_N N\ge
+\frac{(c_\theta/1000)^2}{10^6}N^{2\theta-1},
+\qquad
+\kappa_N^3N\ge(c_\theta/1000)^3N^{3\theta-2}.
+\]
+Hence the actual rounded filter errors $(\varepsilon_N N)^{-8}$ are
+summable, and $\kappa_N^3N$ eventually absorbs every fixed logarithmic cost
+when $\theta>2/3$. The full list of parameter budgets remains to be assembled.
+
+\newpage
+\section*{The verified gauge Frostman construction}
+\begin{proposition}
+For $0<\theta\le1$ and a compact set $E$ of positive gauge measure, there are
+a probability measure $\mu$ and a constant $C>0$ such that
+\[
+\mu(E)=1,\qquad \operatorname{supp}\mu\subseteq E,\qquad
+\mu(\overline B(x,r))\le C h_\theta(r)\quad(0<r<1).
+\]
+\end{proposition}
+\begin{proof}
+Positive Hausdorff gauge measure gives positive gauge content. Finite dyadic
+trees supply nonnegative weights with uniformly positive total mass and
+saturated covering bounds. Choosing atoms on the compact set and normalizing
+gives probability measures carried by $E$. These measures form a weakly
+compact family, so a subsequence converges to a probability measure carried
+by $E$. Portmanteau transfers open-ball bounds to the limit. Comparing an
+arbitrary radius with consecutive dyadic scales, and applying the proved
+gauge doubling estimate, yields the closed-ball bound. The probability bound
+handles radii bounded away from zero.
+\end{proof}
+
+\begin{proposition}
+The resulting measure has no atoms and has finite critical logarithmic energy
+for every $\gamma\ge1$:
+\[
+J_\gamma(\mu)=\iint
+\frac{(1+\log^+(1/\lVert x-y\rVert))^\gamma}{\lVert x-y\rVert}
+\,d\mu(x)\,d\mu(y)<\infty.
+\]
+\end{proposition}
+\begin{proof}
+The ball bound tends to zero with the radius, proving atomlessness. The
+formal kernel is infinite on the diagonal. Decompose each pointwise
+potential into dyadic annuli; the gauge ball bound controls its $n$-th
+annular contribution by a constant times
+\[
+(n+1)^\gamma e^{-c n^\theta}.
+\]
+Logarithmic domination absorbs the polynomial into half the stretched
+exponential. The resulting summable majorant uniformly bounds the potential.
+Integrating against the finite measure proves the energy bound.
+\end{proof}
+
+The actual scalar Gaussian kernel is also controlled:
+\[
+K_\gamma(r)=\sum_{n\ge0}(n+1)^\gamma2^n e^{-4^n r^2}
+\le C_\gamma\frac{(1+\log(1/r))^\gamma}{r}
+\quad(0<r<1,\ \gamma\ge0).
+\]
+A split at the dyadic index nearest the inverse radius bounds the finite
+prefix and compares the shifted tail with $K_\gamma(1)$. The measure-level
+Fourier-energy bridge remains in progress.
+
+\newpage
+\section*{The verified reconstruction bridges}
+Dyadic frequency shells overlap at most three times. The quadratic L$^2$
+bound proves convergence of square-summable shell pieces. Actual smooth
+low-pass kernels preserve mass; their differences have uniformly bounded
+L$^1$ norm and the precise dyadic Fourier support. Convolving removed
+measures with these differences produces summable L$^1$ errors whenever
+the removed masses are summable. Low-pass convolutions converge to the
+original measure on Schwartz tests.
+
+\begin{proposition}
+Suppose a finite positive measure $\alpha$ satisfies
+\[
+\int\varphi\,d\alpha
+=\int\varphi f\,dx+\int(\mathcal F^{-1}\varphi)g\,d\xi
+\quad\text{for all Schwartz tests }\varphi,
+\qquad f\in L^1,\quad g\in L^2.
+\]
+Then $\alpha$ is absolutely continuous with respect to Lebesgue measure.
+\end{proposition}
+\begin{proof}
+Let $d\sigma=|f|\,dx$. Cauchy--Schwarz and Plancherel give
+\[
+\left|\int\varphi\,d\alpha\right|
+\le\int|\varphi|\,d\sigma+\lVert g\rVert_2\lVert\varphi\rVert_2.
+\]
+Use smooth compact cutoffs equal to one on a compact subset of an open set
+$U$, zero off $U$, and bounded between zero and one. Their L$^2$ norm is at
+most $|U|^{1/2}$. Inner regularity yields
+\[
+\alpha(U)\le\sigma(U)+\lVert g\rVert_2|U|^{1/2}.
+\]
+For a Lebesgue-null set, outer regularity provides open covers whose
+Lebesgue and $\sigma$ masses both tend to zero. The bound forces its
+$\alpha$ mass to be zero.
+\end{proof}
+Constructing the actual L$^2$ shell pieces and identifying the telescoped
+series pairing is still in progress.
+
 \section*{Remaining analytic work and verification}
-The proof still needs the gauge Frostman construction, logarithmically
-weighted Fourier and projection estimates, endpoint Orlicz radial projection
-control, the summable Fourier reconstruction criterion, quantitative regular
-decomposition, the four uniform energy estimates, and the multiscale budget
-induction. Fixed-parameter estimates require new uniform bounds before they
-can be used with parameters that shrink as the terminal scale grows.
+The proof still needs logarithmically weighted Fourier and projection
+estimates, endpoint Orlicz radial projection control, the remaining
+reconstruction steps, quantitative regular decomposition, four uniform
+energy estimates, and the multiscale budget induction. Fixed-parameter
+estimates need proved uniform dependence before use at shrinking parameters.
 
 The main theorem currently has one explicit proof hole. Comparator permits
 the three standard axioms and must reject the target's proof hole.

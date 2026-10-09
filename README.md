@@ -41,15 +41,20 @@ gauge, compactness and measurability of the distance set, the positive
 branch-counting exponent above two thirds, logarithmic domination by powers,
 summability of stretched exponentials and the modeled filter-error power,
 the exact rounded parameters from Definition 2.1, positive gauge content,
-and finite dyadic gauge weights with saturated covering bounds.
+and finite dyadic gauge weights with saturated covering bounds. Lemma 5.1's
+full gauge Frostman probability measure and its finite logarithmic critical
+energies are now proved. The actual rounded filter error is summable.
 
 The summable reconstruction foundation proves that dyadic frequency shells
 overlap at most three times, obtains the finite-overlap quadratic L² bound,
 and proves convergence of square-summable shell pieces and summable errors.
-The Fourier-to-measure bridges of the full reconstruction criterion remain open.
+Actual smooth Fourier cutoffs, uniformly integrable convolution errors, and
+low-pass convergence on Schwartz tests are proved, as is the final absolute
+continuity consequence of an L¹ plus Fourier L² pairing. The remaining series
+identification in the full reconstruction criterion is in progress.
 
 The [formalization notebook](docs/output/formalization-notebook.pdf) explains
-the initial geometric and scalar lemmas. Its [Markdown source](docs/formalization-notebook.md)
+the geometric, scalar, Frostman, and reconstruction foundations. Its [Markdown source](docs/formalization-notebook.md)
 uses GitHub display-math delimiters.
 
 The unresolved proof is in [Main](FalconerThetaGauge/Main.lean). Its deliberate
@@ -83,8 +88,8 @@ Such a run is not a Palomar mechanical report.
 
 ## Completion and Palomar
 
-The remaining work includes the gauge Frostman construction, logarithmically
-weighted Fourier and projection energies, the endpoint Orlicz radial estimate,
+The remaining work includes logarithmically weighted Fourier and projection
+energies, the endpoint Orlicz radial estimate,
 the summable reconstruction criterion, quantitative regular decomposition,
 the four uniform energy estimates, and the budget induction and final assembly.
 The fixed-parameter packing development does not establish these estimates

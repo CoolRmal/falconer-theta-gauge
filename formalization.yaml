@@ -1,0 +1,126 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+# Development metadata only. Theorem 1.1 is unfinished and cannot be registered.
+version: "v0.4"
+
+project:
+  name: "Falconer's distance problem for stretched logarithmic gauges"
+  description: >-
+    A Lean 4 development targeting Theorem 1.1 of the supplied October 2026
+    manuscript: every compact subset of the Euclidean plane with positive
+    Hausdorff measure for the gauge r exp(-(log(1/r))^theta), with
+    2/3 < theta < 1, has a distance set of positive Lebesgue measure.
+    The exact statement, gauge Frostman measure, finite logarithmic critical
+    energies, rounded-parameter summability, and substantial Fourier
+    reconstruction foundations are proved. The main geometric proof is unfinished.
+  authors:
+    - "Yongxi Lin"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Yongxi Lin"
+
+repository:
+  role: "substantive-development"
+
+classification:
+  arxiv: ["math.CA"]
+  msc2020: ["28A80", "42B10"]
+
+sources:
+  - title: >-
+      Falconer's distance problem for the gauges r exp(-(log(1/r))^theta),
+      theta > 2/3: a complete proof with scale-dependent parameters
+    type: "manuscript"
+    id: "8 October 2026, Theorem 1.1, pages 2-3"
+    location: "docs/falconer-theta-gauge-proof.pdf"
+    relationship: "formalizes"
+    note: >-
+      The uploaded manuscript is the informal mathematical source. Its PDF
+      does not print a named author; no manuscript authorship is inferred
+      from the user's separate confirmation of the formalization author
+      and responsible maintainer. Source SHA-256:
+      820db3291bf9ebc45ea67abf597f60d46c127ab2844e2eea8c3754c81e284fb3.
+
+related_formalizations: []
+
+status:
+  scope: >-
+    The selected target is FalconerThetaGauge.theorem_one_one, with exactly
+    the manuscript's parameter interval, compactness hypothesis, positive
+    gauge-Hausdorff-measure hypothesis, and unpinned distance-set conclusion.
+    Gauge Frostman, logarithmic critical energy, scalar kernel, parameter,
+    and reconstruction foundation lemmas are proved.
+    The theorem still contains a proof hole. These counts exclude the
+    independent Challenge's deliberate specification hole.
+  sorry_count: 1
+  sorry_in_definitions: 0
+  axioms: ["propext", "Classical.choice", "Quot.sound", "sorryAx"]
+  main_results:
+    - declaration: "FalconerThetaGauge.theorem_one_one"
+      file: "FalconerThetaGauge/Main.lean"
+      sorry_count: 1
+      axioms: ["propext", "Classical.choice", "Quot.sound", "sorryAx"]
+      comparator_config: "comparator.json"
+
+automation:
+  methods:
+    - method: "agent"
+      models: []
+      framework: "Codex"
+      tool_setup: >-
+        AI agents drafted statements and elementary proofs, inspected the
+        supplied PDF, searched Mathlib, prepared the repository and CI, and
+        checked compiler diagnostics and axiom dependencies. Lean tactics
+        and the pinned Lean toolchain check the implemented declarations.
+      prompting_notes: >-
+        Create a public Mathlib-dependent Lean project, formalize the exact
+        Theorem 1.1, require Comparator verification, and prepare eventual
+        Palomar registration after the proof is complete.
+  spend_usd: "not tracked"
+  notes: >-
+    Yongxi Lin was explicitly confirmed by the user as the formalization
+    author and responsible maintainer. Codex assisted in this session.
+    Exact model identities and a monetary contribution log were not recorded;
+    no undocumented model or human-review attribution is asserted.
+
+fidelity:
+  divergences: >-
+    The gauge is the manuscript's literal expression on 0 < r < 1 and is
+    zero at r = 0. Its extension to r >= 1 is the identity, which does not
+    affect the small-scale Hausdorff construction. Gauge Hausdorff measure
+    is Mathlib Measure.mkMetric, using covering diameters. The plane has
+    the Euclidean metric. The conclusion uses Lebesgue measure of the
+    ordinary all-pairs distance image; compactness makes this image
+    measurable. No additional analytic hypothesis is included in the
+    target statement. The proof is incomplete, so no full formalization
+    or verification claim is made.
+
+review:
+  status: "AI statement and definition audit; proof unfinished"
+  reviewers: []
+  notes: >-
+    An AI agent independently compared the Challenge and development
+    signatures and custom definitions against Theorem 1.1 of the PDF.
+    Challenge imports only Mathlib and is not imported by Solution.
+    The local preliminary Comparator run exits with an illegal sorryAx
+    dependency. It ran without the Linux sandbox and is not a Palomar
+    mechanical report. Hosted checks and exact evidence are recorded in
+    docs/verification.json. No independent human mathematical review,
+    successful full Palomar verification, editorial review, or registration
+    is recorded.
+
+alignment:
+  namespace: "FalconerThetaGauge"
+  statements:
+    - source: "8 October 2026 manuscript, Theorem 1.1"
+      lean: "FalconerThetaGauge.theorem_one_one"
+      module: "FalconerThetaGauge.Main"
+      status: "partial"
+      note: >-
+        The exact statement is independently repeated in Challenge.lean.
+        Solution imports the development containing the unfinished target;
+        comparator.json selects that target, which currently fails its
+        proof-completeness check.
+
+acknowledgements: >-
+  Lean, Mathlib, Comparator, and the Palomar infrastructure. Acknowledgement
+  does not assert review or endorsement by any cited project or author.

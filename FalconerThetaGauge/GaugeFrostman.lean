@@ -181,6 +181,59 @@ theorem dyadicRadius_le_half {j : ℕ} (hj : 1 ≤ j) : dyadicRadius j ≤ 1 / 2
     (show -(j : ℝ) ≤ -1 by linarith)
   simpa [dyadicRadius, Real.rpow_neg_one] using h
 
+/-- A cube diameter costs at most one doubling constant times its side-length gauge. -/
+theorem thetaGauge_double_dyadicRadius_le {θ : ℝ} (hθ₀ : 0 < θ) (hθ₁ : θ ≤ 1) (j : ℕ) :
+    thetaGauge θ (ENNReal.ofReal (2 * dyadicRadius j)) ≤
+      ENNReal.ofReal (gaugeDoublingConstant θ) * ENNReal.ofReal (realGauge θ (dyadicRadius j)) := by
+  cases j with
+  | zero =>
+      have h : ENNReal.ofReal 2 ≤ ENNReal.ofReal (gaugeDoublingConstant θ) :=
+        ENNReal.ofReal_le_ofReal (two_le_gaugeDoublingConstant θ)
+      simpa [dyadicRadius, thetaGauge, realGauge, Real.zero_rpow hθ₀.ne'] using h
+  | succ j =>
+      have hrhalf : 2 * dyadicRadius (j + 1) ≤ 1 := by
+        have := dyadicRadius_le_half (j := j + 1) (by omega)
+        linarith
+      rw [thetaGauge_ofReal_le_one hθ₀
+        (mul_nonneg (by norm_num) (dyadicRadius_pos _).le) hrhalf,
+        ← ENNReal.ofReal_mul (gaugeDoublingConstant_pos θ).le]
+      exact ENNReal.ofReal_le_ofReal
+        (realGauge_double_le hθ₀.le hθ₁ (dyadicRadius_pos _) hrhalf)
+
+theorem gaugeContentCost_dyadicCube_le {θ : ℝ} (hθ₀ : 0 < θ) (hθ₁ : θ ≤ 1)
+    (j : ℕ) (k : Fin 2 → ℤ) :
+    gaugeContentCost θ (dyadicCube j k) ≤
+      ENNReal.ofReal (gaugeDoublingConstant θ) * ENNReal.ofReal (realGauge θ (dyadicRadius j)) := by
+  have hsqrt : Real.sqrt 2 ≤ 2 := by
+    nlinarith [Real.sq_sqrt (by norm_num : (0 : ℝ) ≤ 2), Real.sqrt_nonneg 2]
+  have hdiam : Metric.ediam (dyadicCube j k) ≤ ENNReal.ofReal (2 * dyadicRadius j) := by
+    apply Metric.ediam_le
+    intro x hx y hy
+    rw [edist_dist]
+    apply ENNReal.ofReal_le_ofReal
+    refine (dist_le_of_mem_dyadicCube hx hy).trans ?_
+    rw [dyadicRadius, Real.rpow_neg (by norm_num : (0 : ℝ) ≤ 2), Real.rpow_natCast]
+    simpa only [div_eq_mul_inv] using
+      mul_le_mul_of_nonneg_right hsqrt (by positivity : (0 : ℝ) ≤ ((2 : ℝ) ^ j)⁻¹)
+  exact iSup_le fun _ ↦
+    (thetaGauge_mono hθ₀.le hdiam).trans (thetaGauge_double_dyadicRadius_le hθ₀ hθ₁ j)
+
+theorem gaugeContent_le_of_finset_dyadic_cover {θ : ℝ} (hθ₀ : 0 < θ) (hθ₁ : θ ≤ 1)
+    {E : Set Plane} {F : Finset (ℕ × (Fin 2 → ℤ))}
+    (hcov : E ⊆ ⋃ p ∈ F, dyadicCube p.1 p.2) :
+    gaugeContent θ E ≤ ENNReal.ofReal (gaugeDoublingConstant θ) *
+      ENNReal.ofReal (∑ p ∈ F, realGauge θ (dyadicRadius p.1)) := by
+  calc
+    gaugeContent θ E ≤ gaugeContent θ (⋃ p ∈ F, dyadicCube p.1 p.2) := measure_mono hcov
+    _ ≤ ∑ p ∈ F, gaugeContent θ (dyadicCube p.1 p.2) := measure_biUnion_finset_le F _
+    _ ≤ ∑ p ∈ F, ENNReal.ofReal (gaugeDoublingConstant θ) *
+        ENNReal.ofReal (realGauge θ (dyadicRadius p.1)) :=
+      Finset.sum_le_sum fun p _ ↦ (gaugeContent_le_gaugeContentCost θ _).trans
+        (gaugeContentCost_dyadicCube_le hθ₀ hθ₁ _ _)
+    _ = _ := by
+      rw [← Finset.mul_sum, ENNReal.ofReal_sum_of_nonneg
+        (fun p _ ↦ (realGauge_pos θ (dyadicRadius_pos p.1)).le)]
+
 /-- The actual manuscript gauge, used as the generation capacities of the finite tree. -/
 def thetaCapacity (θ : ℝ) : PositiveCapacity where
   value j := realGauge θ (dyadicRadius j)
@@ -198,6 +251,27 @@ theorem exists_finite_gauge_weights (θ : ℝ) (S : Finset (Fin 2 → ℤ)) {n :
       (E ⊆ ⋃ p ∈ F, dyadicCube p.1 p.2) ∧
       (∑ p ∈ F, realGauge θ (dyadicRadius p.1) ≤ ∑ k' ∈ S, w k') :=
   exists_capacity_weights S hn (thetaCapacity θ) hcov
+
+/-- The finite Frostman masses have a positive lower bound independent of depth. -/
+theorem exists_finite_gauge_weights_mass_bound {θ : ℝ} (hθ₀ : 0 < θ) (hθ₁ : θ ≤ 1)
+    (S : Finset (Fin 2 → ℤ)) {n : ℕ} (hn : 1 ≤ n) {E : Set Plane}
+    (hcontent : 0 < gaugeContent θ E) (hcov : E ⊆ ⋃ k' ∈ S, dyadicCube n k') :
+    ∃ w : (Fin 2 → ℤ) → ℝ,
+      (∀ k, 0 ≤ w k) ∧
+      0 < ∑ k' ∈ S, w k' ∧
+      (∀ i ≤ n, ∀ k, cubeMass S n i w k ≤ realGauge θ (dyadicRadius i)) ∧
+      gaugeContent θ E ≤ ENNReal.ofReal (gaugeDoublingConstant θ) *
+        ENNReal.ofReal (∑ k' ∈ S, w k') := by
+  obtain ⟨w, F, hw, hbound, _, hcovF, hmass⟩ := exists_finite_gauge_weights θ S hn hcov
+  have hmassbound : gaugeContent θ E ≤ ENNReal.ofReal (gaugeDoublingConstant θ) *
+      ENNReal.ofReal (∑ k' ∈ S, w k') :=
+    (gaugeContent_le_of_finset_dyadic_cover hθ₀ hθ₁ hcovF).trans
+      (mul_le_mul_right (ENNReal.ofReal_le_ofReal hmass) _)
+  have hmasspos : 0 < ∑ k' ∈ S, w k' := by
+    by_contra h
+    rw [ENNReal.ofReal_eq_zero.mpr (not_lt.mp h), mul_zero] at hmassbound
+    exact not_le_of_gt hcontent hmassbound
+  exact ⟨w, hw, hmasspos, hbound, hmassbound⟩
 
 end GaugeFrostman
 

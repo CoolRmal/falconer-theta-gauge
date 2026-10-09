@@ -2,8 +2,12 @@ module
 
 public import FalconerThetaGauge.Gauge
 public import FalconerThetaGauge.Statement
-public import FalconerThetaGauge.GaugeFrostman
+public import FalconerThetaGauge.GaugeFrostmanLimit
+public import FalconerThetaGauge.GaugeLogEnergy
 public import FalconerThetaGauge.Asymptotics
 public import FalconerThetaGauge.Parameters
 public import FalconerThetaGauge.SummableReconstruction
+public import FalconerThetaGauge.OrliczEnergyKernel
+public import FalconerThetaGauge.FourierReconstructionApproximation
+public import FalconerThetaGauge.ReconstructionDensity
 public import FalconerThetaGauge.Main

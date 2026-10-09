@@ -37,6 +37,13 @@ FOUNDATIONS = (
     "FalconerThetaGauge.GaugeFrostman.exists_finite_gauge_weights",
     "FalconerThetaGauge.summable_l2_of_dyadicFrequencyShell_support",
     "FalconerThetaGauge.reconstruction_of_summable_errors_and_square_bound",
+    "FalconerThetaGauge.exists_gauge_frostman_probabilityMeasure",
+    "FalconerThetaGauge.exists_probabilityMeasure_finite_logCriticalEnergy",
+    "FalconerThetaGauge.dyadicGaussianKernel_le_log",
+    "FalconerThetaGauge.summable_rounded_filter_error",
+    "FalconerThetaGauge.eventually_log_le_blockParameter_cube_mul_scale",
+    "FalconerThetaGauge.absolutelyContinuous_of_l1_fourier_l2_schwartz_pairing",
+    "FalconerThetaGauge.tendsto_integral_reconstructionLowpass_schwartz",
 )
 DECLARATION_NAME = re.compile(r"[A-Za-z_][A-Za-z_0-9']*(?:\.[A-Za-z_][A-Za-z_0-9']*)*")
 AXIOM_REPORT = re.compile(
