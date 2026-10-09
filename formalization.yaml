@@ -24,8 +24,11 @@ project:
     four scalar binning estimates are
     proved. Quadratic and localized stationary expansions have uniform actual
     derivative budgets and the numerical stationary operator bound. Literal
-    inverse operator cancellation and basic actual Fourier energies are proved.
-    The full circular expansion and analytic energy recurrences remain unfinished.
+    inverse operator cancellation, numerical norms, finite inversion tails, and
+    full circular stationary phase for smooth amplitudes are proved. Actual
+    Fourier and distance energies and the positive-measure low/high bridge
+    and the literal scheduled Lemma 7.4 are proved. The four analytic energy
+    recurrences remain unfinished.
   authors:
     - "Yongxi Lin"
   license: "Apache-2.0"

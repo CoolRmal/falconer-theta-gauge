@@ -731,13 +731,106 @@ $$
 
 Their polynomial multiplication is proved to agree with differential
 composition on smooth amplitudes, including the conjugate operators.
-Numerical inverse norms and the full periodic circular expansion remain.
+The numerical inverse norms and the full periodic expansion for smooth amplitudes
+are now proved, as described below.
+
+## Numerical inverse norms and finite inversion
+
+The weighted norm is the actual finite sum of coefficient magnitudes. Its
+triangle and multiplication inequalities follow from polynomial coefficient
+expansion. The literal recursion proves the stronger uniform estimate
+
+$$
+\|Q_j\|_M\le(200NM^2)^j\quad(j\le N),\qquad
+\|Q_j\|_M\le(800jM^2)^j.
+$$
+
+Applying a polynomial of degree at most d to an actual amplitude consumes d
+input derivatives and multiplies its amplitude bound by its weighted norm.
+This is proved at finite differentiability order, also for conjugate operators.
+
+Let C_m be the degree-m coefficient of the two series truncated at T. Actual
+polynomial convolution gives
+
+$$
+C_0=1,\quad C_m=0\ (0<m<T),\qquad
+\|C_m\|_M\le(m+1)(800mM^2)^m.
+$$
+
+The finite product of the actual differential series equals the input
+amplitude plus precisely the terms of total order at least T. For a smooth
+(A,M)-regular amplitude through order 4T and 0≤q≤1/2, its tail satisfies
+
+$$
+\|\mathrm{Tail}\|\le2A(2T+1)q^T,
+\qquad 800(2T)M^2|z|\le q.
+$$
+
+No cancellation or tail estimate is supplied as an analytic hypothesis.
+
+## Full periodic circular expansion for smooth amplitudes
+
+The actual periodized cutoff is locally a single translate. Near and opposite
+cutoffs have disjoint supports. Their complement is smooth, periodic and
+supported where the sine of the phase angle has magnitude at least 1/2.
+The exact circle integral splits into two localized Morse integrals and this
+actual away integral.
+
+For a smooth periodic amplitude G that is (A,M)-regular through order 2T+2,
+M≥1 and Λ≥1, the proved expansion is
+
+$$
+\int_u^{u+2\pi}e^{-i\Lambda\cos(t-\varphi)}G(t)\,dt
+=\sqrt{2\pi/\Lambda}\left[
+ e^{-i(\Lambda-\pi/4)}\sum_{j<T}\Lambda^{-j}P_jG(\varphi)
+ +e^{i(\Lambda-\pi/4)}\sum_{j<T}\Lambda^{-j}\bar P_jG(\varphi+\pi)\right]+E,
+$$
+
+$$
+|E|\le A\sqrt{2\pi/\Lambda}\,B(B/\Lambda)^T,
+\qquad B=10^8(T+1)^4M^2.
+$$
+
+The proof uses T+1 integrations by parts for the away contribution. This
+retains the square-root normalization and fits the available derivative
+budget. The manuscript's finite-regularity version is not claimed here;
+the actual constructed masks are smooth at every order.
+
+The prepared direction arc has a literal convolution cutoff ψΓ. It equals
+one on Γ enlarged by 0.1, vanishes outside Γ enlarged by 0.2, and vanishes
+throughout the opposite arc's neighborhood of radius π/3. Its actual angular
+derivatives obey 33^k(k!)² through the selected finite order.
+
+## Actual weighted distance energy and the Fourier bridge
+
+The passing distance measure is the pushforward of the actual restricted
+product weighted by inverse square-root distance and the passing indicator.
+Positive separation proves that it is finite. Its normalized collision energy
+D satisfies both exact trivial bounds (7.2); literal passing sets give
+monotonicity under level increase, list removal and width enlargement.
+The actual Fourier transform equals the weighted spatial double integral by
+measure pushforward and Fubini.
+
+For finite positive measures η≤β≤ζ, normalization m≥0 and 0≤s≤t, the genuine
+low/high bridge is proved:
+
+$$
+D_\eta(t)\le320D_\zeta(s)
+ +\frac{320}{m}\sum_{s<v\le t}
+ \int_{2^{v-1}\le|r|\le2^v}|\widehat\beta(r)|^2\,dr.
+$$
+
+The proof allows real s and includes a partial first dyadic shell. Its
+stronger high-frequency coefficient is two; the displayed source constant
+320 follows. For the actual ordered scheduled lists, the literal masks give
+passing ≤ masked ≤ next-level passing measures. This instantiates the bridge
+at s=t−εN and proves Lemma 7.4 with its source constant. The four nontrivial
+energy estimates are the next analytic assembly.
 
 ## Remaining proof obligations
 
-The manuscript's proof still requires the full periodic circular stationary
-expansion, numerical inverse-operator
-norms, and four uniform energy recurrences and their shell assembly. Fixed-parameter theorems cannot be used at
+The manuscript's proof still requires the four uniform energy recurrences
+and their shell assembly. Fixed-parameter theorems cannot be used at
 scale-dependent parameters without proving the needed uniform dependence.
 
 The main target now uses the proved preparation and the actual weighted

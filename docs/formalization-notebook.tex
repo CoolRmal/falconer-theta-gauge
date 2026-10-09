@@ -730,14 +730,96 @@ Q_0=1,\qquad Q_j=-\sum_{i=1}^jP_iQ_{j-i},\qquad \deg Q_j\le2j,
 \sum_{i=0}^jP_iQ_{j-i}=0\quad(j\ge1).
 \]
 Their polynomial multiplication agrees with differential composition on
-smooth amplitudes, including the conjugate operators. Numerical inverse
-norms and the full periodic circular expansion remain.
+smooth amplitudes, including the conjugate operators. The numerical inverse
+norms and full periodic expansion for smooth amplitudes are now proved.
+
+\newpage
+\section*{Numerical inverse norms and finite inversion}
+The weighted norm is the actual finite sum of coefficient magnitudes. Its
+triangle and multiplication inequalities follow from polynomial coefficient
+expansion. The literal recursion proves the stronger uniform estimate
+\[
+\|Q_j\|_M\le(200NM^2)^j\quad(j\le N),\qquad
+\|Q_j\|_M\le(800jM^2)^j.
+\]
+Applying a polynomial of degree at most $d$ to an actual amplitude consumes $d$
+input derivatives and multiplies its amplitude bound by its weighted norm.
+This is proved at finite differentiability order, also for conjugate operators.
+
+Let $C_m$ be the degree-$m$ coefficient of the two series truncated at $T$.
+Actual polynomial convolution gives
+\[
+C_0=1,\quad C_m=0\ (0<m<T),\qquad
+\|C_m\|_M\le(m+1)(800mM^2)^m.
+\]
+The finite product of the actual differential series equals the input
+amplitude plus precisely the terms of total order at least $T$. For a smooth
+$(A,M)$-regular amplitude through order $4T$ and $0\le q\le1/2$, its tail satisfies
+\[
+\|\mathrm{Tail}\|\le2A(2T+1)q^T,
+\qquad 800(2T)M^2|z|\le q.
+\]
+No cancellation or tail estimate is supplied as an analytic hypothesis.
+
+\newpage
+\section*{Full periodic circular expansion for smooth amplitudes}
+The actual periodized cutoff is locally a single translate. Near and opposite
+cutoffs have disjoint supports. Their complement is smooth, periodic and
+supported where the sine of the phase angle has magnitude at least $1/2$.
+The exact circle integral splits into two localized Morse integrals and this
+actual away integral.
+
+For a smooth periodic amplitude $G$ that is $(A,M)$-regular through order $2T+2$,
+$M\ge1$ and $\Lambda\ge1$, the proved expansion is
+\[
+\begin{split}
+\int_u^{u+2\pi}e^{-i\Lambda\cos(t-\varphi)}G(t)\,dt
+=\sqrt{2\pi/\Lambda}\bigg[&
+ e^{-i(\Lambda-\pi/4)}\sum_{j<T}\Lambda^{-j}P_jG(\varphi)\\
+ &+e^{i(\Lambda-\pi/4)}\sum_{j<T}\Lambda^{-j}\bar P_jG(\varphi+\pi)\bigg]+E,
+\end{split}
+\]
+\[
+|E|\le A\sqrt{2\pi/\Lambda}\,B(B/\Lambda)^T,
+\qquad B=10^8(T+1)^4M^2.
+\]
+The proof uses $T+1$ integrations by parts for the away contribution. This
+retains the square-root normalization and fits the available derivative
+budget. The manuscript's finite-regularity version is not claimed here;
+the actual constructed masks are smooth at every order.
+
+The prepared direction arc has a literal convolution cutoff $\psi_\Gamma$.
+It equals one on $\Gamma$ enlarged by $0.1$, vanishes outside $\Gamma$ enlarged
+by $0.2$, and vanishes throughout the opposite arc's neighborhood of radius
+$\pi/3$. Its angular derivatives obey $33^k(k!)^2$ through the selected finite order.
+
+\newpage
+\section*{Actual weighted distance energy and the Fourier bridge}
+The passing distance measure is the pushforward of the actual restricted
+product weighted by inverse square-root distance and the passing indicator.
+Positive separation proves that it is finite. Its normalized collision energy
+$D$ satisfies both exact trivial bounds (7.2); literal passing sets give
+monotonicity under level increase, list removal and width enlargement.
+The actual Fourier transform equals the weighted spatial double integral by
+measure pushforward and Fubini.
+
+For finite positive measures $\eta\le\beta\le\zeta$, normalization $m\ge0$
+and $0\le s\le t$, the genuine low/high bridge is proved:
+\[
+D_\eta(t)\le320D_\zeta(s)
+ +\frac{320}{m}\sum_{s<v\le t}
+ \int_{2^{v-1}\le|r|\le2^v}|\widehat\beta(r)|^2\,dr.
+\]
+The proof allows real $s$ and includes a partial first dyadic shell. Its
+stronger high-frequency coefficient is two; the displayed source constant
+$320$ follows. For the actual ordered scheduled lists, the literal masks give
+passing $\le$ masked $\le$ next-level passing measures. This instantiates the
+bridge at $s=t-\varepsilon N$ and proves Lemma 7.4 with its source constant.
+The four nontrivial energy estimates are the next analytic assembly.
 
 \newpage
 \section*{Remaining analytic work and verification}
-The proof still needs the full periodic circular stationary expansion,
-numerical inverse-operator norms, and four
-uniform energy recurrences and their shell assembly.
+The proof still needs four uniform energy recurrences and their shell assembly.
 The main target now uses the proved preparation and weighted distance
 carrier; its sole hole is absolute continuity of the actual weighted source.
 Comparator must reject this hole. A successful build is not proof verification.

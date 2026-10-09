@@ -135,7 +135,18 @@ Challenge has one specification hole. No helper definitions or lemmas may use ho
   degree bounds, and exact scaled derivative identities. The actual weighted
   coefficient norm obeys `(100 j M²)^j`. Literal recursively defined inverse
   polynomials have proved degree, convolution, action and conjugate identities;
-  their numerical norm bounds remain.
+  their actual numerical norms obey `(800 j M²)^j` (a stronger uniform
+  bound with constant 200 is proved). Finite-order action costs and exact
+  finite-series inversion with a geometric tail bound are proved.
+- `CircularStationary*/StationaryCircular*.lean`: genuine periodic near/opposite/away
+  partition, exact integral split and full circular expansion for smooth periodic
+  amplitudes with the literal source remainder constant. The away proof uses
+  order `T+1` to retain its square-root normalization. The selected finite-order
+  prepared-arc convolution cutoff has the exact support and derivative bounds.
+- `MaskedDistanceEnergy*.lean`: literal passing weighted distance measure,
+  exact (7.2) trivial bounds and monotonicity, its true Fourier/Fubini identity,
+  and a finite dyadic low/high bridge. Actual level-mask comparisons give
+  the full scheduled Lemma 7.4 with constant 320.
 - `MaskedFourierEnergy*.lean`: actual Fourier amplitudes, circular spectra,
   source smooth frequency averages, the literal trivial bound (7.1), and
   reached-mask factorization and monotonicity on actual occupied cells.
@@ -158,9 +169,9 @@ skeleton as a completed proof.
 
 ## Next concrete mathematical work
 
-1. Complete the periodic circular partition and full stationary expansion,
-   and inverse-operator numerical bounds.
-2. Prove the four uniform energy estimates, apply the actual finite-tree induction,
+1. Assemble spatial inverse-power factorization and stationary inversion
+   into the four uniform energy estimates.
+2. Apply the actual finite-tree induction,
    and obtain the final shell estimate. The
    existing fixed-parameter Falconer development cannot simply be retuned.
 3. Remove the sole Main proof hole, pass sandboxed Comparator on the exact public

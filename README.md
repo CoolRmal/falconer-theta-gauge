@@ -80,9 +80,15 @@ Quadratic stationary phase is proved for Schwartz and smooth compact
 amplitudes in both signs, with the exact prefactor and remainder. The actual
 arcsine substitution and localized circle expansion are proved, with actual
 uniform amplitude derivative bounds and the operator budget `(100 j M²)^j`.
-Literal inverse operators have proved degree and cancellation identities.
-Actual masked Fourier energies satisfy the source trivial and reached-mask
-bounds. The full circular expansion and analytic energy estimates remain.
+Literal inverse operators have proved degree, cancellation and numerical
+norm bounds, with actual finite-order action costs. The full periodic circular
+expansion for smooth amplitudes has the source remainder constant; finite
+inversion has a proved geometric tail bound. The literal prepared-arc cutoff
+has its exact support and derivative budgets. Actual masked Fourier and
+distance energies satisfy the source trivial and reached-mask bounds. The
+weighted distance Fourier transform and a genuine low/high dyadic bridge are
+proved, including the literal next-level mask sandwich and Lemma 7.4 with
+constant 320. The four nontrivial analytic energy estimates remain.
 
 The summable reconstruction foundation proves that dyadic frequency shells
 overlap at most three times, obtains the finite-overlap quadratic L² bound,
