@@ -61,6 +61,8 @@ The target-specific radial endpoint is assembled using the gauge's finite
 energies at every logarithmic order. Compact quarter-mass restrictions give
 a common eighth-order radial moment bound at every retained pin in both
 directions, proving the spread requirement of Proposition 5.6(c).
+The actual pair directions lie in one closed arc of length at most 1/20,
+completing the common-arc geometry of Proposition 5.6(b).
 Actual occupied-descendant counts, entry-depth bounds, split budget gains,
 and finite scheduled test lists with at most `N²` tests are also proved.
 The nonstationary and linear phase bounds have explicit constants, including
@@ -69,14 +71,18 @@ probability bump has the required factorial L¹ derivative estimates.
 Literal tube and projection tests now have their exact Markov bounds and
 jointly measurable smooth masks. The weighted distance measure, finite-test
 filters, actual regular-carrier loss, and summability of removed mass are
-proved. Whole-piece filter assembly and the directional widening estimates
-remain. Actual move chains and induction trees, including repeated paths,
+proved for the actual filters on all retained regular pieces. Directional
+widening and the exact tube/projection average estimates of Lemma 6.5 are proved. Actual move chains and induction trees, including repeated paths,
 satisfy the length, cost, multiplier, and node-count budgets. Scalar binning
-estimates (7.3(i)--(iii)) are proved for actual finite measures.
+estimates (7.3(i)--(iv)) are proved for actual finite measures, including
+the literal angular Fourier comparisons with constants 2 and 160.
 Quadratic stationary phase is proved for Schwartz and smooth compact
 amplitudes in both signs, with the exact prefactor and remainder. The actual
-arcsine substitution and localized circle expansion are proved; uniform
-circular operator and derivative bounds remain.
+arcsine substitution and localized circle expansion are proved, with actual
+uniform amplitude derivative bounds and the operator budget `(100 j M²)^j`.
+Literal inverse operators have proved degree and cancellation identities.
+Actual masked Fourier energies satisfy the source trivial and reached-mask
+bounds. The full circular expansion and analytic energy estimates remain.
 
 The summable reconstruction foundation proves that dyadic frequency shells
 overlap at most three times, obtains the finite-overlap quadratic L² bound,
@@ -124,9 +130,8 @@ Such a run is not a Palomar mechanical report.
 
 ## Completion and Palomar
 
-The remaining work includes the common short direction arc, directional
-widening and average-count bounds, whole-piece filter assembly, uniform
-circular stationary phase, the Fourier part of scalar binning, the four
+The remaining work includes the full circular stationary expansion,
+inverse-operator numerical bounds, the four
 energy estimates, and their induction and final shell assembly.
 The fixed-parameter packing development does not establish these estimates
 when the parameters shrink with the terminal scale.

@@ -19,9 +19,13 @@ project:
     Actual entry bounds, finite scheduled tests, uniform nonstationary decay,
     and finite-order smooth bumps with factorial derivative bounds are proved.
     Literal directional Markov tests, smooth masks, weighted filtered mass
-    bounds, actual finite induction trees, scalar binning parts i--iii, and
-    quadratic and localized stationary expansions are proved. Uniform
-    circular bounds and analytic energy recurrences remain unfinished.
+    bounds on all retained regular pieces, exact directional average counts,
+    the common closed direction arc, actual finite induction trees, and all
+    four scalar binning estimates are
+    proved. Quadratic and localized stationary expansions have uniform actual
+    derivative budgets and the numerical stationary operator bound. Literal
+    inverse operator cancellation and basic actual Fourier energies are proved.
+    The full circular expansion and analytic energy recurrences remain unfinished.
   authors:
     - "Yongxi Lin"
   license: "Apache-2.0"
@@ -64,7 +68,8 @@ status:
     radial preparation has a uniform eighth-order moment at every retained pin.
     Finite schedule arithmetic and uniform nonstationary estimates are proved.
     Actual weighted distance filtering has summable removed mass for concrete
-    finite filter data. Genuine chains and trees satisfy all finite budgets.
+    finite filters assembled across all actual retained pieces. Genuine chains
+    and trees satisfy all finite budgets.
     Quadratic stationary phase and its literal circular Morse substitution
     are proved for smooth compact amplitudes. The main proof is reduced to
     absolute continuity of the actual prepared weighted distance measure.

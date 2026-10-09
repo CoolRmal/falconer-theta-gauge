@@ -527,9 +527,10 @@ a_N=2.1\left(4R^{-\kappa/4}
 \qquad \sum_N a_N<\infty.
 $$
 
-These statements consume actual finite filter data. The scheduled-test
-constructor supplies such data on occupied anchors; the full union across
-regular pieces and their individual lists remains to be assembled.
+The concrete constructor now assembles the individual lists of every retained
+regular piece into one Borel filter. Neutral padding uses exactly N²+1 shared
+slots. Its carrier is the literal regular carrier, so the displayed removed-mass
+bound applies to the actual scheduled filtered distance measure.
 
 ## Verified actual chains, trees, and scalar binning
 
@@ -579,7 +580,7 @@ $$
 $$
 
 The decaying-kernel argument uses an actual summable integer-shift majorant.
-The Fourier part of Lemma 7.3 remains separate.
+Both Fourier comparisons are now proved as well, as described below.
 
 ## Verified quadratic phase and circular Morse substitution
 
@@ -623,15 +624,120 @@ with the actual derivatives of this compact amplitude. Universal real
 coefficients are defined by finite Leibniz and Faà di Bruno sums of the
 literal coordinate derivatives. The positive and conjugate operators have
 proved exact scaled derivative identities, constant term one, and degree at
-most 2j. Their uniform numerical coefficient bounds and the amplitude
-derivative bounds remain to be proved.
+most 2j. Actual weighted coefficient norms and uniform localized amplitude
+derivative bounds are now proved, as described below.
+
+## Concrete directional averages and assembled filters
+
+The prepared carrier directions lie in one compact closed arc of angular
+length at most 1/20. The proof controls the actual relative complex
+displacement, so it also handles arcs crossing the principal-angle branch.
+
+Nine actual half-open dyadic cells cover each closed disc of dyadic radius,
+including boundary points. The regular measure's cell bounds therefore apply
+to the literal normalized anchor probabilities. Circle sine and cosine band
+estimates, Tonelli, and finite dyadic shells prove the exact Lemma 6.5 bounds:
+
+$$
+\bar N_P\le R^{\operatorname{ht}[g,p]+4\varepsilon},\qquad
+\bar\Pi_P\le 2^{-(u-p)}R^{\operatorname{ht}[p,u]+4\varepsilon}.
+$$
+
+The parameter facts absorb the actual intermediate factors 150(N+4) and
+75(N+2). Passing directions gain the additional factor R^{2ε}. Literal
+angular widening is proved even at closed-neighborhood boundaries; it does
+not require the passing set itself to be closed. Each mask derivative
+vanishes where the next narrower level fails.
+
+The disjoint regular-piece carriers provide a finite Borel pin partition.
+Each piece contributes its own actual scheduled tests. Neutral padding
+preserves their product, and the assembled symbol is smooth in the angular
+variable at every pin. Its derivative scale is bounded by
+
+$$
+(N^2+1)(4T)^3\max(1,2^{L-\varepsilon N}),
+$$
+
+where L is the true maximum length in that piece's finite test list. This
+supplies the concrete filter data for the proved removed-mass estimate.
+
+## Fourier binning and the actual masked Fourier energy
+
+For the literal angular Fourier transform of a finite positive measure, an
+actual two-box identity gives the remaining two binning inequalities:
+
+$$
+C_\eta(h,0)\le2h\int_{|r|\le h^{-1}}|\widehat\eta(r)|^2\,dr,
+\qquad
+\int_{|r|\le h^{-1}}|\widehat\eta(r)|^2\,dr
+\le160h^{-1}C_\eta(h,0).
+$$
+
+This completes all four parts of Lemma 7.3 without a Fourier identity assumed
+as a hypothesis. The diagonal remains in the actual collision measure.
+
+The Fourier energy now consists of literal integrals, with the manuscript's
+actual smooth frequency cutoff Ψ. Its derivative bound is 14^k(k!)² at the
+chosen finite order; its support and plateau give the required dyadic window.
+For bounded measurable masks the actual U, σ and F satisfy
+
+$$
+F_{X,Y}(v)\le2600\,4^v\rho_1(X)\rho_2(Y),
+\qquad
+F_{X,Y}(v)\le2600\,4^{v-a}R^{-2A(a)}
+$$
+
+in the one-piece cell case. A reached mask is a direction-only factor on an
+actual descendant cell, so removing it can only increase this actual energy.
+These are the starting bounds; the four nontrivial energy estimates remain.
+
+## Uniform localized derivatives and exact inverse operators
+
+The genuine holomorphic Jacobian on complex discs of radius one half obeys
+Cauchy's estimates. Restriction to the real axis commutes with every
+iterated derivative, giving, uniformly on |s|≤1,
+
+$$
+|J^{(n)}(s)|\le2\,n!\,2^n,\qquad
+|\vartheta^{(m)}(s)|\le2^m(m-1)!\quad(m\ge1).
+$$
+
+The cutoff χ₀ is the actual interval indicator convolved with the finite-order
+bump of radius π/12. It equals one on the interval of radius π/6, is supported
+in the interval of radius π/3, and obeys |χ₀^{(k)}|≤(2π)^k(k!)² through the
+selected order. Finite Faà di Bruno partitions give the actual localized
+amplitude g the uniform bounds
+
+$$
+|g^{(n)}(s)|\le2A(n!)^2(56M)^n,
+\qquad \|g^{(n)}\|_1\le4A(n!)^2(56M)^n.
+$$
+
+The localized expansion therefore has an explicit uniform remainder in
+universal operator form. The literal coefficient sums satisfy
+
+$$
+\|P_j\|_M\le(100jM^2)^j\quad(j\ge1).
+$$
+
+The proof counts actual cyclic partition weights, whose sum is exactly n!.
+It does not assume the source's individual coefficient estimate. Literal
+polynomials define the inverse recursion and prove
+
+$$
+Q_0=1,\qquad Q_j=-\sum_{i=1}^jP_iQ_{j-i},\qquad
+\deg Q_j\le2j,\qquad \sum_{i=0}^jP_iQ_{j-i}=0\quad(j\ge1).
+$$
+
+Their polynomial multiplication is proved to agree with differential
+composition on smooth amplitudes, including the conjugate operators.
+Numerical inverse norms and the full periodic circular expansion remain.
 
 ## Remaining proof obligations
 
-The manuscript's proof still requires the common short direction arc,
-directional widening and average counts, whole-piece filter assembly,
-uniform circular stationary bounds, Fourier binning, and four uniform energy
-recurrences and their shell assembly. Fixed-parameter theorems cannot be used at
+The manuscript's proof still requires the full periodic circular stationary
+expansion, numerical inverse-operator
+norms, and four uniform energy recurrences and their shell assembly. Fixed-parameter theorems cannot be used at
 scale-dependent parameters without proving the needed uniform dependence.
 
 The main target now uses the proved preparation and the actual weighted

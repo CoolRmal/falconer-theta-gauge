@@ -75,6 +75,9 @@ Challenge has one specification hole. No helper definitions or lemmas may use ho
   common finite eighth-order radial moment at every retained carrier pin in
   both directions, preserving gauge and separation (Proposition 5.6(c)).
   The source's general single-order Theorem 5.4 is not claimed separately.
+  `SeparatedDirectionsArc.lean` proves all actual prepared pair directions
+  lie in one compact closed arc of angular length at most 1/20, with the
+  literal orientation and no assumption about a principal-angle branch.
 - `RegularMeasureExcessCount/Entry*.lean`: actual descendant counts (5.2),
   exact entry depth and all Lemma 9.2 bounds, finite minimum budgets and
   constructed split gains, and actual contributing tube/projection records
@@ -96,8 +99,10 @@ Challenge has one specification hole. No helper definitions or lemmas may use ho
 - `DirectionalTestsMarkov/Tube/Projection/Records/Filter.lean`: literal line
   tubes, occupied-cell counts, normalized anchor projection coincidences,
   exact Markov bad-direction lengths, actual finite scheduled filters, joint
-  measurability, and smooth angular masks. Per-piece whole-carrier assembly
-  and directional widening/average-count estimates remain.
+  measurability, and smooth angular masks. Literal widening, finite shell
+  averages with nine-cell boundary coverage, and exact Lemma 6.5 budgets are
+  proved. Concrete disjoint-piece filters and their smooth derivative budgets
+  now supply the actual whole-carrier construction.
 - `FilteredDistanceMeasure*.lean`: the actual inverse-square-root weighted
   product-distance source, literal masked measures, exact weight and carrier
   bounds, finite-test removed mass, actual regular-carrier defects, and
@@ -111,7 +116,8 @@ Challenge has one specification hole. No helper definitions or lemmas may use ho
   the analytic energy recurrences are still needed.
 - `ScalarEnergyBinning/Shift/Kernel.lean`: true half-open integer-bin measure
   partition, discrete Cauchy--Schwarz, shifted and dilated collision bounds,
-  and the decaying cross-kernel estimate, proving Lemma 7.3(i)--(iii).
+  and the decaying cross-kernel estimate. Actual two-box Fourier identities
+  prove both literal angular Fourier window comparisons, completing 7.3(i)--(iv).
 - `QuadraticGaussian*/QuadraticPhase*/ImaginaryTaylor/Schwartz*.lean`: actual
   Gaussian Fourier pairing, removal of damping by dominated convergence,
   exact principal-branch prefactor, sharp imaginary Taylor remainder,
@@ -120,12 +126,19 @@ Challenge has one specification hole. No helper definitions or lemmas may use ho
 - `StationaryMorse*/LocalizedStationaryPhase.lean`: the literal arcsine
   coordinate, exact Jacobian and cosine phase, smooth compact extension of
   the localized amplitude, actual integral substitution, and its finite
-  localized expansion. Uniform circular bounds remain.
+  localized expansion. Genuine complex Cauchy estimates transfer to the real
+  Jacobian. Actual finite partition weights give uniform amplitude derivatives
+  and explicit localized error bounds in universal operator form.
 - `StationaryPhaseOperators*.lean`: universal real coefficients from literal
   Leibniz and Faà di Bruno sums, exact weighted composition identity at zero,
   constant-coefficient positive/conjugate operators, their order-zero and
-  degree bounds, and exact scaled derivative identities. Uniform numerical
-  coefficient bounds remain.
+  degree bounds, and exact scaled derivative identities. The actual weighted
+  coefficient norm obeys `(100 j M²)^j`. Literal recursively defined inverse
+  polynomials have proved degree, convolution, action and conjugate identities;
+  their numerical norm bounds remain.
+- `MaskedFourierEnergy*.lean`: actual Fourier amplitudes, circular spectra,
+  source smooth frequency averages, the literal trivial bound (7.1), and
+  reached-mask factorization and monotonicity on actual occupied cells.
 - `Main.lean`: the original target now uses the actual uniform radial
   preparation and weighted distance carrier. Its only hole is absolute
   continuity of the actual weighted source measure.
@@ -145,9 +158,8 @@ skeleton as a completed proof.
 
 ## Next concrete mathematical work
 
-1. Complete the common short direction arc, directional widening/average
-   counts, per-piece filter assembly, uniform circular stationary bounds,
-   and the Fourier part of scalar binning.
+1. Complete the periodic circular partition and full stationary expansion,
+   and inverse-operator numerical bounds.
 2. Prove the four uniform energy estimates, apply the actual finite-tree induction,
    and obtain the final shell estimate. The
    existing fixed-parameter Falconer development cannot simply be retuned.
