@@ -96,7 +96,11 @@ series is genuinely separable with bounded polynomial factors and summable
 coefficients. Finite and countable circular Cauchy–Schwarz estimates control the
 actual bilinear integrals by the actual masked energies. Equal-arc convolutions,
 finite Schur bounds, and pointwise phase separation for unlinked cells are
-proved. The four complete analytic energy estimates remain.
+proved. Estimate 7.7 is complete for the actual weighted distance energies.
+The full inverse-circle Fourier series has a proved coefficient bound 11/10.
+The genuine nonzero-symbol linking graph has degree at most `R^(height+12ε)`,
+and actual angular and radial integrals satisfy the source decay bounds.
+Their final joint Fourier-energy assembly and the full space split remain.
 
 The summable reconstruction foundation proves that dyadic frequency shells
 overlap at most three times, obtains the finite-overlap quadratic L² bound,
@@ -144,8 +148,10 @@ Such a run is not a Palomar mechanical report.
 
 ## Completion and Palomar
 
-The remaining work includes assembling the four complete energy estimates
-from these analytic tools, their induction, and the final shell assembly.
+The remaining work includes completing Estimates 7.5, 7.6 and 7.8, then
+assembling the actual induction and the final frequency shells. Estimate 7.7
+is proved. The actual terminal-tree contributions and accumulated small
+errors already satisfy their budget bounds.
 The fixed-parameter packing development does not establish these estimates
 when the parameters shrink with the terminal scale.
 

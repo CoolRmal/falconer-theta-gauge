@@ -27,8 +27,11 @@ project:
     inverse operator cancellation, numerical norms, finite inversion tails, and
     full circular stationary phase for smooth amplitudes are proved. Actual
     Fourier and distance energies and the positive-measure low/high bridge
-    and the literal scheduled Lemma 7.4 are proved. The four analytic energy
-    recurrences remain unfinished.
+    and the literal scheduled Lemma 7.4 are proved. Estimate 7.7 is proved for
+    actual weighted distance energies. The full inverse-circle Fourier series
+    has summable coefficients with bound 11/10; actual nonzero-symbol graph
+    degrees and angular and radial cancellation budgets are proved.
+    Estimates 7.5, 7.6 and 7.8 and the final induction remain unfinished.
   authors:
     - "Yongxi Lin"
   license: "Apache-2.0"
@@ -117,7 +120,10 @@ fidelity:
     is Mathlib Measure.mkMetric, using covering diameters. The plane has
     the Euclidean metric. The conclusion uses Lebesgue measure of the
     ordinary all-pairs distance image; compactness makes this image
-    measurable. No additional analytic hypothesis is included in the
+    measurable. The Step 0 root coefficient bound in Estimate 7.5 is repaired
+    by the proved sharper sqrt(2)/D bound. The second-cell lattice constant
+    81 in Estimate 7.6 replaces the printed 16 and is absorbed by the same
+    tolerance exponent. No additional analytic hypothesis is included in the
     target statement. The proof is incomplete, so no full formalization
     or verification claim is made.
 

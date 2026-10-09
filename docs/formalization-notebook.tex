@@ -902,7 +902,7 @@ the countable extension proves convergence and the integrated estimate
 \]
 Dominated convergence justifies the genuine countable series and integral
 interchange. These are completed analytic tools for Step 3 of Estimate 7.5;
-its full spatial and operator assembly remains.
+the full spatial and operator assembly is recorded below.
 
 \newpage
 \section*{Equal arcs, genuine links, and Schur's bound}
@@ -931,12 +931,143 @@ Schur's argument proves
 D\sum_\alpha\|z_\alpha\|^2+
 \sum_{\alpha\not\sim\beta}|\langle z_\alpha,z_\beta\rangle|.
 \]
-All unlinked inner products are retained explicitly. Their oscillatory bounds
-and the few-links count still need assembly to complete Estimate 7.6.
+All unlinked inner products are retained explicitly. The following sections
+prove the actual few-links count and individual cancellation bounds; their
+joint Fourier-energy assembly remains.
+
+\newpage
+\section*{Full spatial and operator assembly of the inverse series}
+The actual polynomial differential operators are expanded by the finite
+Leibniz rule. Each branch is a real scheduled symbol multiplied by an actual
+bounded spatial polynomial. The inverse-distance series converges uniformly
+on the separated carrier discs, with
+\[
+\sum_n|\gamma_{j,n}|\le(\sqrt2/D)^j,\qquad D=\lVert x_0-y_0\rVert.
+\]
+The printed Step 0 bound $2/D\le6\cdot2^a$ fails at the prepared root
+$a=0$, $D=1/4$. Our proved sharper coefficient bound repairs this step:
+\[
+2/D=8>6,\qquad \sqrt2/D=4\sqrt2<6.
+\]
+Both the prepared root and separated cells therefore have the needed scale
+$6\cdot2^a$. Actual Fubini and summability prove that the full inverse-circle
+integral equals a genuine countable Fourier series. The true branch symbols
+for an initial mask product have order at most $2T$.
+On the actual frequency window, nonnegative summable majorants satisfy
+\[
+|c_n(r)|\le a_n,\quad \sum_n a_n\le\sum_{j<T}q^j\le11/10,
+\quad q\le2^{-7\varepsilon N/8}.
+\]
+This completes Step 2 of Estimate 7.5. Its final distance-transform error and
+frequency-energy assembly remain.
+
+\newpage
+\section*{Complete weighted linearization: Estimate 7.7}
+For the actual separated $a$-cells and occupied $p$-cell descendants, with
+$2p>a+t$, the exact norm Taylor identity gives error at most $2^{-t}/1000$.
+Four-point distance collisions imply the doubled-width projection collision.
+The actual passing projection test gives a one-cell raw collision bound of
+$4B$ times the squared product of cell masses, where
+\[
+B=2^{-(t-p)}2^{N(k_p[p,t]+6\varepsilon)}.
+\]
+A witness in a retained cell pair implies that every point in the cell pair
+passes the shorter lists at the next width. This uses genuine direction motion
+and the proved width gap. Exact measure sums over retained cells allow grouping
+by center distances. The true nine-neighbor graph and scalar binning bounds
+give factors $108$ and $9$.
+
+The singular weight $d^{-1/2}$ contributes the exact ratio $22$. Hence
+\[
+22\cdot108\cdot9=21384\le2^{\varepsilon N},
+\]
+and the actual weighted recurrence is
+\[
+D_{X,Y}^{I,i}(t)\le2^{N(k_p[p,t]+7\varepsilon)}D_{X,Y}^{J,i+1}(p).
+\]
+Here $J\subseteq I$, its tests are anchored at depths at most $p$, and
+$a+\mathrm{length}\le p$. The manuscript's stronger length bound $(p-a)/2$
+satisfies this condition. No collision or energy estimate is assumed.
+
+\newpage
+\section*{Actual nonzero-symbol links and the graph degree}
+A nonzero built symbol automatically lies on its occupied anchor carrier.
+Its mask derivative factors provide a genuine passing witness at the next
+width. Combined with the actual smoothed arc, this selects the contributing
+fine-cell columns.
+
+Within each $g$-ancestor group, all linked first-cell centers lie in the passing
+witness's tube. The exact count gives at most $2^{N(k_p[g,p]+6\varepsilon)}$
+centers per group. There are at most $2^{2\varepsilon N}$ groups. For a fixed
+first cell, the second-cell linking coordinates give $81\cdot2^{3\varepsilon N}$
+centers. This square bound is coarser than the printed constant $16$; the
+same final exponent holds because $81\le2^{\varepsilon N}$:
+\[
+\deg(\alpha)\le2^{2\varepsilon N}2^{N(k_p[g,p]+6\varepsilon)}
+81\,2^{3\varepsilon N}\le2^{N(k_p[g,p]+12\varepsilon)}.
+\]
+The integrated Schur estimate retains cancellation after each unlinked integral:
+\[
+\int\left\|\sum_\alpha Z_\alpha\right\|^2\le
+n\sum_\alpha\int\|Z_\alpha\|^2+
+\sum_{\alpha\not\sim\beta}
+\left|\int\langle Z_\alpha,Z_\beta\rangle\right|.
+\]
+The actual parent Fourier amplitude is the finite sum over occupied descendants;
+omitted zero-mass cells contribute exactly zero.
+
+\newpage
+\section*{Actual angular and radial cancellation}
+The true arc support within the period centered on that arc has Lebesgue length
+at most $2\ell$. This follows from its chord bound $3\ell/4$ and the sine Taylor
+inequality. Periodic integration by parts uses this support mass, preserving
+the small-arc factor when summing over arcs.
+
+For the actual amplitude $\chi\,b(x,\cdot)b(x',\cdot)$, the derivative scale is
+\[
+M_a\le1024T^2(N^2+1)2^{v-p+\varepsilon N}.
+\]
+An angular linking failure gives an open neighborhood of the true support
+where the phase derivative is at least $r\tau/3$. Actual cell geometry,
+$r\ge2^{v-2}$ and ParameterFacts yield
+\[
+\left|\int e^{-irw\cdot(x-x')}\chi(w)b(x,w)b(x',w)\,dw\right|
+\le2\ell\,2^{-90N}.
+\]
+The literal radial amplitude is $h(r)=2^{-v}\Psi(r/2^v)r^2$, supported in
+$[2^{v-2},2^{v+2}]$. Its actual derivatives satisfy
+\[
+|h^{(j)}(r)|\le16\,2^v(512T^2/2^v)^j\quad(j\le6T).
+\]
+For a radial linking failure, the actual linear-phase integral is bounded by
+$2^{-300N}$. The full joint integral, arc sum and normalized $F$ recurrence
+still need assembly to complete Estimate 7.6.
+
+\newpage
+\section*{Actual terminal-tree budgets and the near-cell space split}
+All terminal visits retain their actual multiplicity. The short-leaf estimate
+and tree-size budget give
+\[
+\mathcal T_{\mathrm{terminal}}\le2^{N(-V(\mathrm{root})+226\kappa)}.
+\]
+The actual sum of weighted $2^{-25N}$ node errors is at most $2^{-20N}$.
+Together they satisfy the bound with $227\kappa$. These results estimate genuine
+state energies and visits; the analytic recurrence controlling the initial
+state remains to be assembled.
+
+For the near part of the full space split, true dyadic lattice boxes contain
+exactly $81$ centers within the needed coordinate range. The actual pair-cell
+near relation is symmetric, with row and column degrees at most
+\[
+81^2=6561.
+\]
+The complete far part of Estimate 7.8 still needs the full circular expansion,
+its two sign combinations and the scalar binning kernel.
 
 \newpage
 \section*{Remaining analytic work and verification}
-The proof still needs four uniform energy recurrences and their shell assembly.
+Estimate 7.7 is complete. Estimates 7.5, 7.6 and 7.8 need their remaining
+analytic assembly, followed by the actual induction and frequency shell bound.
 The main target now uses the proved preparation and weighted distance
 carrier; its sole hole is absolute continuity of the actual weighted source.
 Comparator must reject this hole. A successful build is not proof verification.
