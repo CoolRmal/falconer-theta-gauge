@@ -154,9 +154,10 @@ lake build FalconerThetaGauge Challenge Solution
 ```
 
 The [GitHub workflow](.github/workflows/verify.yml) has separate build and
-Comparator jobs on every push and pull request. Comparator compares the
-complete statement and definition dependencies, enforces the three standard
-axioms, and checks the exported proof with Lean, NanoDa, and con-ron.
+Comparator jobs on pushes to branches and ordinary tags, and on pull requests.
+Disposable `palomar-verify-*` authentication tags are excluded. Comparator
+compares the complete statement and definition dependencies, enforces the three
+standard axioms, and checks the exported proof with Lean, NanoDa, and con-ron.
 
 ```sh
 ./scripts/verify-comparator.sh
@@ -184,8 +185,9 @@ The [mechanical report](docs/mechanical-preflight-98d3222.json) binds that
 immutable snapshot. Palomar intake and repository-access verification are
 complete; its [own verification run](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37911192794)
 also passed. Its [public report](docs/palomar-mechanical-verification-98d3222.json)
-records the exact source and three kernel acceptances. Editorial review
-and registration follow
+records the exact source and three kernel acceptances. The
+[Challenge-rendering check](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37913883466)
+also passed. Editorial review and registration follow
 [Palomar's submission protocol](https://palomar-registry.org/how-to-submit).
 Later documentation revisions are distinct from the verified proof snapshot.
 

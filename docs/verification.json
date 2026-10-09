@@ -8286,6 +8286,20 @@
       },
       "errors": [],
       "warnings": []
+    },
+    "challenge_rendering": {
+      "status": "pass",
+      "source_commit": "98d3222b42ba5fcaeb56068cf2d542c3d4851d80",
+      "pipeline_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+      "run_id": 37913883466,
+      "run_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37913883466",
+      "completed_at": "2026-10-09T09:55:59Z",
+      "source_binding": "Public run title names the accepted repository and source commit; the render job successfully fetched and bound that source.",
+      "jobs": {
+        "profile": "success",
+        "render": "success"
+      },
+      "scope_note": "This public run establishes Challenge-rendering success. Editorial review and registration remain separate and pending."
     }
   },
   "scope_warnings": [
@@ -12325,6 +12339,40 @@
       },
       "scope_note": "Evidence binds the exact public proof snapshot. Later documentation revisions do not change the verified theorem but are distinct commits.",
       "note": "The completed theorem passes hosted compilation, the 1009-declaration axiom audit, sandboxed Comparator with three kernels, and the full pinned Palomar mechanical preflight."
+    },
+    {
+      "status": "passed",
+      "repository": "CoolRmal/falconer-theta-gauge",
+      "commit": "d388fb10226053d21a706084990ae426a8c45853",
+      "workflow": ".github/workflows/verify.yml",
+      "run_id": 37913494158,
+      "run_url": "https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37913494158",
+      "event": "push",
+      "conclusion": "success",
+      "checked_on": "2026-10-09",
+      "dependency_setup": "passed for both jobs",
+      "lean_modules_build": "passed",
+      "lean_modules_build_jobs": 3971,
+      "proof_status_gate": {
+        "status": "passed",
+        "audited_declaration_count": 1009,
+        "main_theorem": "standard axioms only"
+      },
+      "comparator": {
+        "status": "passed",
+        "sandbox_enabled": true,
+        "statement_comparison": "passed",
+        "export_build_jobs": 3968,
+        "kernel_replays": {
+          "Lean": "passed",
+          "NanoDa": "passed",
+          "con-ron": "passed"
+        },
+        "con_ron_accepted_declarations": 68640
+      },
+      "full_palomar_preflight": "Not dispatched: the manual preflight jobs are skipped on ordinary pushes.",
+      "scope_note": "This CI result verifies the later documentation and push-trigger revision. Its Lean sources are identical to the frozen verified proof snapshot 98d3222b42ba5fcaeb56068cf2d542c3d4851d80. The original full preflight and Palomar mechanical verification remain recorded separately; editorial review and registration are pending.",
+      "note": "Hosted build, the 1009-declaration axiom audit, and sandboxed Comparator with all three kernels passed after excluding disposable Palomar authentication tags from the push trigger."
     }
   ],
   "completed_proof": {
