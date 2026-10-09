@@ -4,15 +4,17 @@ October 9, 2026. The Lean proof of the exact Theorem 1.1 is complete, including
 the analytic recurrences, all-scales reconstruction, and final positive-length
 conclusion. The main theorem builds and its axiom audit contains only
 `propext`, `Classical.choice`, and `Quot.sound`; there are zero development
-proof holes in its dependency graph. Independent Comparator replay of the
-completed public revision and Palomar registration are still pending.
+proof holes in its dependency graph. Public proof snapshot
+[98d3222](https://github.com/CoolRmal/falconer-theta-gauge/tree/98d3222b42ba5fcaeb56068cf2d542c3d4851d80)
+has passed hosted verification and independent Comparator replay. Palomar
+registration remains pending private editorial review and publication consent.
 Author and responsible maintainer: Yongxi Lin.
 
 The sections below retain the detailed development of the proof, with the
 completed space-splitting estimate and final assembly recorded at the end.
 Earlier failed verification runs are historical checkpoints, not the status
-of the completed proof. A local Lean build and axiom audit are not a claim of
-successful independent Comparator certification.
+of the completed proof. The successful verification reported below belongs
+to the exact public proof snapshot, independently of this notebook update.
 
 ## Exact target
 
@@ -1576,9 +1578,33 @@ declarations, but the main theorem still depended on `sorryAx`. Sandboxed
 Comparator built that export in 3892 jobs and rejected the forbidden axiom.
 That result describes the old revision, not the now-completed main proof.
 
-Independent Comparator replay and hosted verification of the completed
-public revision are pending. No green Comparator result is claimed in this
-notebook. Palomar registration remains pending those final checks, truthful
-metadata, and registry review.
+The verified public proof snapshot is
+[98d3222b42ba5fcaeb56068cf2d542c3d4851d80](https://github.com/CoolRmal/falconer-theta-gauge/tree/98d3222b42ba5fcaeb56068cf2d542c3d4851d80).
+The [completed hosted run 37908268932](https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37908268932)
+passed the full-project build in 3,971 jobs and the audit of all 1,009 tracked
+declarations. Independent Comparator replay accepted the solution with Lean's
+default kernel, nanoda, and con-ron; con-ron verified 68,640 exported
+declarations. The exact theorem matched the protected Challenge, and the
+three standard permitted axioms were the only dependencies.
+
+The full official preflight mechanical report has status `pass`, stage
+`complete`, zero errors, and zero warnings. It checked 530 source headers and
+classified the Challenge's source provenance as high trust. The report's
+SHA-256 is
+`70c47463dbaefb3ef2df86e83eb6c1f03eb65e82807fa41022d1f3ff8ead0b2a`.
+These results certify the named public snapshot; the present documentation
+update does not change its Lean proof.
+
+Palomar accepted submission `6a1lzh570gjl`, and its
+[registry verification run 37911192794](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37911192794)
+has passed for the same exact public snapshot. The actual registry report
+records status `pass`, stage `complete`, zero errors and warnings, all 530
+source headers, high-trust Challenge provenance, and acceptance by all three
+kernels. Its SHA-256 is
+`a8b3aef7c29bc950745db35f29d31179db7286b8bf22d77bf7526409d289e6ad`.
+
+The submission's API status is `awaiting-review`. Private editorial review,
+publication consent, and final registration remain pending. No completed
+Palomar registration or publication is claimed.
 
 [Public project: CoolRmal/falconer-theta-gauge](https://github.com/CoolRmal/falconer-theta-gauge)

@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
-# The proof builds without holes; final Comparator and Palomar checks are pending.
+# Proof and full mechanical preflight verified at the immutable snapshot recorded below.
 version: "v0.4"
 
 project:
@@ -62,8 +62,10 @@ status:
     proved in the forms needed by this target; their scope differences from
     the manuscript are recorded under fidelity. The target statement has no
     additional analytic assumptions. These counts exclude the independent
-    Challenge's deliberate specification hole. Final sandboxed Comparator
-    replay and full Palomar verification remain pending.
+    Challenge's deliberate specification hole. The immutable public proof
+    snapshot 98d3222b42ba5fcaeb56068cf2d542c3d4851d80 passed sandboxed Comparator
+    and full Palomar mechanical preflight. Registry intake is complete; its
+    own verification, editorial review and registration are separate steps.
   sorry_count: 0
   sorry_in_definitions: 0
   axioms: ["propext", "Classical.choice", "Quot.sound"]
@@ -128,11 +130,12 @@ fidelity:
     additive error R^(-25) instead of the printed R^(-30); the proved weighted
     induction and summability budgets absorb this error. No additional
     analytic hypothesis is included in the target statement. The completed
-    Lean proof is distinct from the pending independent Comparator and
-    Palomar verification and review.
+    Lean proof is independently verified at the frozen public snapshot
+    recorded under review; Palomar editorial review and registration remain
+    separate. Later documentation revisions do not change that proof.
 
 review:
-  status: "Agent-reviewed; Lean build and axiom audit complete"
+  status: "Agent-reviewed; build, axiom audit, Comparator and full mechanical preflight passed"
   reviewers: []
   notes: >-
     An AI agent independently compared the Challenge and development
@@ -143,9 +146,15 @@ review:
     Classical.choice, and Quot.sound. Earlier preliminary Comparator failures
     concern unfinished historical snapshots and are not final verification.
     Hosted checks and exact evidence are recorded in docs/verification.json.
-    Final sandboxed Comparator replay and full Palomar mechanical verification
-    remain pending. No independent human mathematical review, Palomar
-    editorial review, or registration is recorded.
+    The frozen public proof snapshot 98d3222b42ba5fcaeb56068cf2d542c3d4851d80
+    passed sandboxed Comparator with Lean, NanoDa and con-ron, and the full
+    pinned Palomar mechanical preflight in GitHub run 37908268932. Its bounded
+    report is docs/mechanical-preflight-98d3222.json. Palomar intake and
+    repository-access verification are complete. Palomar's own mechanical
+    verification also passed in run 37911192794, with its public report at
+    docs/palomar-mechanical-verification-98d3222.json. No independent human
+    mathematical review is recorded. Palomar editorial review and registration
+    are managed separately; no private review outcome is asserted here.
 
 alignment:
   namespace: "FalconerThetaGauge"
@@ -159,7 +168,8 @@ alignment:
         Solution imports the completed proof development. The target has the
         same hypotheses and conclusion, and its custom definitions match the
         independent specification. comparator.json selects this theorem;
-        final sandboxed comparison and independent kernel replay are pending.
+        sandboxed comparison and independent replay by all three kernels
+        passed for public proof snapshot 98d3222b42ba5fcaeb56068cf2d542c3d4851d80.
 
 acknowledgements: >-
   Lean, Mathlib, Comparator, and the Palomar infrastructure. Acknowledgement

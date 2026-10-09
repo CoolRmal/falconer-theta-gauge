@@ -4,8 +4,9 @@ Lean 4 / Mathlib project for Theorem 1.1 in the
 [source manuscript](docs/falconer-theta-gauge-proof.pdf), dated October 8, 2026.
 
 **Status: Theorem 1.1 is proved in Lean with no development holes or
-additional analytic hypotheses. Final sandboxed Comparator and Palomar
-verification are pending.**
+additional analytic hypotheses. [Comparator and the full Palomar mechanical
+preflight passed](https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37908268932)
+for commit `98d3222b42ba5fcaeb56068cf2d542c3d4851d80`. Palomar registration is pending.**
 
 For
 
@@ -153,8 +154,7 @@ lake build FalconerThetaGauge Challenge Solution
 ```
 
 The [GitHub workflow](.github/workflows/verify.yml) has separate build and
-Comparator jobs on every push and pull request. A successful build of a proof
-skeleton is not a successful proof verification. Comparator compares the
+Comparator jobs on every push and pull request. Comparator compares the
 complete statement and definition dependencies, enforces the three standard
 axioms, and checks the exported proof with Lean, NanoDa, and con-ron.
 
@@ -178,9 +178,15 @@ logarithmic energies, corrected intermediate constants in Estimates 7.5
 and 7.6, and a deliberately weaker error in Estimate 7.8. All required
 auxiliary estimates are proved; none is an assumption of the main theorem.
 
-The exact public commit must pass the Comparator job and the full pinned
-Palomar mechanical preflight before intake. The manual GitHub workflow runs
-that full preflight; submission, review and registration are separate steps
-under [Palomar's submission protocol](https://palomar-registry.org/how-to-submit).
+The exact public proof commit passed the Comparator job and full pinned
+Palomar mechanical preflight, including Lean, NanoDa and con-ron replay.
+The [mechanical report](docs/mechanical-preflight-98d3222.json) binds that
+immutable snapshot. Palomar intake and repository-access verification are
+complete; its [own verification run](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37911192794)
+also passed. Its [public report](docs/palomar-mechanical-verification-98d3222.json)
+records the exact source and three kernel acceptances. Editorial review
+and registration follow
+[Palomar's submission protocol](https://palomar-registry.org/how-to-submit).
+Later documentation revisions are distinct from the verified proof snapshot.
 
 Author and responsible maintainer: **Yongxi Lin**.
