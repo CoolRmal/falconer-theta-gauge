@@ -27,11 +27,14 @@ project:
     inverse operator cancellation, numerical norms, finite inversion tails, and
     full circular stationary phase for smooth amplitudes are proved. Actual
     Fourier and distance energies and the positive-measure low/high bridge
-    and the literal scheduled Lemma 7.4 are proved. Estimate 7.7 is proved for
+    and the literal scheduled Lemma 7.4 are proved. Estimates 7.5 and 7.6 are
+    proved for actual shell and Fourier energies. Estimate 7.7 is proved for
     actual weighted distance energies. The full inverse-circle Fourier series
     has summable coefficients with bound 11/10; actual nonzero-symbol graph
     degrees and angular and radial cancellation budgets are proved.
-    Estimates 7.5, 7.6 and 7.8 and the final induction remain unfinished.
+    The actual far-cell geometry, circular formula, passing support and
+    twice-integrated radial kernel are proved. Estimate 7.8 and the final
+    induction remain unfinished.
   authors:
     - "Yongxi Lin"
   license: "Apache-2.0"

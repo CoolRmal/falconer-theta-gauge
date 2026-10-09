@@ -96,11 +96,16 @@ series is genuinely separable with bounded polynomial factors and summable
 coefficients. Finite and countable circular Cauchy–Schwarz estimates control the
 actual bilinear integrals by the actual masked energies. Equal-arc convolutions,
 finite Schur bounds, and pointwise phase separation for unlinked cells are
-proved. Estimate 7.7 is complete for the actual weighted distance energies.
+proved. Estimates 7.5, 7.6 and 7.7 are complete for the actual shell,
+Fourier and weighted distance energies.
 The full inverse-circle Fourier series has a proved coefficient bound 11/10.
 The genuine nonzero-symbol linking graph has degree at most `R^(height+12ε)`,
 and actual angular and radial integrals satisfy the source decay bounds.
-Their final joint Fourier-energy assembly and the full space split remain.
+The literal finite radial and two-circle measures, active-cell decomposition,
+integrated Schur estimate and exact normalized orthogonality recurrence are
+proved. The space split has its actual far-cell geometry, full circular
+expansion, passing support and twice-integrated radial kernel; its full
+assembly and the final induction remain.
 
 The summable reconstruction foundation proves that dyadic frequency shells
 overlap at most three times, obtains the finite-overlap quadratic L² bound,

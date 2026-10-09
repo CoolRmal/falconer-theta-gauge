@@ -1041,7 +1041,7 @@ $[2^{v-2},2^{v+2}]$. Its actual derivatives satisfy
 \]
 For a radial linking failure, the actual linear-phase integral is bounded by
 $2^{-300N}$. The full joint integral, arc sum and normalized $F$ recurrence
-still need assembly to complete Estimate 7.6.
+are now assembled, as detailed below.
 
 \newpage
 \section*{Actual terminal-tree budgets and the near-cell space split}
@@ -1061,12 +1061,88 @@ near relation is symmetric, with row and column degrees at most
 \[
 81^2=6561.
 \]
-The complete far part of Estimate 7.8 still needs the full circular expansion,
-its two sign combinations and the scalar binning kernel.
+The complete far part of Estimate 7.8 still needs its two sign combinations
+and scalar binning kernel assembled with the actual circular formula.
+
+\newpage
+\section*{Actual Mattila shell estimate and its state consequence}
+The true inverse-circle series is integrated against the literal filtered
+distance measure. Its weighted coefficient sum is at most $11/10$.
+Circular Cauchy--Schwarz bounds the series square by $121/50$ times the
+actual carrier mass product and built-symbol Fourier supremum.
+The exact stationary prefactor and both Fourier signs give
+\[
+\operatorname{Shell}_v(\beta)\le
+2\rho_1(X)\rho_2(Y)F^{\mathrm{sup}}_{X,Y}(v)
++2^{-390N}\bigl(\rho_1(X)\rho_2(Y)\bigr)^2.
+\]
+On actual occupied separated dyadic cells, every ball separation, common arc,
+inverse coefficient and terminal-distance hypothesis is derived from the
+cell geometry. Normalizing by the actual positive masses proves the dyadic
+shell form of Estimate 7.5.
+
+Reached-test contraction bounds each actual high shell by twice the actual
+Fourier state at start $a$, plus the terminal error. Thus the low/high
+recurrence, before refinement to its split point, is
+\[
+D_i(a,t)\le320D_{i+1}(a,t-\delta)
++640\sum_{t-\delta<v\le t}F_i(a,t,a,v)
++320\delta\,2^{-390N}.
+\]
+These are actual filtered-measure shell integrals and actual state energies.
+No inversion, energy or uniform-parameter outcome is assumed.
+
+\newpage
+\section*{Complete actual orthogonality estimate}
+The actual density $h(r)=2^{-v}\Psi(r/2^v)r^2$ defines a finite radial measure.
+Its product with two circle measures is the literal measure for the squared
+pair amplitude. Carrier mass cancels the spectrum normalization even when
+one carrier has mass zero.
+
+For each arc pair, the square-root-weighted parent amplitude is exactly the
+sum over genuinely active occupied fine-cell pairs. Integrable Fubini
+identifies each actual complex cross integral with its four-point spatial
+oscillatory kernel. Its real inner-product integral inherits cancellation.
+All three linking failures give
+\[
+|\text{unlinked cross integral}|\le
+64\,4^v(2\ell)^2 2^{-90N}
+\rho(P)\rho(P')\rho(Q)\rho(Q').
+\]
+The actual arc count obeys $M\cdot2\ell\le16$. Genuine descendant mass sums and
+$v\le N$ give $M^2\cdot64\cdot4^v(2\ell)^2\cdot2^{-90N}\le2^{-80N}$.
+Integrated Schur and the exact arc partition prove the full Estimate 7.6:
+\[
+F_{X,Y}(v)\le2^{N(k_p[g,p]+12\varepsilon)}
+\sum_{P\subseteq X,\ Q\subseteq Y}
+\frac{\rho(P)\rho(Q)}{\rho(X)\rho(Y)}F_{P,Q}(v)+2^{-80N}.
+\]
+The sum is over actual occupied $p$-cell descendants, using the same literal
+built symbols. No Fourier or cancellation bound is assumed.
+
+\newpage
+\section*{Actual far-cell space-splitting foundations}
+A true far cell pair has maximum point separation greater than
+$\tfrac52\,2^{-h}$. In the two-large-pairs case, both separations exceed
+$\tfrac54\,2^{-h}$. Literal source distance bins imply actual cell separation
+and regrouping depths $a<n<h+12$.
+
+The actual circle integral has its full two-sign stationary expansion.
+Every nonzero stationary coefficient supplies a true next-level passing
+pair through the literal derivative branches and antipodal tests.
+For the actual cutoff-normalized radial moment, twice-integrated phase
+cancellation gives the source envelope
+\[
+|\mathcal M_{j,j'}(\delta)|\le
+\frac{12544\,(j+j'+2)^2\,4^{j+j'+1}
+2^{v(1-j-j')}}{(1+2^v|\delta|)^2}.
+\]
+These are checked analytic and geometric components. Their coefficient sums,
+sign cases and depth regrouping still need assembly for full Estimate 7.8.
 
 \newpage
 \section*{Remaining analytic work and verification}
-Estimate 7.7 is complete. Estimates 7.5, 7.6 and 7.8 need their remaining
+Estimates 7.5, 7.6 and 7.7 are complete. Estimate 7.8 needs its remaining
 analytic assembly, followed by the actual induction and frequency shell bound.
 The main target now uses the proved preparation and weighted distance
 carrier; its sole hole is absolute continuity of the actual weighted source.

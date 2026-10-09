@@ -1099,7 +1099,7 @@ $$
 
 For a radial linking failure, the actual linear-phase integral is bounded
 by 2⁻³⁰⁰ᴺ. The full joint integral, arc sum and normalized F recurrence
-still need assembly to complete Estimate 7.6.
+are now assembled, as detailed below.
 
 ## Actual terminal-tree budgets and the near-cell space split
 
@@ -1124,12 +1124,94 @@ $$
 81^2=6561.
 $$
 
-The complete far part of Estimate 7.8 still needs the full circular expansion,
-its two sign combinations and the scalar binning kernel.
+The complete far part of Estimate 7.8 still needs its two sign combinations
+and the scalar binning kernel assembled with the actual circular formula.
+
+## Actual Mattila shell estimate and its state consequence
+
+The true spatial inverse-circle series is integrated against the literal
+filtered distance measure. Its weighted coefficient sum is at most 11/10.
+Circular Cauchy–Schwarz then bounds the series square by 121/50 times the
+actual carrier mass product and the built-symbol Fourier supremum.
+The exact stationary prefactor and both Fourier signs give
+
+$$
+\operatorname{Shell}_v(\beta)\le
+2\rho_1(X)\rho_2(Y)\,F^{\mathrm{sup}}_{X,Y}(v)
++2^{-390N}\bigl(\rho_1(X)\rho_2(Y)\bigr)^2.
+$$
+
+On actual occupied separated dyadic cells, every ball separation,
+common arc, inverse coefficient and terminal-distance hypothesis is derived
+from the cell geometry. Normalizing by the actual positive carrier masses
+proves the dyadic shell form of Estimate 7.5. Reached-test contraction bounds
+each actual high shell by twice the actual Fourier state at start a, plus
+the same terminal error. Thus the low/high recurrence, before refinement to
+its split point, is
+
+$$
+D_i(a,t)\le320D_{i+1}(a,t-\delta)
++640\sum_{t-\delta<v\le t}F_i(a,t,a,v)
++320\delta\,2^{-390N}.
+$$
+
+## Complete actual orthogonality estimate
+
+The true radial density h(r)=2⁻ᵛΨ(r/2ᵛ)r² defines a finite measure. Its
+product with two circle arc-length measures is the literal integration
+measure for the squared pair amplitude. Carrier mass cancels the spectrum
+normalization, including when a carrier has mass zero.
+
+For each arc pair, the square-root-weighted parent amplitude is exactly the
+sum over genuinely active occupied fine-cell pairs. The actual complex
+cross integral equals the four-point spatial integral of the oscillatory
+kernel, by integrable Fubini. Its real inner-product integral inherits the
+proved cancellation. All three linking failures give
+
+$$
+|\text{unlinked cross integral}|\le
+64\,4^v(2\ell)^2 2^{-90N}
+\rho(P)\rho(P')\rho(Q)\rho(Q').
+$$
+
+The arc count satisfies M·2ℓ≤16. Genuine descendant mass sums and v≤N give
+M²·64·4ᵛ(2ℓ)²·2⁻⁹⁰ᴺ≤2⁻⁸⁰ᴺ. Integrated Schur and the exact arc partition
+therefore prove the full source Estimate 7.6:
+
+$$
+F_{X,Y}(v)\le2^{N(k_p[g,p]+12\varepsilon)}
+\sum_{P\subseteq X,\ Q\subseteq Y}
+\frac{\rho(P)\rho(Q)}{\rho(X)\rho(Y)}F_{P,Q}(v)+2^{-80N}.
+$$
+
+The sum is over the actual occupied p-cell descendants, with the same
+literal built symbols. No Fourier or cancellation bound is assumed.
+
+## Actual far-cell space-splitting foundations
+
+A genuine far cell pair has max point separation greater than
+(5/2)·2⁻ʰ. In the two-large-pairs case, both point separations exceed
+(5/4)·2⁻ʰ. Literal source distance bins imply actual cell separation and
+actual regrouping depths a<n<h+12.
+
+The true circle integral has its full two-sign stationary expansion.
+Every nonzero stationary coefficient supplies a genuine next-level passing
+pair through the literal derivative-branch expansion and antipodal tests.
+For the actual cutoff-normalized radial moment, twice-integrated phase
+cancellation gives the explicit source envelope
+
+$$
+|\mathcal M_{j,j'}(\delta)|\le
+\frac{12544\,(j+j'+2)^2\,4^{j+j'+1}
+2^{v(1-j-j')}}{(1+2^v|\delta|)^2}.
+$$
+
+These are checked analytic and geometric components. Their coefficient sums,
+sign cases and depth regrouping still need assembly for full Estimate 7.8.
 
 ## Remaining proof obligations
 
-Estimate 7.7 is complete. Estimates 7.5, 7.6 and 7.8 still require their
+Estimates 7.5, 7.6 and 7.7 are complete. Estimate 7.8 still requires its
 remaining analytic assembly, followed by the actual induction and frequency
 shell estimate. Fixed-parameter theorems cannot be used at
 scale-dependent parameters without proving the needed uniform dependence.
