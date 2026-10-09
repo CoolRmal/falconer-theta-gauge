@@ -239,7 +239,7 @@
     "proof_status_gate": {
       "status": "rejected",
       "error": "FAIL FalconerThetaGauge.theorem_one_one: forbidden axioms sorryAx",
-      "foundations": "All twelve audited foundational declarations report standard axioms only.",
+      "foundations": "All audited supporting declarations report standard axioms only.",
       "job_url": "https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37873255378/job/113635879228"
     },
     "comparator": {
@@ -267,5 +267,67 @@
     "Theorem 1.1 in Main still uses sorryAx; proving foundations does not complete the geometric theorem.",
     "Only the named declarations in proof_status_audit have been audited for axiom dependencies by that script.",
     "Definition and statement fidelity was inspected by an AI agent; no independent human mathematical review is recorded."
+  ],
+  "additional_hosted_verifications": [
+    {
+      "status": "rejected",
+      "repository": "CoolRmal/falconer-theta-gauge",
+      "commit": "4539d5bad05daee0e9935446dcf8046b1ba84ae2",
+      "workflow": ".github/workflows/verify.yml",
+      "run_id": 37874893028,
+      "run_url": "https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37874893028",
+      "conclusion": "failure",
+      "dependency_setup": "passed for both jobs",
+      "lean_modules_build": "passed",
+      "proof_status_gate": {
+        "status": "rejected",
+        "error": "FAIL FalconerThetaGauge.theorem_one_one: forbidden axioms sorryAx",
+        "foundations": "All audited supporting declarations report standard axioms only.",
+        "job_url": "https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37874893028/job/113641102616"
+      },
+      "comparator": {
+        "status": "rejected",
+        "sandbox_enabled": true,
+        "sandbox_setup": "passed",
+        "challenge_build": "passed with intentional statement-hole warning",
+        "solution_build": "passed with unfinished main-theorem warning",
+        "error": "Illegal axiom detected: 'sorryAx'",
+        "job_url": "https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37874893028/job/113641102481",
+        "scope_note": "Successful statement comparison or independent proof replay is not claimed for this rejected run."
+      },
+      "full_palomar_preflight": "Not dispatched: the manual workflow jobs were skipped on this push.",
+      "note": "Infrastructure setup and compilation passed. Both verification gates reject the actual unfinished target rather than silently verifying only foundations.",
+      "files_sha256": {
+        "FalconerThetaGauge/Asymptotics.lean": "4f32f76ec47110622f701651808485f5261a3028d9f81c9073724f3231833299",
+        "FalconerThetaGauge/FourierReconstructionApproximation.lean": "b1a2b3fc356b3b6ce2eeecb66d1357498bf3e0968a28c68c07cdd965bfb1cb53",
+        "FalconerThetaGauge/FourierReconstructionCutoff.lean": "d8901cbaff089eb20765676810b90b7221949e656faaa965723fa51175724fb3",
+        "FalconerThetaGauge/FourierReconstructionMeasure.lean": "550922787e8592c766afee022b4064ca54df4a934a00228283444b104433088e",
+        "FalconerThetaGauge/Gauge.lean": "7bfe0d9dbc1c90fd4bda43fdaafc7df1c11d0f53dc1257d56f42a3ede669297c",
+        "FalconerThetaGauge/GaugeFrostman.lean": "4f4f07731de34b06f4a9ffaeb97ffa4a03380ea9c70b897ef7f9047dfd3522ff",
+        "FalconerThetaGauge/GaugeFrostmanDyadic.lean": "1563024235a8e85f5d73f85c73c4c893a4992a37e42ac180236c42503a776c39",
+        "FalconerThetaGauge/GaugeFrostmanLimit.lean": "90fe27a5835a34a678eee0dcaf85fd28282080b6c07d9fda12b7bd0bbf748816",
+        "FalconerThetaGauge/GaugeFrostmanMeasure.lean": "6928a6ee189c119467b4191adc07c3e2f861764936c47080e1413707d05a4993",
+        "FalconerThetaGauge/GaugeFrostmanWeights.lean": "66468f5ea30c4b124af308513d00cf1e4d6a6ba64847594af64c3e8108691bc9",
+        "FalconerThetaGauge/GaugeLogEnergy.lean": "911769512eaaaee34f925814c2434d77e0470167eeddb904074f127819a7eadd",
+        "FalconerThetaGauge/Main.lean": "30539fa8ab3350d661008e2ecf4b2cc20a3abf91c310e1da74528ba9a6449d63",
+        "FalconerThetaGauge/OrliczEnergy.lean": "8a6c64557ea6dc7302162ff0390ba233dc09f581d3bdb1380b81532bb21bb585",
+        "FalconerThetaGauge/OrliczEnergyKernel.lean": "338b2076e9c884893cea76cb0e7fc95f0d0392b8abd059e076426cb1dbcc0131",
+        "FalconerThetaGauge/Parameters.lean": "96053efb00c9b8d800026f98c8ad32a4716320f3eac5af6e9565c15e210ab927",
+        "FalconerThetaGauge/ReconstructionDensity.lean": "cec58fddd0fb5f3d05ad860fe71dc9a9074611c19ea1f7ec620275571e7236bb",
+        "FalconerThetaGauge/Statement.lean": "863ae240688d06db67b5eb519703bececd203e6f1d991286097bce1dae8be880",
+        "FalconerThetaGauge/SummableReconstruction.lean": "3cf841a3615022be970935a061bf7cb7525c210410faca9df5fbf18ff49e8777",
+        "Challenge.lean": "6fdbae1e75d62084453dab63d82cd8f9cebfe0339a502d28acae99694f995e48",
+        "Solution.lean": "e590c2bcc095cb7a77e59a067ebc3bf94d86cf641035bfa3e53f182a890c47ae",
+        "FalconerThetaGauge.lean": "7b84a6f0dd1740d0cb5eb56c60c1230651a961ad06829864052aa9b98a91ce4c",
+        "comparator.json": "3f94bf769e79f0c38e77ea0f27bca21282c7dd895f42b89e29ff9c84f431322b",
+        "lake-manifest.json": "c3a0b4703d79f8f753c46bcb565d7032475a25a37816f813ea48e24ab8117f05",
+        "lakefile.toml": "ae472c47e4c052284f596ad58f3ada37b7df03600d1446a8a8c4a47d1630014b",
+        "lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+        "scripts/check-proof-status.py": "27409a52776a7a457f46f5779099f8bd077ec8d81d7e6d731992c1b917ab5a47",
+        "scripts/verify-comparator.sh": "ab5e9c2590fb3e8cf86ab65c9f112666247dd6535b4a798040728bd84c9bfdfb",
+        ".github/workflows/verify.yml": "6c8aa09208ec4985a108df853ff9a4cce91e6e92e0f06f6c431630335f597446"
+      },
+      "scope_note": "Evidence is bound to the exact immutable public commit. Later source changes need a new hosted run."
+    }
   ]
 }

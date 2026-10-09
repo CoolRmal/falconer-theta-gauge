@@ -1,5 +1,7 @@
 /-
+Copyright (c) 2026 Yongxi Lin. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yongxi Lin
 The convolution estimates adapt the FalconerPacking Schwartz measure reconstruction proofs.
 -/
 module

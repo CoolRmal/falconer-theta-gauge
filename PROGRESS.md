@@ -16,6 +16,10 @@ Challenge has one specification hole. No helper definitions or lemmas may use ho
 - `Parameters.lean`: exact parameters with integer ceilings, positive gain and
   tolerance, exact gain power law, integer-scale identities and rounding bounds;
   actual rounded filter-error summability and logarithmic budget domination.
+- `ParameterBudgets.lean`: full Lemma 2.2, all four budget groups (P1)--(P4)
+  above a common threshold for the actual rounded scale-dependent parameters.
+- `FilterSummability.lean`: all three exact filter-bound error terms are
+  summable at the actual scale-dependent parameters.
 - `GaugeFrostman.lean` and its helpers: gauge monotonicity, positive gauge content,
   finite dyadic normalization with arbitrary positive capacities instantiated by
   gauge weights, saturated covering mass bounds, compact weak limits, and the
@@ -25,6 +29,12 @@ Challenge has one specification hole. No helper definitions or lemmas may use ho
   critical energies for the Frostman measure (Corollary 5.5).
 - `OrliczEnergyKernel.lean`: the actual dyadic Gaussian kernel converges and is
   bounded by a constant times `(1+log(1/r))^γ/r` at small positive radii.
+- `OrliczEnergyFourier.lean` and helpers: full Lemma 5.2, literal weighted
+  Fourier energy bounded by one plus critical logarithmic spatial energy;
+  genuine Gaussian duality and finite inverse-norm low-frequency integral.
+- `GaugeSeparatedMeasures*.lean`: normalized compact separated probabilities,
+  similarity preserving gauge bounds, and the fixed unit-square geometry in
+  Proposition 5.6, with all finite logarithmic energies.
 - `SummableReconstruction.lean`: Banach-space square-bound convergence,
   reconstruction from summable errors, concrete finite-overlap L² inequality,
   dyadic-shell overlap at most three, and L² convergence for square-summable shells.
@@ -34,6 +44,12 @@ Challenge has one specification hole. No helper definitions or lemmas may use ho
   Schwartz tests to the original measure.
 - `ReconstructionDensity.lean`: actual L¹ plus Fourier L² Schwartz pairing
   implies absolute continuity, using smooth cutoffs and Plancherel.
+- `FourierReconstruction.lean`: full Lemma 4.2, actual dominated approximants,
+  summable removed masses and exact dyadic shell energies imply absolute
+  continuity, proved by concrete L¹/L² series and telescoped Schwartz pairings.
+- `DistanceScaling/DistanceMeasure.lean`: exact distance-set Lebesgue scaling
+  under preparation, and absolute continuity of the actual product-distance
+  pushforward implies the positive-length conclusion.
 
 ## Verification and publishing
 
@@ -50,19 +66,15 @@ skeleton as a completed proof.
 
 ## Next concrete mathematical work
 
-1. Complete Lemma 4.2: obtain actual L² Fourier shell pieces from the energy
-   bounds, identify their pairings with the smoothed measure, and telescope the
-   convergent series to the original measure. The convolution, approximation,
-   summable-error, overlap, and final absolute-continuity bridges are proved.
-2. Complete Lemmas 5.2--5.3 and Theorem 5.4: logarithmic Fourier energy and
-   averaged orthogonal-projection density bounds; transfer to radial projections.
+1. Complete Lemma 5.3 and Theorem 5.4: averaged orthogonal-projection Orlicz
+   density bounds and transfer to radial projections.
    Since the gauge supplies every logarithmic energy, stronger Orlicz bounds can
    replace Dunford--Pettis/Mazur with an open-set uniform-integrability limit
    argument, if the resulting exact endpoint theorem is proved.
-3. Implement the quantitative regular decomposition, mask geometry, four energy
+2. Implement the quantitative regular decomposition, mask geometry, four energy
    estimates, budget scheduling and induction, and final shell estimate. The
    existing fixed-parameter Falconer development cannot simply be retuned.
-4. Remove the sole Main proof hole, pass sandboxed Comparator on the exact public
+3. Remove the sole Main proof hole, pass sandboxed Comparator on the exact public
    commit, complete truthful metadata, run full Palomar preflight, retrieve the
    registry review, and register only the completed reviewed theorem.
 

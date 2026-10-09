@@ -29,6 +29,22 @@ theorem eventually_log_le_mul_rpow (s c : ℝ) (hs : 0 < s) (hc : 0 < c) :
   simpa only [Real.norm_eq_abs, abs_of_nonneg (Real.log_nonneg hnpos),
     abs_of_nonneg (Real.rpow_nonneg (Nat.cast_nonneg n) s)] using hn
 
+/-- A fixed additive shift in the logarithm does not change power domination. -/
+theorem eventually_log_add_le_mul_rpow (s c : ℝ) (a : ℕ) (hs : 0 < s) (hc : 0 < c) :
+    ∀ᶠ n : ℕ in atTop, Real.log ((n : ℝ) + a) ≤ c * (n : ℝ) ^ s := by
+  have hp := ((tendsto_rpow_atTop hs).comp
+    (tendsto_natCast_atTop_atTop (R := ℝ))).const_mul_atTop (by positivity : 0 < c / 2)
+  filter_upwards [eventually_log_le_mul_rpow s (c / 2) hs (by positivity),
+    hp.eventually (eventually_ge_atTop (Real.log 2)),
+    eventually_ge_atTop a, eventually_ge_atTop 1] with n hlog hconst hna hn
+  have hnpos : (0 : ℝ) < n := by exact_mod_cast (lt_of_lt_of_le Nat.zero_lt_one hn)
+  have hna' : (a : ℝ) ≤ n := by exact_mod_cast hna
+  dsimp only [Function.comp_def] at hconst
+  have hmono : Real.log ((n : ℝ) + a) ≤ Real.log (2 * n) :=
+    Real.log_le_log (by positivity) (by linarith)
+  rw [Real.log_mul (by norm_num : (2 : ℝ) ≠ 0) hnpos.ne'] at hmono
+  linarith
+
 /-- The branch-counting exponent is positive precisely above the manuscript's
 two-thirds threshold. -/
 theorem branchExponent_pos_iff (θ : ℝ) : 0 < 3 * θ - 2 ↔ 2 / 3 < θ := by

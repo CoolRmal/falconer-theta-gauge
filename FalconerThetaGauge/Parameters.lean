@@ -195,6 +195,21 @@ theorem eventually_log_le_blockParameter_cube_mul_scale (θ c : ℝ)
   rw [hexp] at hb
   exact hlog.trans (by nlinarith)
 
+/-- The logarithmic cost can include the manuscript's fixed terminal-scale shift. -/
+theorem eventually_log_add_le_blockParameter_cube_mul_scale (θ c : ℝ) (a : ℕ)
+    (hθ : 2 / 3 < θ) (hc : 0 < c) :
+    ∀ᶠ N : ℕ in atTop, Real.log ((N : ℝ) + a) ≤ c * blockParameter θ N ^ 3 * N := by
+  have ha : 0 < (gainCoefficient θ / 1000) ^ 3 := by
+    exact pow_pos (div_pos (gainCoefficient_pos θ) (by norm_num)) 3
+  filter_upwards [eventually_log_add_le_mul_rpow (3 * θ - 2)
+    (c * (gainCoefficient θ / 1000) ^ 3) a ((branchExponent_pos_iff θ).2 hθ)
+    (mul_pos hc ha), eventually_ge_atTop 1] with N hlog hN
+  have hb := blockParameter_pow_mul_scale_lower θ 3 (lt_of_lt_of_le Nat.zero_lt_one hN)
+  have hexp : (θ - 1) * (3 : ℝ) + 1 = 3 * θ - 2 := by ring
+  norm_num only [Nat.cast_ofNat] at hb
+  rw [hexp] at hb
+  exact hlog.trans (by nlinarith)
+
 theorem tolerance_pos (θ : ℝ) {N : ℕ} (hN : 0 < N) : 0 < tolerance θ N := by
   have hk := blockParameter_pos θ hN
   have hN' : (0 : ℝ) < N := by exact_mod_cast hN

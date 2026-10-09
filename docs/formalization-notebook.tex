@@ -122,7 +122,14 @@ $\kappa_N$ and tolerance $\varepsilon_N$. The verified lower bounds imply
 \]
 Hence the actual rounded filter errors $(\varepsilon_N N)^{-8}$ are
 summable, and $\kappa_N^3N$ eventually absorbs every fixed logarithmic cost
-when $\theta>2/3$. The full list of parameter budgets remains to be assembled.
+when $\theta>2/3$. The full Lemma 2.2 is now proved: all four budget groups
+hold above one common threshold. The coarse bound $T+1\le242N$ makes its
+derivative constants polynomial; logarithmic domination absorbs them into
+$2^{\varepsilon_NN/8}$. The remaining count budgets follow from the inverse
+tolerance bound and the growth of $\kappa_N^3N$.
+All three terms in the asserted filter bound are now summable:
+$(\varepsilon_NN)^{-8}$, $N2^{-\varepsilon_NN}$, and
+$2^{-\kappa_NN/4}$. The geometric removed-mass estimate remains to be proved.
 
 \newpage
 \section*{The verified gauge Frostman construction}
@@ -175,8 +182,59 @@ K_\gamma(r)=\sum_{n\ge0}(n+1)^\gamma2^n e^{-4^n r^2}
 \quad(0<r<1,\ \gamma\ge0).
 \]
 A split at the dyadic index nearest the inverse radius bounds the finite
-prefix and compares the shifted tail with $K_\gamma(1)$. The measure-level
-Fourier-energy bridge remains in progress.
+prefix and compares the shifted tail with $K_\gamma(1)$. This kernel now
+also controls the actual Fourier energy described on the next page.
+
+\newpage
+\section*{The verified logarithmic Fourier energy}
+\begin{proposition}
+For every planar probability measure $\mu$ and $\gamma\ge0$, a finite positive
+constant depending only on $\gamma$ satisfies
+\[
+\int_{\mathbb R^2}|\widehat\mu(\xi)|^2
+\frac{\log^\gamma(e+\lVert\xi\rVert)}{\lVert\xi\rVert}\,d\xi
+\le C_\gamma(1+J_\gamma(\mu)).
+\]
+\end{proposition}
+\begin{proof}
+Mathlib's evaluated Gaussian Fourier transform and Fubini give the precise
+duality between Gaussian-weighted squared Fourier modulus and the spatial
+Gaussian kernel. Tonelli sums the nonnegative dyadic Gaussian contributions.
+The proved scalar kernel bound controls their sum by the critical spatial
+energy. A dyadic scale nearest each high frequency supplies the desired
+logarithmic weight. At low frequencies, the probability bound controls the
+Fourier modulus; the extended inverse norm has a proved finite integral on
+the planar unit ball. Combining the regions proves Lemma 5.2 with a finite
+explicit constant and the manuscript's literal Fourier phase.
+\end{proof}
+
+\section*{Separated probabilities and the prepared geometry}
+Two compact pieces of positive mass are extracted from the atomless Frostman
+probability. Their normalized restrictions retain gauge ball bounds and all
+finite logarithmic energies. The positive similarity used in Proposition 5.6
+places the pieces in discs of radius $1/400$ inside the unit square, with
+centers exactly $1/4$ apart. Every cross distance lies in $[0.24,0.26]$.
+These geometric and energy preparation statements are proved; the radial
+Orlicz density preparation remains to be established.
+
+The actual product-distance pushforward has mass one on the all-pairs
+distance set. Its absolute continuity therefore gives positive length.
+Preparation multiplies this length by the positive similarity scale, so
+positivity transfers back to the original set.
+
+\section*{The complete summable reconstruction criterion}
+Lemma 4.2 is now proved for a finite positive measure $\alpha$ and dominated
+approximants $\tau_N\le\alpha$ for $N\ge N_0$. Its exact hypotheses are
+\[
+\sum_{N\ge N_0}\bigl(\alpha(\mathbb R)-\tau_N(\mathbb R)\bigr)<\infty,
+\qquad
+\sum_{N\ge N_0}\int_{2^{N-1}\le|r|\le2^{N+1}}
+|\widehat\tau_N(r)|^2\,dr<\infty.
+\]
+They imply $\alpha\ll\LL^1$. The concrete convolution errors and Fourier
+bands form convergent L$^1$ and L$^2$ series. Telescoping the low-pass
+convolutions identifies their pairing with the original measure. The final
+absolute-continuity argument is given on the next page.
 
 \newpage
 \section*{The verified reconstruction bridges}
@@ -214,13 +272,12 @@ For a Lebesgue-null set, outer regularity provides open covers whose
 Lebesgue and $\sigma$ masses both tend to zero. The bound forces its
 $\alpha$ mass to be zero.
 \end{proof}
-Constructing the actual L$^2$ shell pieces and identifying the telescoped
-series pairing is still in progress.
+The actual L$^2$ shell pieces and the telescoped series pairing have been
+constructed, completing this part of the reconstruction proof.
 
 \section*{Remaining analytic work and verification}
-The proof still needs logarithmically weighted Fourier and projection
-estimates, endpoint Orlicz radial projection control, the remaining
-reconstruction steps, quantitative regular decomposition, four uniform
+The proof still needs orthogonal and radial Orlicz projection estimates,
+quantitative regular decomposition, four uniform
 energy estimates, and the multiscale budget induction. Fixed-parameter
 estimates need proved uniform dependence before use at shrinking parameters.
 

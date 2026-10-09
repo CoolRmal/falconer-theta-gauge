@@ -110,6 +110,17 @@ $$
 These are scalar results. The geometric estimates that supply the corresponding
 shell energies and filter errors remain to be proved.
 
+The full parameter Lemma 2.2 is now proved, including all four groups of
+budgets above one common threshold, for the actual rounded quantities. The
+coarse bound on the expansion count is `T+1 ≤ 242N`; logarithmic domination
+absorbs its polynomial constants. The inverse tolerance is controlled by the
+inverse square block parameter, so the regular-part and branch counts are
+absorbed by the growth of the cubic block parameter times the scale.
+All three terms in the asserted filter bound are summable at the actual
+parameters: the inverse eighth power of the scale-multiplied tolerance, the
+scale times its dyadic exponential, and the dyadic block exponential.
+The geometric removed-mass estimate itself remains to be proved.
+
 ## Verified gauge Frostman measure and logarithmic energies
 
 For the stronger range of exponents below, the full gauge Frostman construction
@@ -158,8 +169,24 @@ $$
 
 Splitting at the dyadic scale nearest the inverse radius controls the finite
 prefix and compares the shifted tail with the convergent kernel at radius one.
-The Fourier-energy identity connecting this scalar kernel to measures remains
-to be established.
+Gaussian Fourier duality and Tonelli now connect this scalar kernel to actual
+planar probability measures, proving the full Lemma 5.2:
+
+$$
+\int_{\mathbb R^2}|\widehat\mu(\xi)|^2
+\frac{\log^\gamma(e+\lVert\xi\rVert)}{\lVert\xi\rVert}\,d\xi
+\le C_\gamma(1+J_\gamma(\mu)),\qquad\gamma\ge0.
+$$
+
+The Fourier phase is exactly that of the manuscript. The inverse norm at the
+origin is extended nonnegative; its integral over a bounded planar ball is
+proved finite. No finiteness assumption is hidden in the weight definition.
+
+Two compact pieces of positive mass are also extracted and normalized.
+A positive similarity puts them in discs of radius `1/400` inside the unit
+square, with centers exactly `1/4` apart and pair distances between `0.24`
+and `0.26`. Their probabilities retain the gauge bounds and all logarithmic
+energies. Positive distance-set length transfers back under this similarity.
 
 ## Verified reconstruction bridges
 
@@ -193,14 +220,26 @@ $$
 $$
 
 Outer regularity provides open covers with both terms tending to zero for any
-Lebesgue-null set. Hence the measure is absolutely continuous. Constructing
-the actual L² shell pieces and identifying the telescoped series pairing is
-still in progress.
+Lebesgue-null set. Hence the measure is absolutely continuous. The actual
+L² shell pieces and the telescoped series pairing are constructed,
+completing the manuscript's Lemma 4.2. For any finite positive measure and
+eventually dominated approximants, the exact criterion is
+
+$$
+\sum_{N\ge N_0}\bigl(\alpha(\mathbb R)-\tau_N(\mathbb R)\bigr)<\infty,
+\qquad
+\sum_{N\ge N_0}\int_{2^{N-1}\le|r|\le2^{N+1}}
+|\widehat\tau_N(r)|^2\,dr<\infty
+\quad\Longrightarrow\quad\alpha\ll\mathcal L^1.
+$$
+
+The actual product-distance probability has mass one on the all-pairs distance
+set. Its absolute continuity therefore implies positive Lebesgue length.
 
 ## Remaining proof obligations
 
-The manuscript's proof still requires endpoint Orlicz radial projection bounds,
-the remaining summable Fourier reconstruction steps, regular decomposition
+The manuscript's proof still requires orthogonal and radial Orlicz projection bounds,
+regular decomposition
 with explicit parameter dependence, four uniform energy estimates, and the
 multiscale budget induction. Fixed-parameter theorems cannot be used at
 scale-dependent parameters without proving the needed uniform dependence.

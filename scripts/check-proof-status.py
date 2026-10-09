@@ -44,6 +44,15 @@ FOUNDATIONS = (
     "FalconerThetaGauge.eventually_log_le_blockParameter_cube_mul_scale",
     "FalconerThetaGauge.absolutelyContinuous_of_l1_fourier_l2_schwartz_pairing",
     "FalconerThetaGauge.tendsto_integral_reconstructionLowpass_schwartz",
+    "FalconerThetaGauge.exists_parameter_threshold",
+    "FalconerThetaGauge.summable_reconstruction",
+    "FalconerThetaGauge.absolutelyContinuous_of_summable_dyadic_reconstruction",
+    "FalconerThetaGauge.exists_prepared_probabilityMeasures_finite_logCriticalEnergy",
+    "FalconerThetaGauge.volume_distanceSet_affineMap_image_pos_iff",
+    "FalconerThetaGauge.logarithmicFourierEnergy_le",
+    "FalconerThetaGauge.logarithmicFourierEnergy_ne_top",
+    "FalconerThetaGauge.volume_distanceSet_pos_of_crossDistanceMeasure_absolutelyContinuous",
+    "FalconerThetaGauge.summable_filterMassError",
 )
 DECLARATION_NAME = re.compile(r"[A-Za-z_][A-Za-z_0-9']*(?:\.[A-Za-z_][A-Za-z_0-9']*)*")
 AXIOM_REPORT = re.compile(

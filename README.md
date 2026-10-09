@@ -44,14 +44,18 @@ the exact rounded parameters from Definition 2.1, positive gauge content,
 and finite dyadic gauge weights with saturated covering bounds. Lemma 5.1's
 full gauge Frostman probability measure and its finite logarithmic critical
 energies are now proved. The actual rounded filter error is summable.
+All four budget groups of Lemma 2.2 and the weighted Fourier energy estimate
+of Lemma 5.2 are proved. The separated probability preparation retains the
+specified unit-square geometry, gauge bounds, and finite energies.
 
 The summable reconstruction foundation proves that dyadic frequency shells
 overlap at most three times, obtains the finite-overlap quadratic L² bound,
 and proves convergence of square-summable shell pieces and summable errors.
 Actual smooth Fourier cutoffs, uniformly integrable convolution errors, and
 low-pass convergence on Schwartz tests are proved, as is the final absolute
-continuity consequence of an L¹ plus Fourier L² pairing. The remaining series
-identification in the full reconstruction criterion is in progress.
+continuity consequence of an L¹ plus Fourier L² pairing. The series
+identification is complete, proving the full summable reconstruction criterion
+of Lemma 4.2 with its exact dominated-measure and shell-energy hypotheses.
 
 The [formalization notebook](docs/output/formalization-notebook.pdf) explains
 the geometric, scalar, Frostman, and reconstruction foundations. Its [Markdown source](docs/formalization-notebook.md)
@@ -88,9 +92,8 @@ Such a run is not a Palomar mechanical report.
 
 ## Completion and Palomar
 
-The remaining work includes logarithmically weighted Fourier and projection
-energies, the endpoint Orlicz radial estimate,
-the summable reconstruction criterion, quantitative regular decomposition,
+The remaining work includes the orthogonal-projection Orlicz density estimate,
+the endpoint radial estimate, quantitative regular decomposition,
 the four uniform energy estimates, and the budget induction and final assembly.
 The fixed-parameter packing development does not establish these estimates
 when the parameters shrink with the terminal scale.
