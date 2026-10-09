@@ -61,6 +61,7 @@ done
 
 # Palomar supplies these trusted paths itself. They must not be committed in
 # comparator.json, where external_kernels is not a permitted submitter field.
+# Limit con-ron to the two workers used by Palomar's qualified memory policy.
 config=$(mktemp "${TMPDIR:-/tmp}/theta-gauge-comparator.XXXXXX")
 trap 'rm -f "$config"' EXIT
 python3 - comparator.json "$config" "$prefix" <<'PY'
@@ -81,7 +82,7 @@ if "external_kernels" in config:
 config.pop("enable_nanoda", None)
 config["external_kernels"] = {
     "nanoda": [f"{prefix}/bin/nanoda_bin"],
-    "con-ron": [f"{prefix}/bin/con-ron"],
+    "con-ron": [f"{prefix}/bin/con-ron", "--jobs=2"],
 }
 pathlib.Path(destination).write_text(json.dumps(config, indent=2) + "\n", encoding="utf-8")
 PY

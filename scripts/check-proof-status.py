@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit Lean's actual axiom dependencies, including the unfinished main theorem.
+"""Audit Lean's actual axiom dependencies, including the main theorem.
 
 Run after building Solution. The independent Challenge is deliberately excluded:
 its statement hole is permitted, whereas the proved theorem must be axiom-clean.
@@ -990,6 +990,44 @@ FOUNDATIONS = (
     "FalconerThetaGauge.norm_circle_product_sub_stationary_product_le",
     "FalconerThetaGauge.norm_averaged_circle_product_sub_stationary_product_le",
     "FalconerThetaGauge.norm_spaceSplittingAveragedCircleKernel_sub_stationaryProduct_le_source",
+    "FalconerThetaGauge.weightedCrossDistanceMeasure_absolutelyContinuous",
+    "FalconerThetaGauge.actualSpaceSplittingRecurrence",
+    "FalconerThetaGauge.regularRemainingDistanceMaximum_le_far_child",
+    "FalconerThetaGauge.profileLongestTestLength_le_terminal",
+    "FalconerThetaGauge.toleranceCount_ge_sixteen_of_parameterFacts",
+    "FalconerThetaGauge.regularRemainingTests_card_le",
+    "FalconerThetaGauge.regularProfileNearStart_source_geometry",
+    "FalconerThetaGauge.spaceSplittingFarCrossSum_le_source",
+    "FalconerThetaGauge.maskedFourierEnergy_spaceSplitting_le_source",
+    "FalconerThetaGauge.spaceSplittingFineEnergyAverage",
+    "FalconerThetaGauge.spaceSplittingFineEnergyAverage_nonneg",
+    "FalconerThetaGauge.mass_mul_spaceSplittingFineEnergyAverage",
+    "FalconerThetaGauge.maskedFourierEnergy_le_normalized_near_and_far",
+    "FalconerThetaGauge.norm_spaceSplittingAveragedCircleKernel_far_noncomparable_le_source",
+    "FalconerThetaGauge.ofReal_norm_spaceSplittingAveragedCircleKernel_far_le",
+    "FalconerThetaGauge.norm_spaceSplittingAveragedCircleKernel_far_le_source",
+    "FalconerThetaGauge.spaceSplittingFar_not_comparable_cases",
+    "FalconerThetaGauge.spaceSplittingFar_mem_comparable_iff",
+    "FalconerThetaGauge.spaceSplittingFarWeightedKernel",
+    "FalconerThetaGauge.measurable_spaceSplittingFarWeightedKernel",
+    "FalconerThetaGauge.ofReal_spaceSplitting_passing_coefficient_eq_weighted",
+    "FalconerThetaGauge.spaceSplittingFarWeightedKernel_ne_top",
+    "FalconerThetaGauge.spaceSplittingFarWeightedKernel_toReal",
+    "FalconerThetaGauge.spaceSplittingFarCrossSum",
+    "FalconerThetaGauge.spaceSplittingRootFourMeasure_real_univ",
+    "FalconerThetaGauge.spaceSplittingFarCrossSum_le_majorant",
+    "FalconerThetaGauge.spaceSplittingFarCrossSum_le_of_ofReal_majorant",
+    "FalconerThetaGauge.spaceSplittingFarCrossSum_le_distance_maxima_of_ofReal_bound",
+    "FalconerThetaGauge.spaceSplittingFarCrossSum_le_distance_maxima",
+    "FalconerThetaGauge.spaceSplittingFineFourMeasure",
+    "FalconerThetaGauge.spaceSplittingFinePairs",
+    "FalconerThetaGauge.sum_spaceSplittingFineFourMeasure",
+    "FalconerThetaGauge.integrable_spaceSplittingFineFourMeasure",
+    "FalconerThetaGauge.sum_integral_spaceSplittingFineFourMeasure",
+    "FalconerThetaGauge.spaceSplittingFarCrossSum_le_lintegral_majorant",
+    "FalconerThetaGauge.spaceSplittingFarWeightedKernel_lintegral_ne_top",
+    "FalconerThetaGauge.spaceSplittingFarCrossSum_le_weighted_kernel",
+    "FalconerThetaGauge.instIsFiniteMeasureProdPlaneSpaceSplittingFineFourMeasure",
 )
 DECLARATION_NAME = re.compile(r"[A-Za-z_][A-Za-z_0-9']*(?:\.[A-Za-z_][A-Za-z_0-9']*)*")
 AXIOM_REPORT = re.compile(

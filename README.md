@@ -3,8 +3,9 @@
 Lean 4 / Mathlib project for Theorem 1.1 in the
 [source manuscript](docs/falconer-theta-gauge-proof.pdf), dated October 8, 2026.
 
-**Status: work in progress. The main theorem is not proved, does not pass
-Comparator, and is not registered on Palomar.**
+**Status: Theorem 1.1 is proved in Lean with no development holes or
+additional analytic hypotheses. Final sandboxed Comparator and Palomar
+verification are pending.**
 
 For
 
@@ -106,16 +107,20 @@ integrated Schur estimate and exact normalized orthogonality recurrence are
 proved. The space split has its actual far-cell geometry, full circular
 expansion, passing support, opposite-sign coefficient sum and near-cell
 Schur estimate. Moves 1--3 are complete for actual state energies and test
-lists. The genuine weighted tree telescopes with all path multiplicities,
-reducing its bound to the remaining full space-splitting recurrence.
+lists. The genuine weighted tree telescopes with all path multiplicities.
+Full Estimate 7.8 now supplies its actual space-splitting recurrence.
 The actual global filtered annulus is a finite mixture with its original
 retained-piece masses and actual self-energy averages.
 The actual root energy has its proved entry jump. The entry-state bound,
-full source annulus decay and reconstruction now follow conditionally on
-the remaining space-splitting recurrence. Exact stationary-main product
+full source annulus decay and reconstruction follow from the proved
+space-splitting recurrence. Exact stationary-main product
 algebra, both equal-sign source bounds, actual Case A cancellation,
 the averaged circular remainder and the Case B passing kernel are proved.
 Literal distance bins and weighted-kernel depth regrouping are also proved.
+Their actual four-measure integrals and normalized cell sums complete
+Estimate 7.8, including zero-mass cells. The recurrence is proved for the
+actual induction states, yielding unconditional absolute continuity of the
+prepared weighted distance measure and the exact main theorem.
 
 The summable reconstruction foundation proves that dyadic frequency shells
 overlap at most three times, obtains the finite-overlap quadratic L² bound,
@@ -130,11 +135,12 @@ The [formalization notebook](docs/output/formalization-notebook.pdf) explains
 the geometric, scalar, Frostman, and reconstruction foundations. Its [Markdown source](docs/formalization-notebook.md)
 uses GitHub display-math delimiters.
 
-The unresolved proof is in [Main](FalconerThetaGauge/Main.lean). It uses the
-proved preparation and weighted distance carrier; its sole proof hole is
-absolute continuity of that actual weighted distance measure. Comparator
-rejects this hole because `sorryAx` is not permitted.
-The separate hole in Challenge records the independent specification.
+The complete proof is in [Main](FalconerThetaGauge/Main.lean). It uses the
+proved preparation, unconditional absolute continuity, the weighted distance
+carrier and similarity invariance. Lean reports only `propext`,
+`Classical.choice` and `Quot.sound` as its axiom dependencies.
+The deliberate hole in Challenge records the independent specification and
+is excluded from the proof development.
 
 ## Build and verification
 
@@ -161,21 +167,20 @@ development checkout, `./scripts/verify-comparator.sh --preliminary` runs a
 comparison with the sandbox disabled and explicitly refuses execution in CI.
 Such a run is not a Palomar mechanical report.
 
-## Completion and Palomar
+## Source fidelity and Palomar
 
-Estimates 7.5, 7.6 and 7.7 and actual induction Moves 1--3 are proved.
-The remaining work is to assemble full Estimate 7.8 and discharge its
-actual state recurrence. The root-to-entry estimate is proved, and the final
-frequency-shell decay and reconstruction follow from that recurrence. The actual
-terminal-tree contributions and accumulated small errors already satisfy
-their budget bounds, and the weighted tree telescope is proved with an
-explicit hypothesis for the outstanding space-splitting recurrence.
-The fixed-parameter packing development does not establish these estimates
-when the parameters shrink with the terminal scale.
+The final theorem and its five custom statement definitions exactly match
+[Challenge](Challenge.lean). Auxiliary proof adaptations are recorded in
+[formalization.yaml](formalization.yaml) and the notebook: an immaterial
+large-radius gauge extension, finite-order smooth bump choices, fully smooth
+stationary amplitudes, the target-specific radial limit using stronger
+logarithmic energies, corrected intermediate constants in Estimates 7.5
+and 7.6, and a deliberately weaker error in Estimate 7.8. All required
+auxiliary estimates are proved; none is an assumption of the main theorem.
 
-After the target is proved without holes, the exact public commit must pass
-the Comparator job and the full pinned Palomar mechanical preflight. Complete
-truthful `formalization.yaml` metadata and obtain the registry's review before
-registration through [Palomar's submission protocol](https://palomar-registry.org/how-to-submit).
-The manual GitHub workflow includes the full preflight; submission and
-registration are separate actions.
+The exact public commit must pass the Comparator job and the full pinned
+Palomar mechanical preflight before intake. The manual GitHub workflow runs
+that full preflight; submission, review and registration are separate steps
+under [Palomar's submission protocol](https://palomar-registry.org/how-to-submit).
+
+Author and responsible maintainer: **Yongxi Lin**.

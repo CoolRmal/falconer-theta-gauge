@@ -1,8 +1,18 @@
-# Theorem 1.1: formal statement and verified foundations
+# Theorem 1.1: completed Lean proof notebook
 
-October 9, 2026. This notebook records an incomplete formalization. The main
-theorem remains a proof obligation and is not comparator certified.
+October 9, 2026. The Lean proof of the exact Theorem 1.1 is complete, including
+the analytic recurrences, all-scales reconstruction, and final positive-length
+conclusion. The main theorem builds and its axiom audit contains only
+`propext`, `Classical.choice`, and `Quot.sound`; there are zero development
+proof holes in its dependency graph. Independent Comparator replay of the
+completed public revision and Palomar registration are still pending.
 Author and responsible maintainer: Yongxi Lin.
+
+The sections below retain the detailed development of the proof, with the
+completed space-splitting estimate and final assembly recorded at the end.
+Earlier failed verification runs are historical checkpoints, not the status
+of the completed proof. A local Lean build and axiom audit are not a claim of
+successful independent Comparator certification.
 
 ## Exact target
 
@@ -107,8 +117,8 @@ $$
 \sum_{n=0}^{\infty}n^{-8(2\theta-1)}<\infty.
 $$
 
-These are scalar results. The geometric estimates that supply the corresponding
-shell energies and filter errors remain to be proved.
+These scalar results are used with the proved geometric removed-mass bounds
+and shell-energy estimates assembled later in this notebook.
 
 The full parameter Lemma 2.2 is now proved, including all four groups of
 budgets above one common threshold, for the actual rounded quantities. The
@@ -119,7 +129,8 @@ absorbed by the growth of the cubic block parameter times the scale.
 All three terms in the asserted filter bound are summable at the actual
 parameters: the inverse eighth power of the scale-multiplied tolerance, the
 scale times its dyadic exponential, and the dyadic block exponential.
-The geometric removed-mass estimate itself remains to be proved.
+The actual geometric removed-mass estimate is proved using the assembled
+directional filters below.
 
 ## Verified gauge Frostman measure and logarithmic energies
 
@@ -276,10 +287,13 @@ $$
 
 Portmanteau transfers this estimate to a weak probability limit. Outer
 regularity extends it from open sets to arbitrary sets. Letting the cutoff
-grow proves absolute continuity of the limit. A uniform moment of order two
-greater than the desired exponent also gives finite lower Orlicz moments for
-the limit's actual Radon–Nikodym density. The target-specific radial endpoint
-and uniform spread preparation are now assembled below.
+grow proves absolute continuity of the limit. A uniform moment of order
+gamma plus two gives the desired order-gamma Orlicz moment for the limit's
+actual Radon–Nikodym density. Gauge Frostman measures supply every logarithmic
+energy, so this stronger-input route suffices for Theorem 1.1. It is a
+target-specific substitute for the manuscript's general sharp radial
+Theorem 5.4, rather than a claim to its full same-exponent formulation.
+The radial endpoint and uniform spread preparation are assembled below.
 
 ## Verified regular decomposition
 
@@ -399,8 +413,8 @@ $$
 
 For the manuscript's bad-direction length budget, choosing its inverse square
 root gives the exact bound by a dyadic exponential plus an inverse eighth
-power. The finite-test weighted loss is now proved below; the full construction
-still needs the assembly of each regular piece's own test list.
+power. The finite-test weighted loss and the assembly of each regular piece's
+own test list are proved below.
 
 ## Verified entry depth and finite test schedule
 
@@ -435,8 +449,8 @@ long subintervals, are monotone under interval inclusion, and retain each
 contributing origin. Anchor depths lie in the constructed marks and every
 length is at most half its origin's length. The mark count and the exact
 parameter budget give at most **N²** tests per list, proving Lemma 8.3(b,c).
-The actual chains and finite trees are now constructed below. Their analytic
-energy recurrences remain to be proved.
+The actual chains and finite trees are constructed below. Their analytic
+energy recurrences are all proved, including the final space split.
 
 ## Verified uniform nonstationary estimates and smooth bumps
 
@@ -606,8 +620,8 @@ $$
 \bigl(\|g^{(2T)}\|_1+\|g^{(2T+2)}\|_1\bigr),\qquad \Lambda>0.
 $$
 
-This checkpoint claims the smooth-amplitude version used by the constructed
-masks; the manuscript's full finite-regularity version is not claimed.
+The proved smooth-amplitude expansion suffices for the constructed masks.
+The manuscript's full finite-regularity version is not claimed.
 The literal circular coordinate and its Jacobian satisfy
 
 $$
@@ -689,7 +703,7 @@ $$
 
 in the one-piece cell case. A reached mask is a direction-only factor on an
 actual descendant cell, so removing it can only increase this actual energy.
-These are the starting bounds; the four nontrivial energy estimates remain.
+These are the starting bounds for the four proved nontrivial energy estimates.
 
 ## Uniform localized derivatives and exact inverse operators
 
@@ -825,7 +839,7 @@ stronger high-frequency coefficient is two; the displayed source constant
 320 follows. For the actual ordered scheduled lists, the literal masks give
 passing ≤ masked ≤ next-level passing measures. This instantiates the bridge
 at s=t−εN and proves Lemma 7.4 with its source constant. The four nontrivial
-energy estimates are the next analytic assembly.
+energy estimates are all assembled below.
 
 ## Concrete scheduled symbols and spatial separation
 
@@ -961,8 +975,8 @@ D\sum_\alpha\|z_\alpha\|^2+
 $$
 
 All unlinked inner products are retained explicitly. The following sections
-prove the actual few-links count and individual cancellation bounds; their
-joint Fourier-energy assembly remains.
+prove the actual few-links count, individual cancellation bounds, and full
+joint Fourier-energy assembly.
 
 ## Full spatial and operator assembly of the inverse series
 
@@ -996,7 +1010,8 @@ q\le2^{-7\varepsilon N/8}.
 $$
 
 This completes the spatial and operator expansion in Step 2 of Estimate 7.5.
-Its final distance-transform error and frequency-energy assembly remain.
+The completed distance-transform and frequency-energy assembly is recorded
+in the actual Mattila shell estimate below.
 
 ## Complete weighted linearization: Estimate 7.7
 
@@ -1113,8 +1128,8 @@ $$
 
 The actual sum of weighted 2⁻²⁵ᴺ node errors is at most 2⁻²⁰ᴺ.
 Together they satisfy the bound with 227κ. These results estimate genuine
-state energies and visits; the analytic recurrence controlling the initial
-state remains to be assembled.
+state energies and visits; the proved analytic recurrences now control the
+initial state without an additional hypothesis.
 
 For the near part of the full space split, true dyadic lattice boxes contain
 exactly 81 centers within the needed coordinate range. Thus the actual
@@ -1124,8 +1139,8 @@ $$
 81^2=6561.
 $$
 
-The complete far part of Estimate 7.8 still needs its two sign combinations
-and the scalar binning kernel assembled with the actual circular formula.
+The complete far part of Estimate 7.8 combines the two sign combinations,
+scalar binning kernel, and actual circular formula as recorded below.
 
 ## Actual Mattila shell estimate and its state consequence
 
@@ -1206,8 +1221,8 @@ $$
 2^{v(1-j-j')}}{(1+2^v|\delta|)^2}.
 $$
 
-These are checked analytic and geometric components. Their coefficient sums,
-sign cases and depth regrouping still need assembly for full Estimate 7.8.
+These checked analytic and geometric components enter the proved coefficient
+sums, sign cases, and depth regrouping for full Estimate 7.8 below.
 
 ## Actual induction Moves 1--3
 
@@ -1261,10 +1276,9 @@ $$
 \mathcal E_{\mathrm{root}}\le R^{-V(\mathrm{root})+227\kappa}.
 $$
 
-This last implication explicitly requires the outstanding full
-space-splitting recurrence. Moves 1--3 and all tree bookkeeping are proved;
-the hypothesis for Move 4 has not yet been discharged. No such analytic
-hypothesis is added to Theorem 1.1.
+The full space-splitting recurrence, proved below, discharges the last local
+input to this telescope. All four actual moves and the tree bookkeeping are
+proved; no analytic recurrence hypothesis is added to Theorem 1.1.
 
 ## Full annulus and exact original-piece mixture
 
@@ -1309,10 +1323,10 @@ literal repeated linear-phase decay.
 The near relation has actual symmetric degree at most 81². Integrated
 Schur gives the real mass-weighted parent Fourier energy bounded by 81²
 times its genuine fine-cell energies plus the actual far cross integrals.
-The remaining sign and remainder estimates and scalar collision regrouping
-must still control those far cross integrals.
+The proved sign and remainder estimates and scalar collision regrouping
+control those far cross integrals in the complete cell estimate below.
 
-## Actual entry estimate and conditional reconstruction
+## Actual entry estimate and all-scales reconstruction
 
 The retained root self energy now has a proved jump to the actual entry
 state. With the true entry depth c and original gain parameter beta,
@@ -1322,8 +1336,7 @@ F_t\le R^{\beta+\kappa+12\varepsilon}
 \mathcal E_0(c,N,c,N)+R^{-80}.
 $$
 
-The actual tree and gauge budget, conditional only on the remaining
-space-splitting recurrence for that retained probability, give
+The actual tree, all four local recurrences, and gauge budget give
 
 $$
 \mathcal E_0(c,N,c,N)\le R^{-2\beta+227\kappa+2/N}.
@@ -1340,8 +1353,9 @@ The exact 8T filters have proved domination, finite mass and summable
 removed mass. The closed dyadic shells agree with the full annuli almost
 everywhere. Stretched-gain summability and the proved reconstruction lemma
 then give absolute continuity of the original weighted distance measure.
-This entire final chain still explicitly depends on actual Move 4 at each
-retained piece and scale; that analytic input is not yet discharged.
+Actual Move 4 is proved for each retained probability and scale. Thus the
+entire final chain is unconditional under the original preparation
+hypotheses; its final endpoint has no space-splitting assumption.
 
 ## Exact two-circle stationary main product
 
@@ -1391,20 +1405,180 @@ geometry and parameter hypotheses. All declarations in the exact
 main-product and equal-sign modules have been checked for standard axiom
 dependencies only.
 
-## Remaining proof obligations and verification
+## Complete cell space-splitting estimate: Estimate 7.8
 
-Estimates 7.5, 7.6 and 7.7, actual Moves 1--3, exact mixture identities and
-the genuine weighted tree telescope are proved. Full Estimate 7.8, the
-the source shell decay and final reconstruction are proved conditionally
-on its remaining actual recurrence. The main target's sole hole is absolute continuity of its actual
-prepared weighted distance source.
+The averaged circle kernel is an actual integral, with scale s=2ᵛ:
 
-The hosted check on public commit 886a9d8 compiled the development in
-3895 jobs and audited 784 declarations. Only the main theorem used
-sorryAx. Sandboxed Comparator built the export in 3892 jobs and rejected
-that same forbidden axiom. No successful independent proof replay is
-claimed. Later source changes require a new run.
+$$
+\mathcal K(x,x',y,y')=
+\frac1s\int_0^\infty\Psi(r/s)r^2
+I_{b_1}(r;x,x')I_{b_2}(r;y,y')\,dr,
+$$
 
-Palomar registration remains pending the completed proof, successful
-verification of the exact public commit, truthful metadata and registry
-review.
+$$
+I_b(r;x,x')=\int_{S^1}e^{-ir\langle x-x',w\rangle}
+ b(x,w)b(x',w)\,dw.
+$$
+
+The circle integral is bounded by 2π. Compact radial support supplies an
+integrable majorant, so genuine Fubini identifies each joint Fourier cross
+inner product with the real part of this kernel integrated against the four
+original restricted spatial measures. Summing the occupied fine cells is
+exactly the original parent four-point measure; no measure is replaced by
+cell-center atoms.
+
+For a far fine-cell pair, the one-short-pair case uses angular cancellation.
+When both pairs are large, the true stationary product splits into opposite
+and equal signs. The opposite signs give the next-level passing collision
+kernel above; the equal signs and stationary remainders have proved decay.
+The actual pointwise kernel majorant is
+
+$$
+|\mathcal K|\le R^{-300}+2^{25}2^v
+\mathbf1_{\mathrm{farComparable}}
+\frac{\mathbf1_{Z_{i+1}}(x,x')\mathbf1_{Z_{i+1}}(y,y')}
+ {\sqrt{d_xd_y}(1+2^v|d_x-d_y|)^2}.
+$$
+
+Here the comparable set excludes zero separations and retains the actual
+fine-cell far geometry. Integration preserves the original parent masses.
+The proved distance-bin cover uses depths a<n<p+12, and the literal scalar
+collision estimate regroups the singular weights into the corresponding
+next-level distance-energy maxima. Combined with the near Schur bound, this
+proves, including zero-mass parents,
+
+$$
+F_{X,Y}^{b_1,b_2}(v)\le
+81^2\operatorname{FineAvg}_{p}(F)
++2^{90}\sum_{a<n<p+12}D_{X,Y;Z_{i+1}}^{\max}(n,v)+R^{-25}.
+$$
+
+This is the genuine cell-level Estimate 7.8 for the built symbol classes,
+under their geometric and parameter hypotheses. Its final error deliberately
+weakens the intermediate R⁻³⁰⁰ decay to R⁻²⁵, the error used by the finite
+induction tree. The proof does not claim a sharper printed remainder that
+has not been transported through every normalization.
+
+## Actual Move 4 and unconditional recurrence tree
+
+For a valid long Fourier state with short remaining tests, the constructed
+space-split depth is
+
+$$
+p=v-2\max\{L,\delta\},\qquad \delta=\varepsilon N,
+$$
+
+where L is the actual maximum test length. The integer schedule makes this
+identity exact. The parameter budget gives p+12≤v+1, so the depth sum in
+Estimate 7.8 is exactly the depth range of the actual discrepancy children.
+The parent and child lists are the genuine scheduled lists, and the widened
+passing set is their next mask level. Fine-cell mass sums bound the near
+average by the refined Fourier-state energy; deleting tests bounds each far
+distance maximum by its actual discrepancy-child energy. Thus
+
+$$
+F_i(b,e,a,v)\le81^2F_i(b,e,p,v)
++2^{90}\sum_{a<n<\min(v+1,p+12)}D_{i+1}(b,e,n,v)+R^{-25}.
+$$
+
+The declaration `actualSpaceSplittingRecurrence` proves this recurrence for
+every probability carried by the unit square with the actual parameter
+facts. It has no assumed analytic outcome. Each retained regular piece is a
+normalized restriction of the original measure; its probability and
+unit-square identities are derived internally. All four moves can therefore
+be substituted into the finite weighted tree telescope at every large scale.
+The entry bound, original-mass mixture, and annulus decay in the preceding
+sections are now unconditional.
+
+## Unconditional absolute continuity and the exact main theorem
+
+Let μ and ν be the actual prepared probabilities on the two separated
+compact pieces. Their common gauge ball bound, unit-square carrier, and
+uniform per-pin order-eight radial Orlicz bounds are obtained from positive
+gauge measure. For every sufficiently large N, the assembled 8T filters give
+actual finite positive measures α_N dominated by the original weighted
+cross-distance measure α, with
+
+$$
+\sum_N(\alpha-\alpha_N)(\mathbb R)<\infty,
+\qquad
+\operatorname{Annulus}_N(\alpha_N)\le R^{-\beta_N/3}.
+$$
+
+The stretched gain β_N=c_θN^{θ−1} makes the shell bound summable. The complete
+Lemma 4.2, applied to these actual measures and Fourier transforms, proves
+
+$$
+\alpha=\operatorname{dist}_{\#}
+ \bigl(\lVert x-y\rVert^{-1/2}\,d\mu(x)\,d\nu(y)\bigr)
+\ll\mathcal L^1.
+$$
+
+The endpoint `weightedCrossDistanceMeasure_absolutelyContinuous` uses only
+the proved preparation hypotheses; it has no space-splitting or shell-energy
+assumption. This is the analytic input used by the final main proof.
+
+The prepared compact pieces lie in a positive similarity copy E′ of E and
+have full probability mass there. Their distances lie in [0.24,0.26], so α
+has finite, strictly positive total mass and is carried by the compact set
+Δ(E′). If that set had zero Lebesgue measure, absolute continuity would make
+its α-mass zero, contradicting its full positive mass. Therefore
+
+$$
+\mathcal L^1(\Delta(E'))>0.
+$$
+
+The positive similarity scale gives Δ(E′)=ℓΔ(E). The proved measure-scaling
+identity transfers positivity back to Δ(E), closing the exact declaration
+`FalconerThetaGauge.theorem_one_one`. Its only assumptions are the original
+range 2/3<θ<1, compactness, and positive Hausdorff gauge measure.
+
+## Scope of the adaptations
+
+The proof retains the theorem's exact gauge and conclusion. Several auxiliary
+arguments use stronger available hypotheses or explicit corrected budgets:
+
+- The bump is C∞ and depends on the required finite derivative order K. The
+  selected-order factorial bounds are proved; a single bump satisfying the
+  same bound at every order is not claimed. The actual masks use K=8T.
+- Stationary phase is proved for C∞ periodic amplitudes, with all derivative
+  bounds needed at the chosen order. Every constructed mask satisfies this
+  hypothesis. The manuscript's broader finite-regularity lemma is not claimed.
+- Radial Orlicz preparation uses the available uniform logarithmic moment of
+  order γ+2 to obtain the actual density moment of order γ. All such input
+  energies are supplied by the gauge bound, so the stronger-input route proves
+  the target without asserting the full sharp general Theorem 5.4.
+- Regularity is proved through depth N, the terminal scale of the actual
+  decomposition. All downstream uses lie in this range. The manuscript's
+  all-depth wording is not inferred from arbitrary within-cell masses.
+- Estimate 7.5 uses the proved coefficient budget (√2/D)ʲ to repair the printed
+  root calculation 2/D≤6, which is false at D=1/4. The full shell estimate has
+  the displayed R⁻³⁹⁰ error and the exact original mass normalization.
+- Estimate 7.6 uses the proved lattice count 81 in place of the printed 16.
+  The parameter inequality 81≤Rᵋ preserves the required final 12ε exponent.
+  Genuine support widths, arc sums, and both cancellation directions are
+  included in its displayed R⁻⁸⁰ error.
+- Estimate 7.8 uses the displayed R⁻²⁵ final error. The finite tree's weighted
+  error sum is proved with this value, so no sharper cell error is needed.
+
+## Verification status and historical checkpoints
+
+The exact main theorem now builds, and all 1,009 tracked declarations pass
+the final dependency audit. The main proof uses only the three standard Lean
+axioms `propext`, `Classical.choice`, and `Quot.sound`.
+There are zero development proof holes in that proof. The independent
+Challenge repeats the target's transparent definitions and imports only
+Mathlib; Solution imports the completed development and not Challenge.
+
+Earlier public revisions were explicitly incomplete. For example, the
+historical checkpoint 886a9d8 compiled in 3895 hosted jobs and audited 784
+declarations, but the main theorem still depended on `sorryAx`. Sandboxed
+Comparator built that export in 3892 jobs and rejected the forbidden axiom.
+That result describes the old revision, not the now-completed main proof.
+
+Independent Comparator replay and hosted verification of the completed
+public revision are pending. No green Comparator result is claimed in this
+notebook. Palomar registration remains pending those final checks, truthful
+metadata, and registry review.
+
+[Public project: CoolRmal/falconer-theta-gauge](https://github.com/CoolRmal/falconer-theta-gauge)
