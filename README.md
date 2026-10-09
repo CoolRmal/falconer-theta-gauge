@@ -5,23 +5,17 @@ A Lean 4 / Mathlib formalization of Theorem 1.1 in the
 The theorem is proved without proof holes or additional analytic assumptions.
 Palomar registration is pending.
 
-For
+For $\frac{2}{3}\lt\theta\lt1$, define $h_\theta(0)=0$ and
 
-$$
-\frac23 < \theta < 1,\qquad
-h_\theta(r)=r\exp\!\left(-\bigl(\log(1/r)\bigr)^\theta\right)
-\quad (0<r<1),\qquad h_\theta(0)=0,
-$$
+$$h_\theta(r)=r\exp\left(-\bigl(\log(1/r)\bigr)^\theta\right)\qquad(0\lt r\lt1).$$
 
-every compact set $E\subset\mathbb R^2$ satisfies
+For a compact set $E\subset\mathbb{R}^2$, let
 
-$$
-\mathcal H^{h_\theta}(E)>0
-\quad\Longrightarrow\quad
-\mathcal L^1\bigl(\Delta(E)\bigr)>0,
-\qquad
-\Delta(E)=\{\lVert x-y\rVert:x,y\in E\}.
-$$
+$$\Delta(E)=\lbrace\lVert x-y\rVert:x,y\in E\rbrace.$$
+
+Then
+
+$$\mathcal{H}^{h_\theta}(E)>0\quad\Longrightarrow\quad\mathcal{L}^1\bigl(\Delta(E)\bigr)>0.$$
 
 The plane has the Euclidean metric. Gauge Hausdorff measure uses Mathlib's
 `Measure.mkMetric`, with covering diameters; extending the gauge by the identity
