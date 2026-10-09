@@ -2,6 +2,9 @@ name: Lean build and Comparator
 
 on:
   push:
+    branches: ["**"]
+    # Palomar authentication tags are deleted immediately after verification.
+    tags-ignore: ["palomar-verify-*"]
   pull_request:
   workflow_dispatch:
     inputs:

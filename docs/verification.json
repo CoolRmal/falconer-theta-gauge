@@ -12354,5 +12354,16 @@
       "con_ron_accepted_declarations": 68640,
       "job_url": "https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37908268932/job/113747256925"
     }
+  },
+  "temporary_authentication_tag_ci": {
+    "run_id": 37911185493,
+    "run_url": "https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37911185493",
+    "source_commit": "98d3222b42ba5fcaeb56068cf2d542c3d4851d80",
+    "event": "push of temporary Palomar authentication tag",
+    "status": "checkout_failed",
+    "proof_check_started": false,
+    "reason": "Palomar requires immediate tag cleanup after access verification. The former unrestricted push trigger queued checkout after that tag had been deleted.",
+    "correction": "The workflow now checks all branches and ordinary tags while excluding palomar-verify-* authentication tags. Pull-request and manual verification are retained.",
+    "scope_note": "This checkout failure does not invalidate the passing Comparator and actual Palomar mechanical reports for the same immutable proof commit."
   }
 }
