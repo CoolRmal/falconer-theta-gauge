@@ -1,4 +1,15 @@
-# Formalization progress
+# Historical development checkpoint
+
+This is the development record last updated at commit
+`6bea7ea1b7e949bf18facba9571f4117882d31c4`, before the proof was completed.
+The unfinished steps below describe that earlier snapshot.
+
+**Current status:** Theorem 1.1 is proved without development holes or additional
+analytic assumptions. The independent Challenge retains its specification hole.
+See the [README](README.md) for the current theorem and verification instructions,
+and [verification evidence](docs/verification.json) for completed checks.
+
+## Earlier status
 
 The goal is the exact Theorem 1.1 of `docs/falconer-theta-gauge-proof.pdf`.
 The project is public at https://github.com/CoolRmal/falconer-theta-gauge.

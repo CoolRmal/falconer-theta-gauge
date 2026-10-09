@@ -49,7 +49,15 @@ sources:
       and responsible maintainer. Source SHA-256:
       820db3291bf9ebc45ea67abf597f60d46c127ab2844e2eea8c3754c81e284fb3.
 
-related_formalizations: []
+related_formalizations:
+  - id: "https://github.com/CoolRmal/falconer-packing/tree/70140ccedfb6de71342299523a21b1550df69ab9"
+    relationship: "adapts"
+    note: >-
+      Foundational modules adapt proved code from Yongxi Lin's Apache-2.0
+      Falconer packing development at this immutable revision. The module
+      correspondence and retained notices are recorded in docs/ATTRIBUTION.md.
+      The scale-dependent gauge estimates and target theorem are proved here;
+      the fixed-parameter theorem is not assumed.
 
 status:
   scope: >-
