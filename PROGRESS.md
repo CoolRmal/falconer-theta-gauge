@@ -68,6 +68,28 @@ Challenge has one specification hole. No helper definitions or lemmas may use ho
   weak limits with uniformly bounded positive logarithmic moments, and finite
   lower Orlicz moments for the actual RN density from a stronger uniform bound.
 
+- `RadialProjectionLimit*/Endpoint/Preparation/Spread*.lean`: the actual
+  target-specific endpoint is assembled from smoothing, joint weak limits,
+  the averaged orthogonal estimate, and the gauge's energies at every order.
+  Borel bounded good-pin sets and compact quarter-mass restrictions prove a
+  common finite eighth-order radial moment at every retained carrier pin in
+  both directions, preserving gauge and separation (Proposition 5.6(c)).
+  The source's general single-order Theorem 5.4 is not claimed separately.
+- `RegularMeasureExcessCount/Entry*.lean`: actual descendant counts (5.2),
+  exact entry depth and all Lemma 9.2 bounds, finite minimum budgets and
+  constructed split gains, and actual contributing tube/projection records
+  and scheduled test lists with the exact `N²` cardinal bound (8.3(b,c)).
+- `OrliczSmallSet.lean`: the true logarithmic small-set cutoff bound and the
+  exact inverse-eighth-power filter budget estimate for actual densities.
+- `RegularFunctions/Nonstationary*.lean` and `LinearPhase.lean`: exact finite
+  derivative regularity under products, support-local reciprocal bounds,
+  polynomial-order repeated integration by parts on the line and over a
+  period, and the sharp linear-phase bound with scales below one allowed.
+- `ExplicitBump*.lean`: for any finite derivative order, an actual smooth,
+  even, nonnegative, compact probability bump with the exact factorial L¹
+  derivative bound. The construction uses finitely many normalized box
+  convolutions and a smooth tail; no infinite-product theorem is claimed.
+
 ## Verification and publishing
 
 Pinned Lean: `leanprover/lean4:v4.35.0-rc2`.
@@ -83,13 +105,10 @@ skeleton as a completed proof.
 
 ## Next concrete mathematical work
 
-1. Complete Theorem 5.4: actual smooth radial joint measures, weak convergence,
-   and transfer from the completed averaged orthogonal-projection Orlicz bound.
-   Since the gauge supplies every logarithmic energy, stronger Orlicz bounds can
-   replace Dunford--Pettis/Mazur with an open-set uniform-integrability limit
-   argument, if the resulting exact endpoint theorem is proved.
-2. Implement mask geometry, four energy
-   estimates, budget scheduling and induction, and final shell estimate. The
+1. Implement actual directional test geometry and masks, weighted filtered
+   distance measures with their removed-mass bound, and stationary phase.
+2. Prove the four uniform energy estimates, complete the move-chain induction,
+   and obtain the final shell estimate. The
    existing fixed-parameter Falconer development cannot simply be retuned.
 3. Remove the sole Main proof hole, pass sandboxed Comparator on the exact public
    commit, complete truthful metadata, run full Palomar preflight, retrieve the

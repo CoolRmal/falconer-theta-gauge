@@ -17,6 +17,9 @@ at commit `70140ccedfb6de71342299523a21b1550df69ab9`:
 | Convolution estimates and low-pass approximation | `SchwartzMeasureReconstruction` |
 | Measure Fourier identities and L² pairing | `FourierDensity` |
 | Gaussian Fourier duality | `GaussianEnergy` |
+| Support-local integration by parts | `NonstationaryPhase` |
+| Real-to-complex iterated derivative identity | `NonstationaryPhaseBounds` |
+| Smooth reciprocal constructor | `RegularizedReciprocal` |
 
 Original copyright and author notices are retained in adapted modules.
 The gauge-dependent estimates, exact parameter budgets, logarithmic energy

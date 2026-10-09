@@ -68,6 +68,22 @@ FOUNDATIONS = (
     "FalconerThetaGauge.measure_rnDeriv_tail_le",
     "FalconerThetaGauge.weak_limit_orlicz_density",
     "FalconerThetaGauge.regularMeasureExcess_normalizedRestrict_properties",
+    "FalconerThetaGauge.occupiedCellDescendants_count_le",
+    "FalconerThetaGauge.regularDyadicPartMeasure_excess_properties",
+    "FalconerThetaGauge.regularDyadicPart_entry_properties",
+    "FalconerThetaGauge.profileSplitPoint_right_budget_gain",
+    "FalconerThetaGauge.profileSplitPoint_left_budget_gain",
+    "FalconerThetaGauge.profileScheduledTests_card_le_scale_sq",
+    "FalconerThetaGauge.lintegral_orliczPhi_angularLineDensity_pinProjection_le",
+    "FalconerThetaGauge.ae_radialProjection_orlicz_density_of_approximating_sources",
+    "FalconerThetaGauge.ae_radialProjection_orlicz_density_prepared",
+    "FalconerThetaGauge.exists_prepared_probabilityMeasures_uniform_radial_orlicz",
+    "FalconerThetaGauge.withDensity_filter_bad_directions_of_budget",
+    "FalconerThetaGauge.norm_iteratedDeriv_reciprocal_le",
+    "FalconerThetaGauge.nonstationary_phase",
+    "FalconerThetaGauge.nonstationary_phase_periodic",
+    "FalconerThetaGauge.linear_phase",
+    "FalconerThetaGauge.integral_norm_iteratedDeriv_explicitBump_le",
 )
 DECLARATION_NAME = re.compile(r"[A-Za-z_][A-Za-z_0-9']*(?:\.[A-Za-z_][A-Za-z_0-9']*)*")
 AXIOM_REPORT = re.compile(

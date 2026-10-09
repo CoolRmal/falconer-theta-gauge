@@ -57,6 +57,15 @@ averaged logarithmic Orlicz estimate. The radial development
 includes the exact weighted polar identity, its smooth Orlicz transfer, and
 absolute continuity of weak limits under uniform logarithmic bounds, with
 finite lower Orlicz moments for their actual Radon–Nikodym densities.
+The target-specific radial endpoint is assembled using the gauge's finite
+energies at every logarithmic order. Compact quarter-mass restrictions give
+a common eighth-order radial moment bound at every retained pin in both
+directions, proving the spread requirement of Proposition 5.6(c).
+Actual occupied-descendant counts, entry-depth bounds, split budget gains,
+and finite scheduled test lists with at most `N²` tests are also proved.
+The nonstationary and linear phase bounds have explicit constants, including
+the periodic version. For each finite derivative order, a genuine smooth even
+probability bump has the required factorial L¹ derivative estimates.
 
 The summable reconstruction foundation proves that dyadic frequency shells
 overlap at most three times, obtains the finite-overlap quadratic L² bound,
@@ -102,9 +111,9 @@ Such a run is not a Palomar mechanical report.
 
 ## Completion and Palomar
 
-The remaining work includes the orthogonal-projection Orlicz density estimate,
-the endpoint radial estimate, quantitative regular decomposition,
-the four uniform energy estimates, and the budget induction and final assembly.
+The remaining work includes the actual directional test geometry and masks,
+filtered-measure mass estimates, the stationary phase expansion, the four
+uniform energy estimates, and the budget induction and final assembly.
 The fixed-parameter packing development does not establish these estimates
 when the parameters shrink with the terminal scale.
 

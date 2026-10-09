@@ -311,8 +311,8 @@ Portmanteau transfers this estimate to a weak probability limit. Outer
 regularity extends it from open sets to arbitrary sets. Letting the cutoff
 grow proves absolute continuity of the limit. A uniform moment of order two
 greater than the desired exponent also gives finite lower Orlicz moments for
-the limit's actual Radon--Nikodym density. The full radial endpoint and
-prepared spread-direction bounds are still under construction.
+the limit's actual Radon--Nikodym density. The target-specific radial endpoint
+and uniform spread preparation are now assembled below.
 
 \newpage
 \section*{Verified regular decomposition}
@@ -377,10 +377,149 @@ g(n)-\kappa\le A(n)\le\frac nN.
 \]
 The upper bound follows from the Lipschitz bound and $A(0)=0$.
 
+\newpage
+\section*{Verified radial endpoint and uniform spread}
+
+The gauge supplies every logarithmic energy order. Smooth compact probability
+approximations contract their Fourier energies and stay in a common carrier
+separated from the pins. The averaged orthogonal estimate and the exact
+smooth polar identity bound the actual joint radial densities at a stronger
+Orlicz order. Their joint measures converge weakly; the proved Orlicz limit
+argument identifies the actual Radon--Nikodym density of the limit. Thus the
+prepared radial projections are absolutely continuous and have finite moments
+at every desired order for almost every pin. This target-specific argument
+uses stronger energies than the general single-order Theorem 5.4.
+
+Write the eighth-order radial moment as
+
+\[
+Q(x)=\int_{S^1}\Phi_8(F_x(w))\,dw,
+\qquad \Phi_8(t)=t\log^8(e+t).
+\]
+
+
+Joint measurability makes the good-pin sets with bounded moment Borel. Since
+these sets exhaust a full-measure set, one has mass greater than one half.
+Inner regularity gives a compact subset with original mass greater than one
+quarter. Restrict and normalize both sources to these compact sets. Each
+restricted radial measure is at most four times its original radial measure;
+the actual Radon--Nikodym densities satisfy the same domination almost everywhere.
+The elementary scaling estimate is proved:
+
+\[
+\Phi_8(4t)\le4(1+\log4)^8\Phi_8(t),\qquad t\ge0.
+\]
+
+
+A common finite bound therefore holds at \textbf{every} retained pin in both
+directions. The new probabilities retain the small separated discs, actual
+compact carriers, and all logarithmic energies. Their common gauge constant
+increases by at most four. This proves the uniform spread requirement of
+Proposition 5.6(c), with the actual radial densities.
+
+The logarithmic small-set estimate is also proved for actual densities:
+
+\[
+\int_ZF\le H|Z|+K(\log H)^{-8},\qquad H>1.
+\]
+
+
+For the manuscript's bad-direction length budget, choosing its inverse square
+root gives the exact bound by a dyadic exponential plus an inverse eighth
+power. Actual test geometry and filtered-measure loss are still required
+before this becomes Lemma 6.13.
+
+\newpage
+\section*{Verified entry depth and finite test schedule}
+
+Actual regular-part cell masses now give the source's occupied-descendant
+count, rather than a postulated counting bound. The entry depth is the last
+integer depth at which the actual excess is at most the gain:
+
+\[
+c=\max\{n\le N:A(n)\le\beta\}.
+\]
+
+
+The exact parameter facts and gauge lower barrier prove all the entry bounds
+of Lemma 9.2, including the post-entry budget:
+
+\[
+\lfloor\beta N\rfloor\le c<N/4,\qquad 100q<N-c,
+\qquad A(n)>\beta-1/N\quad(c\le n\le N),
+\]
+
+
+\[
+V([c,N])\ge2\beta-2/N,\qquad k_c[0,c]\le\beta+\kappa.
+\]
+
+
+The finite interval minima define the actual trimmed budget. Its inclusion
+monotonicity and split gains are proved from actual minimum plateaux. The
+constructed split uses marked block minimizers and gives the length margins
+that pay the positive costs of the three moves.
+
+Contributing tube and projection tests are concrete finite records with
+anchors, endpoints and lengths. Their scheduled lists run over the actual
+long subintervals, are monotone under interval inclusion, and retain each
+contributing origin. Anchor depths lie in the constructed marks and every
+length is at most half its origin's length. The mark count and the exact
+parameter budget give at most $N^2$ tests per list, proving Lemma 8.3(b,c).
+This is finite schedule arithmetic; the analytic move estimates and chain
+induction remain to be proved.
+
+\newpage
+\section*{Verified uniform nonstationary estimates and smooth bumps}
+
+For a smooth amplitude with derivative bounds
+
+\[
+\|a^{(j)}\|_\infty\le A M^j\quad(j\le K),\qquad M\ge1,
+\]
+
+
+assume the actual phase derivative has norm at least a positive number
+on an open neighborhood of the amplitude's closed support, and its higher
+derivatives through order $k+1$ have norm at most a common constant. A globally
+smooth regularized reciprocal agrees with the true inverse there. Exact
+Leibniz coefficients and factorial bounds give the source's polynomial base:
+
+\[
+\left|\int e^{i\phi}a\right|
+\le |\operatorname{supp}a|\,A
+\left(\frac{2(k+1)^2\max\{M,\Lambda/\lambda\}}{\lambda}\right)^k.
+\]
+
+
+The smooth compact real-line form and the smooth periodic form are both
+proved. For the latter, endpoint terms cancel over an actual period, and its
+length replaces the support length. For a linear phase, the transported
+amplitude is exactly the k-th derivative times the k-th power of the constant
+inverse slope; the sharper base M divided by the slope lower bound allows
+$M$ below one. No unspecified order-dependent derivative constants are used.
+
+For every finite order $K$ there is a genuine smooth, nonnegative, even
+probability bump with compact support in $[-1,1]$ and
+
+\[
+\int_{\mathbb R}|\omega_K^{(k)}(x)|\,dx
+\le(\pi^2/6)^k(k!)^2,\qquad 0\le k\le K.
+\]
+
+
+Its construction convolves normalized boxes of half-widths $6/(\pi^2 j^2)$,
+with a smooth probability tail inside the remaining
+support radius. The fundamental theorem of calculus differentiates each box
+average into its boundary difference. The $L^1$ cost is exactly the inverse box
+width, giving the factorial product. The Basel identity makes the remaining
+radius positive. This finite-order construction suffices for the later
+finite-order masks; an infinite-product identity is not claimed.
+
 \section*{Remaining analytic work and verification}
-The proof still needs the radial endpoint assembly,
-spread-direction preparation, four uniform
-energy estimates, and the multiscale budget induction. Fixed-parameter
+The proof still needs actual directional tests and masks, filtered-measure
+mass estimates, stationary phase, four uniform energy estimates, and the
+multiscale budget induction. Fixed-parameter
 estimates need proved uniform dependence before use at shrinking parameters.
 
 The main theorem currently has one explicit proof hole. Comparator permits
