@@ -827,6 +827,142 @@ passing ≤ masked ≤ next-level passing measures. This instantiates the bridge
 at s=t−εN and proves Lemma 7.4 with its source constant. The four nontrivial
 energy estimates are the next analytic assembly.
 
+## Concrete scheduled symbols and spatial separation
+
+The symbol class is the actual finite product of normalized angular mask
+derivatives, multiplied by a Borel spatial weight bounded by one. Its order
+is the sum of the derivative orders. Measurability, the bound by one, and the
+next-level passing implication follow from these actual factors.
+
+To differentiate symbols of initial order at most 2T up to another 6T times,
+the construction chooses the finite bump order K=8T. The existing 6T bounds
+remain valid. Each true derivative has a finite Leibniz expansion into symbols
+of the increased order, with total coefficient magnitude at most
+
+$$
+M_L^j,\qquad M_L=128T^2|L|\max(1,2^{\max\operatorname{length}(L)-\varepsilon N}).
+$$
+
+Dropping reached factors contracts the actual Fourier energy. The state
+energies in Definition 8.4 are genuine suprema and finite cell maxima of these
+actual energies; their trivial bounds follow from the actual cell masses.
+
+For balls of radius ρ with centers x₀,y₀ separated by D≥50ρ, the genuine
+inverse-distance power has a uniformly convergent separated polynomial series
+
+$$
+|x-y|^{-j}=\sum_{n=0}^{\infty}\gamma_n p_n(x)q_n(y),\qquad
+|p_n(x)|,|q_n(y)|\le1,\qquad
+\sum_n|\gamma_n|\le(\sqrt2/D)^j.
+$$
+
+Absolute convergence and uniform convergence on the product of the closed
+balls are proved. This is stronger than the coefficient constant in Lemma 3.9.
+
+The short terminal-state bounds are also actual energy estimates. For a true
+move chain whose final interval has length at most 100κN, its actual multiplier
+product pays the final energy at every mask level:
+
+$$
+\mathrm{Mult}(\mathrm{chain})\,
+\mathcal E_\rho(\mathrm{final})
+\le2^{N(-V(\mathrm{root})+225\kappa)}.
+$$
+
+This follows from the actual excess bounds and the proved chain cost; no
+terminal-energy bound is assumed.
+
+## One-sided inversion for the actual masks
+
+The prepared cutoff equals one near the true pair directions and vanishes
+near their opposite directions. Thus the opposite stationary series vanishes
+term by term. The finite P/Q convolution leaves exactly the high-order tail.
+The correct complex normalization is
+
+$$
+c_1=(\sqrt{2\pi})^{-1}e^{-i\pi/4}.
+$$
+
+For the actual pair of scheduled symbols, the proved pointwise inversion is
+
+$$
+\left|d^{-1/2}e^{-ird}B(\varphi)-c_1\sqrt r
+\sum_{j<T}(rd)^{-j}\int_u^{u+2\pi}e^{-ird\cos(t-\varphi)}
+\psi_\Gamma(t)Q_jB(t)\,dt\right|\le2^{-200N}.
+$$
+
+Here d>0, r>0, the true direction lies in Γ, and the source frequency,
+list-length, cardinality and terminal-distance conditions hold. The actual
+symbol derivative scale satisfies the needed frequency and terminal budgets,
+including an empty list. ParameterFacts proves the geometric ratio bound
+
+$$
+\varpi\le2^{-7\varepsilon N/8},\qquad
+\varpi^T\le2^{-210N}.
+$$
+
+The proof retains the square-root normalization in the stationary remainder.
+No pointwise inversion result is supplied as a hypothesis.
+
+## Actual bilinear Cauchy–Schwarz and countable expansions
+
+For the actual Fourier amplitudes U_X,U_Y, a measurable circle weight bounded
+by one, and r>0, define the literal integral
+
+$$
+Z(r)=\sqrt r\int\psi(w)U_X(r,w)\overline{U_Y(r,w)}\,dw.
+$$
+
+The actual circular Cauchy–Schwarz inequality, including zero cell masses, gives
+
+$$
+|Z(r)|^2\le\rho(X)\rho(Y)\,\sigma_X(r)\sigma_Y(r)/r.
+$$
+
+The genuine smooth frequency window equals one on [2ᵛ/2,2·2ᵛ]. Integration
+of this inequality on that interval is bounded by 2ρ(X)ρ(Y)F_X,Y(v).
+For actual measurable coefficients |cₙ(r)|≤aₙ with nonnegative summable aₙ,
+the countable extension proves convergence and the integrated estimate
+
+$$
+\int_{2^{v-1}}^{2^{v+1}}\left|\sum_n c_n(r)Z_n(r)\right|^2dr
+\le2\rho(X)\rho(Y)\left(\sum_n a_n\right)
+\left(\sum_n a_nF_n(v)\right).
+$$
+
+Dominated convergence justifies the genuine countable series and integral
+interchange. These are completed analytic tools for Step 3 of Estimate 7.5;
+its full spatial and operator assembly remains.
+
+## Equal arcs, genuine links, and Schur's bound
+
+For 0<ℓ≤1, M=⌈2π/ℓ⌉ equal periodic cells have actual width w=2π/M satisfying
+ℓ/2≤w≤ℓ and M≤8/ℓ. The literal source cutoffs are
+
+$$
+\chi_k=1_{A_k}*\omega_{w/4},\qquad \sum_k\chi_k=1,\qquad
+|\chi_k^{(j)}|\le(576T^2/\ell)^j\quad(j\le6T).
+$$
+
+Their actual support lies within chord distance ℓ of the arc center. The
+quarter turn is the genuine planar right-angle isometry. True dyadic cell
+centers and actual points satisfy the necessary phase replacement bounds.
+For the manuscript's ℓ=min(1,2⁻ᵖ/2⁻ᵃ·2ᴱ), τ=2⁻ᵖ·2³ᴱᐟ² and 2ᴱᐟ²≥12,
+an unlinked pair of cell pairs has either a radial phase or one of the two
+angular phase derivatives of magnitude greater than τ/2.
+
+For any actual finite symmetric linking graph with row degree at most D,
+Schur's argument proves
+
+$$
+\left\|\sum_\alpha z_\alpha\right\|^2\le
+D\sum_\alpha\|z_\alpha\|^2+
+\sum_{\alpha\not\sim\beta}|\langle z_\alpha,z_\beta\rangle|.
+$$
+
+All unlinked inner products are retained explicitly. Their oscillatory bounds
+and the few-links count still need assembly to complete Estimate 7.6.
+
 ## Remaining proof obligations
 
 The manuscript's proof still requires the four uniform energy recurrences

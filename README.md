@@ -88,7 +88,15 @@ has its exact support and derivative budgets. Actual masked Fourier and
 distance energies satisfy the source trivial and reached-mask bounds. The
 weighted distance Fourier transform and a genuine low/high dyadic bridge are
 proved, including the literal next-level mask sandwich and Lemma 7.4 with
-constant 320. The four nontrivial analytic energy estimates remain.
+constant 320. The actual scheduled symbol class now has a finite derivative expansion,
+coefficient budget, reached-factor energy contraction, and actual state-energy
+maxima. Prepared one-sided circular inversion has its correct complex constant
+and a proved terminal error for these actual symbols. The spatial inverse-power
+series is genuinely separable with bounded polynomial factors and summable
+coefficients. Finite and countable circular Cauchy–Schwarz estimates control the
+actual bilinear integrals by the actual masked energies. Equal-arc convolutions,
+finite Schur bounds, and pointwise phase separation for unlinked cells are
+proved. The four complete analytic energy estimates remain.
 
 The summable reconstruction foundation proves that dyadic frequency shells
 overlap at most three times, obtains the finite-overlap quadratic L² bound,
@@ -136,9 +144,8 @@ Such a run is not a Palomar mechanical report.
 
 ## Completion and Palomar
 
-The remaining work includes the full circular stationary expansion,
-inverse-operator numerical bounds, the four
-energy estimates, and their induction and final shell assembly.
+The remaining work includes assembling the four complete energy estimates
+from these analytic tools, their induction, and the final shell assembly.
 The fixed-parameter packing development does not establish these estimates
 when the parameters shrink with the terminal scale.
 
