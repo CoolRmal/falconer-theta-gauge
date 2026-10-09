@@ -110,6 +110,12 @@ lists. The genuine weighted tree telescopes with all path multiplicities,
 reducing its bound to the remaining full space-splitting recurrence.
 The actual global filtered annulus is a finite mixture with its original
 retained-piece masses and actual self-energy averages.
+The actual root energy has its proved entry jump. The entry-state bound,
+full source annulus decay and reconstruction now follow conditionally on
+the remaining space-splitting recurrence. Exact stationary-main product
+algebra, both equal-sign source bounds, actual Case A cancellation,
+the averaged circular remainder and the Case B passing kernel are proved.
+Literal distance bins and weighted-kernel depth regrouping are also proved.
 
 The summable reconstruction foundation proves that dyadic frequency shells
 overlap at most three times, obtains the finite-overlap quadratic L² bound,
@@ -158,8 +164,9 @@ Such a run is not a Palomar mechanical report.
 ## Completion and Palomar
 
 Estimates 7.5, 7.6 and 7.7 and actual induction Moves 1--3 are proved.
-The remaining work includes the full Estimate 7.8, the root-to-entry
-self-energy estimate and the final frequency-shell decay. The actual
+The remaining work is to assemble full Estimate 7.8 and discharge its
+actual state recurrence. The root-to-entry estimate is proved, and the final
+frequency-shell decay and reconstruction follow from that recurrence. The actual
 terminal-tree contributions and accumulated small errors already satisfy
 their budget bounds, and the weighted tree telescope is proved with an
 explicit hypothesis for the outstanding space-splitting recurrence.

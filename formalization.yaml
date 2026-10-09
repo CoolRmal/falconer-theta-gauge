@@ -37,7 +37,12 @@ project:
     Schur bound are proved. Actual induction Moves 1--3 and the weighted
     multiplicity-preserving tree telescope are proved. The global filtered
     annulus has its exact original-mass regular-piece mixture bound.
-    Full Estimate 7.8 and final frequency-shell decay remain unfinished.
+    The actual root-to-entry bound is proved. Source shell decay and final
+    reconstruction are proved conditionally on the remaining space-splitting
+    recurrence. Exact double stationary-main expansion, equal-sign source
+    decay, Case A cancellation, averaged circular remainders, the Case B
+    passing kernel and weighted distance-kernel regrouping are proved.
+    Full Estimate 7.8 and its actual state recurrence remain unfinished.
   authors:
     - "Yongxi Lin"
   license: "Apache-2.0"

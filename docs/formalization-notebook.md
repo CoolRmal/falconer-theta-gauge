@@ -1312,17 +1312,96 @@ times its genuine fine-cell energies plus the actual far cross integrals.
 The remaining sign and remainder estimates and scalar collision regrouping
 must still control those far cross integrals.
 
+## Actual entry estimate and conditional reconstruction
+
+The retained root self energy now has a proved jump to the actual entry
+state. With the true entry depth c and original gain parameter beta,
+
+$$
+F_t\le R^{\beta+\kappa+12\varepsilon}
+\mathcal E_0(c,N,c,N)+R^{-80}.
+$$
+
+The actual tree and gauge budget, conditional only on the remaining
+space-splitting recurrence for that retained probability, give
+
+$$
+\mathcal E_0(c,N,c,N)\le R^{-2\beta+227\kappa+2/N}.
+$$
+
+Weakening 227 to the source's 300 and closing the exact original-mass
+mixture proves the genuine full symmetric annulus estimate
+
+$$
+\operatorname{Annulus}_N(\alpha_N)\le R^{-\beta/3}.
+$$
+
+The exact 8T filters have proved domination, finite mass and summable
+removed mass. The closed dyadic shells agree with the full annuli almost
+everywhere. Stretched-gain summability and the proved reconstruction lemma
+then give absolute continuity of the original weighted distance measure.
+This entire final chain still explicitly depends on actual Move 4 at each
+retained piece and scale; that analytic input is not yet discharged.
+
+## Exact two-circle stationary main product
+
+The actual full-circle stationary main is the literal sum of its two
+signs with their square-root prefactor. Its radial product uses
+
+$$
+\sqrt{\frac{2\pi}{rd_x}}\sqrt{\frac{2\pi}{rd_y}}r
+=\frac{2\pi}{\sqrt{d_xd_y}}.
+$$
+
+The opposite phases cancel their quarter-circle constants; the equal
+phases contribute respectively i and minus i. Finite expansion and
+integrability of the actual cutoff-normalized integer powers prove
+
+$$
+\int_{\mathbb R}2^{-v}\Psi(r/2^v)r^2 M_x(r)M_y(r)\,dr
+=\mathcal K_{\mathrm{opp}}+\mathcal K_{\mathrm{equal}}.
+$$
+
+Every term has the literal radial exponent 1-j-k. The opposite series
+is exactly the already bounded passing collision kernel; the two equal
+series have moments at d_x+d_y and minus that sum. No stationary-product
+identity or energy inequality is assumed as a hypothesis in this step.
+
+## Actual equal-sign source decay
+
+Repeated linear cancellation applies to both genuine sum-distance
+moments. The scaled stationary coefficients are at most the geometric
+sequence (1/4) to their respective orders. For the actual parameter
+budget the radial cancellation ratio satisfies
+
+$$
+\left(\frac{1200T^2}{2^v d_x}\right)^T\le R^{-450}.
+$$
+
+The common coefficient and radial prefactor is at most R to the fifth
+power, and each complete equal-sign term is at most R to minus 400.
+The actual count of the two finite double series obeys
+
+$$
+2T^2\le R,\qquad |\mathcal K_{\mathrm{equal}}|\le R^{-390}.
+$$
+
+These are proved for the actual built symbols under the literal far
+geometry and parameter hypotheses. All declarations in the exact
+main-product and equal-sign modules have been checked for standard axiom
+dependencies only.
+
 ## Remaining proof obligations and verification
 
 Estimates 7.5, 7.6 and 7.7, actual Moves 1--3, exact mixture identities and
 the genuine weighted tree telescope are proved. Full Estimate 7.8, the
-root-to-entry energy decay and final shell reconstruction remain to be
-assembled. The main target's sole hole is absolute continuity of its actual
+the source shell decay and final reconstruction are proved conditionally
+on its remaining actual recurrence. The main target's sole hole is absolute continuity of its actual
 prepared weighted distance source.
 
-The hosted check on public commit 74484c4 compiled the development in
-3862 jobs and audited 638 declarations. Only the main theorem used
-sorryAx. Sandboxed Comparator built the export in 3859 jobs and rejected
+The hosted check on public commit 886a9d8 compiled the development in
+3895 jobs and audited 784 declarations. Only the main theorem used
+sorryAx. Sandboxed Comparator built the export in 3892 jobs and rejected
 that same forbidden axiom. No successful independent proof replay is
 claimed. Later source changes require a new run.
 
