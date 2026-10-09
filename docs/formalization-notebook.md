@@ -1,6 +1,6 @@
 # Theorem 1.1: formal statement and verified foundations
 
-October 8, 2026. This notebook records an incomplete formalization. The main
+October 9, 2026. This notebook records an incomplete formalization. The main
 theorem remains a proof obligation and is not comparator certified.
 Author and responsible maintainer: Yongxi Lin.
 
@@ -399,8 +399,8 @@ $$
 
 For the manuscript's bad-direction length budget, choosing its inverse square
 root gives the exact bound by a dyadic exponential plus an inverse eighth
-power. Actual test geometry and filtered-measure loss are still required
-before this becomes Lemma 6.13.
+power. The finite-test weighted loss is now proved below; the full construction
+still needs the assembly of each regular piece's own test list.
 
 ## Verified entry depth and finite test schedule
 
@@ -435,8 +435,8 @@ long subintervals, are monotone under interval inclusion, and retain each
 contributing origin. Anchor depths lie in the constructed marks and every
 length is at most half its origin's length. The mark count and the exact
 parameter budget give at most **N²** tests per list, proving Lemma 8.3(b,c).
-This is finite schedule arithmetic; the analytic move estimates and chain
-induction remain to be proved.
+The actual chains and finite trees are now constructed below. Their analytic
+energy recurrences remain to be proved.
 
 ## Verified uniform nonstationary estimates and smooth bumps
 
@@ -481,14 +481,162 @@ width, giving the factorial product. The Basel identity makes the remaining
 radius positive. This finite-order construction suffices for the later
 finite-order masks; an infinite-product identity is not claimed.
 
+## Verified directional masks and weighted filter loss
+
+The tube count uses actual occupied dyadic cell centers in the literal
+Euclidean tube. The projection count uses actual pair coincidence under
+the normalized anchor-cell restriction. Both are measurable and antipodally
+symmetric. Markov's inequality gives the exact failure length
+
+$$
+|\mathrm{Bad}_{\mathrm{test}}|\le2\pi\,2^{-2\varepsilon N}.
+$$
+
+Convolving the indicator of a closed neighborhood of an arbitrary passing
+set with the finite-order bump gives an actual smooth mask between zero and
+one, equal to one on the passing set. Periodic descent gives a function on
+the circle. A finite partition into occupied anchor cells proves joint
+measurability in the pin and direction. Its angular derivative bounds are
+
+$$
+\|b^{(k)}\|_\infty\le\left(\frac{(4T)^3}{\sigma}\right)^k,
+\quad k\le6T,\qquad \sigma=\min\{1,2^{-\ell}R^\varepsilon\}.
+$$
+
+The weighted distance source and its masked versions are literal measures:
+
+$$
+\alpha=\operatorname{dist}_\#\bigl(|x-y|^{-1/2}(\mu_1\times\mu_2)\bigr),
+\qquad
+\tau_N=\operatorname{dist}_\#\bigl(M_N(x,y)|x-y|^{-1/2}
+(\mu_1\times\mu_2)\bigr).
+$$
+
+On the prepared carriers, the weight lies between one and 2.1. Finite lists
+of at most N²+1 genuine tests give a Borel pair mask. The proved regular
+decomposition supplies the actual carrier defects. The Orlicz estimate then
+proves domination and the exact summable removed-mass bound:
+
+$$
+\tau_N\le\alpha,\qquad (\alpha-\tau_N)(\mathbb R)\le a_N,
+$$
+
+$$
+a_N=2.1\left(4R^{-\kappa/4}
++2\left[3(N+1)R^{-\varepsilon}+2^8K(\varepsilon N)^{-8}\right]\right),
+\qquad \sum_N a_N<\infty.
+$$
+
+These statements consume actual finite filter data. The scheduled-test
+constructor supplies such data on occupied anchors; the full union across
+regular pieces and their individual lists remains to be assembled.
+
+## Verified actual chains, trees, and scalar binning
+
+The six actual move types have explicit child states. Every move strictly
+decreases the interval width, so unfolding terminates. Nodes are genuine
+chains with proved transitions. A multiset version preserves multiplicities
+when several paths reach the same state. Exact parameter budgets prove
+
+$$
+\#\mathrm{ordinary\ moves}\le7/\kappa,\qquad
+\#\mathrm{all\ moves}\le7/\kappa+1/\varepsilon,\qquad
+\#\mathrm{tree\ visits}\le R^\kappa.
+$$
+
+The actual chain costs telescope against the constructed interval minima.
+For every depth n in its final interval, including short final intervals,
+
+$$
+\sum\mathrm{cost}\le2A(n)+22\kappa-V(\mathrm{root}),\qquad
+\prod\mathrm{multiplier}\le R^{\sum\mathrm{cost}+2\kappa}.
+$$
+
+Mask levels remain below the source's finite derivative-order bounds. The
+literal entry-piece list has at most N²+1 tests, includes the entry tube, and
+drops precisely that tube when restricted above the entry depth. The
+numerical energy-closing and final-shell inequalities are proved from the
+exact parameter facts. Analytic recurrences for the four actual energies
+are still required before the tree can prove their estimates.
+
+For a finite positive measure on the line, write
+
+$$
+C_\eta(h,u)=(\eta\times\eta)\{|s-t-u|\le h\},\qquad h>0.
+$$
+
+Actual half-open bins form a disjoint measurable partition. Discrete
+Cauchy--Schwarz gives the manuscript's first three binning estimates:
+
+$$
+C_\eta(h,u)\le4C_\eta(h,0),\qquad
+C_\eta(Lh,0)\le(2L+1)C_\eta(h,0)\quad(L\in\mathbb N),
+$$
+
+$$
+\iint(1+|s-t|/h)^{-2}\,d\eta(s)d\zeta(t)
+\le10\sqrt{C_\eta(h,0)C_\zeta(h,0)}.
+$$
+
+The decaying-kernel argument uses an actual summable integer-shift majorant.
+The Fourier part of Lemma 7.3 remains separate.
+
+## Verified quadratic phase and circular Morse substitution
+
+The quadratic Fourier identity is proved by a genuine complex Gaussian,
+followed by dominated convergence as the positive damping tends to zero.
+The complex square-root branch is evaluated exactly. The purely imaginary
+Taylor remainder has the sharp factorial bound, with no exponential loss.
+Every required Fourier moment is an actual integrable Schwartz derivative.
+Two adjacent derivative norms give an integrable Cauchy majorant of total
+mass one half in Mathlib's normalized frequency variable.
+
+For Schwartz amplitudes, and therefore for smooth compact amplitudes, the
+source's exact expansion and error are proved in both signs:
+
+$$
+\int e^{i\Lambda s^2/2}g(s)\,ds
+=\sqrt{2\pi/\Lambda}\,e^{i\pi/4}
+\sum_{j<T}\frac{(i/(2\Lambda))^j}{j!}g^{(2j)}(0)+E,
+$$
+
+$$
+|E|\le\sqrt{2/\Lambda}\,\frac{(2\Lambda)^{-T}}{T!}
+\bigl(\|g^{(2T)}\|_1+\|g^{(2T+2)}\|_1\bigr),\qquad \Lambda>0.
+$$
+
+This checkpoint claims the smooth-amplitude version used by the constructed
+masks; the manuscript's full finite-regularity version is not claimed.
+The literal circular coordinate and its Jacobian satisfy
+
+$$
+\vartheta(s)=2\arcsin(s/2),\qquad
+\vartheta'(s)=(1-s^2/4)^{-1/2},\qquad
+\cos\vartheta(s)=1-s^2/2.
+$$
+
+If a smooth cutoff vanishes outside the angular interval of radius π/3,
+the actual transformed product with the Jacobian is smooth and supported
+in [-1,1]. An ordinary integral substitution identifies the localized
+cosine integral with its quadratic integral. Its finite expansion follows
+with the actual derivatives of this compact amplitude. Universal real
+coefficients are defined by finite Leibniz and Faà di Bruno sums of the
+literal coordinate derivatives. The positive and conjugate operators have
+proved exact scaled derivative identities, constant term one, and degree at
+most 2j. Their uniform numerical coefficient bounds and the amplitude
+derivative bounds remain to be proved.
+
 ## Remaining proof obligations
 
-The manuscript's proof still requires actual directional tests and masks,
-filtered-measure mass estimates, stationary phase, four uniform energy
-estimates, and the multiscale budget induction. Fixed-parameter theorems cannot be used at
+The manuscript's proof still requires the common short direction arc,
+directional widening and average counts, whole-piece filter assembly,
+uniform circular stationary bounds, Fourier binning, and four uniform energy
+recurrences and their shell assembly. Fixed-parameter theorems cannot be used at
 scale-dependent parameters without proving the needed uniform dependence.
 
-The main target has one explicit proof hole. Comparator permits only
+The main target now uses the proved preparation and the actual weighted
+distance carrier. Its one explicit hole is absolute continuity of the
+weighted distance source. Comparator permits only
 `propext`, `Quot.sound`, and `Classical.choice`, so it must reject the current
 target's dependence on `sorryAx`. Registration on Palomar requires the completed
 proof, successful verification of the exact public commit, truthful metadata,

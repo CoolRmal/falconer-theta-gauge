@@ -89,6 +89,46 @@ Challenge has one specification hole. No helper definitions or lemmas may use ho
   even, nonnegative, compact probability bump with the exact factorial L¹
   derivative bound. The construction uses finitely many normalized box
   convolutions and a smooth tail; no infinite-product theorem is claimed.
+- `ExplicitBumpScale/Cutoff/Periodic/Circle/Partition.lean`: actual convolution
+  masks of closed neighborhoods of arbitrary passing sets, periodic angular
+  descent, finite Borel pin partitions, and the exact derivative budget
+  `((4T)^3/σ)^k` through order `6T`.
+- `DirectionalTestsMarkov/Tube/Projection/Records/Filter.lean`: literal line
+  tubes, occupied-cell counts, normalized anchor projection coincidences,
+  exact Markov bad-direction lengths, actual finite scheduled filters, joint
+  measurability, and smooth angular masks. Per-piece whole-carrier assembly
+  and directional widening/average-count estimates remain.
+- `FilteredDistanceMeasure*.lean`: the actual inverse-square-root weighted
+  product-distance source, literal masked measures, exact weight and carrier
+  bounds, finite-test removed mass, actual regular-carrier defects, and
+  summable real removed mass for the filtered sequence. The filter data must
+  be supplied by the concrete piece/test construction.
+- `RegularMeasureEntryChain*/Children/PieceLists/Tree*.lean`: actual six-kind
+  moves, finite child enumeration, decreasing interval widths, terminating
+  trees and path multisets retaining branch multiplicities. Actual chains
+  satisfy the length, total cost, multiplier, mask-level, and `R^κ` visit
+  budgets. Exact scalar closing and entry-shell inequalities are proved;
+  the analytic energy recurrences are still needed.
+- `ScalarEnergyBinning/Shift/Kernel.lean`: true half-open integer-bin measure
+  partition, discrete Cauchy--Schwarz, shifted and dilated collision bounds,
+  and the decaying cross-kernel estimate, proving Lemma 7.3(i)--(iii).
+- `QuadraticGaussian*/QuadraticPhase*/ImaginaryTaylor/Schwartz*.lean`: actual
+  Gaussian Fourier pairing, removal of damping by dominated convergence,
+  exact principal-branch prefactor, sharp imaginary Taylor remainder,
+  integrable derivative moments, and quadratic stationary phase with the
+  source's exact error for Schwartz and smooth compact amplitudes, both signs.
+- `StationaryMorse*/LocalizedStationaryPhase.lean`: the literal arcsine
+  coordinate, exact Jacobian and cosine phase, smooth compact extension of
+  the localized amplitude, actual integral substitution, and its finite
+  localized expansion. Uniform circular bounds remain.
+- `StationaryPhaseOperators*.lean`: universal real coefficients from literal
+  Leibniz and Faà di Bruno sums, exact weighted composition identity at zero,
+  constant-coefficient positive/conjugate operators, their order-zero and
+  degree bounds, and exact scaled derivative identities. Uniform numerical
+  coefficient bounds remain.
+- `Main.lean`: the original target now uses the actual uniform radial
+  preparation and weighted distance carrier. Its only hole is absolute
+  continuity of the actual weighted source measure.
 
 ## Verification and publishing
 
@@ -105,9 +145,10 @@ skeleton as a completed proof.
 
 ## Next concrete mathematical work
 
-1. Implement actual directional test geometry and masks, weighted filtered
-   distance measures with their removed-mass bound, and stationary phase.
-2. Prove the four uniform energy estimates, complete the move-chain induction,
+1. Complete the common short direction arc, directional widening/average
+   counts, per-piece filter assembly, uniform circular stationary bounds,
+   and the Fourier part of scalar binning.
+2. Prove the four uniform energy estimates, apply the actual finite-tree induction,
    and obtain the final shell estimate. The
    existing fixed-parameter Falconer development cannot simply be retuned.
 3. Remove the sole Main proof hole, pass sandboxed Comparator on the exact public

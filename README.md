@@ -66,6 +66,17 @@ and finite scheduled test lists with at most `N²` tests are also proved.
 The nonstationary and linear phase bounds have explicit constants, including
 the periodic version. For each finite derivative order, a genuine smooth even
 probability bump has the required factorial L¹ derivative estimates.
+Literal tube and projection tests now have their exact Markov bounds and
+jointly measurable smooth masks. The weighted distance measure, finite-test
+filters, actual regular-carrier loss, and summability of removed mass are
+proved. Whole-piece filter assembly and the directional widening estimates
+remain. Actual move chains and induction trees, including repeated paths,
+satisfy the length, cost, multiplier, and node-count budgets. Scalar binning
+estimates (7.3(i)--(iii)) are proved for actual finite measures.
+Quadratic stationary phase is proved for Schwartz and smooth compact
+amplitudes in both signs, with the exact prefactor and remainder. The actual
+arcsine substitution and localized circle expansion are proved; uniform
+circular operator and derivative bounds remain.
 
 The summable reconstruction foundation proves that dyadic frequency shells
 overlap at most three times, obtains the finite-overlap quadratic L² bound,
@@ -80,8 +91,10 @@ The [formalization notebook](docs/output/formalization-notebook.pdf) explains
 the geometric, scalar, Frostman, and reconstruction foundations. Its [Markdown source](docs/formalization-notebook.md)
 uses GitHub display-math delimiters.
 
-The unresolved proof is in [Main](FalconerThetaGauge/Main.lean). Its deliberate
-proof hole is rejected by Comparator because `sorryAx` is not permitted.
+The unresolved proof is in [Main](FalconerThetaGauge/Main.lean). It uses the
+proved preparation and weighted distance carrier; its sole proof hole is
+absolute continuity of that actual weighted distance measure. Comparator
+rejects this hole because `sorryAx` is not permitted.
 The separate hole in Challenge records the independent specification.
 
 ## Build and verification
@@ -111,9 +124,10 @@ Such a run is not a Palomar mechanical report.
 
 ## Completion and Palomar
 
-The remaining work includes the actual directional test geometry and masks,
-filtered-measure mass estimates, the stationary phase expansion, the four
-uniform energy estimates, and the budget induction and final assembly.
+The remaining work includes the common short direction arc, directional
+widening and average-count bounds, whole-piece filter assembly, uniform
+circular stationary phase, the Fourier part of scalar binning, the four
+energy estimates, and their induction and final shell assembly.
 The fixed-parameter packing development does not establish these estimates
 when the parameters shrink with the terminal scale.
 
