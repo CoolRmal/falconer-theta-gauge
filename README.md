@@ -104,8 +104,12 @@ and actual angular and radial integrals satisfy the source decay bounds.
 The literal finite radial and two-circle measures, active-cell decomposition,
 integrated Schur estimate and exact normalized orthogonality recurrence are
 proved. The space split has its actual far-cell geometry, full circular
-expansion, passing support and twice-integrated radial kernel; its full
-assembly and the final induction remain.
+expansion, passing support, opposite-sign coefficient sum and near-cell
+Schur estimate. Moves 1--3 are complete for actual state energies and test
+lists. The genuine weighted tree telescopes with all path multiplicities,
+reducing its bound to the remaining full space-splitting recurrence.
+The actual global filtered annulus is a finite mixture with its original
+retained-piece masses and actual self-energy averages.
 
 The summable reconstruction foundation proves that dyadic frequency shells
 overlap at most three times, obtains the finite-overlap quadratic L² bound,
@@ -153,10 +157,12 @@ Such a run is not a Palomar mechanical report.
 
 ## Completion and Palomar
 
-The remaining work includes completing Estimates 7.5, 7.6 and 7.8, then
-assembling the actual induction and the final frequency shells. Estimate 7.7
-is proved. The actual terminal-tree contributions and accumulated small
-errors already satisfy their budget bounds.
+Estimates 7.5, 7.6 and 7.7 and actual induction Moves 1--3 are proved.
+The remaining work includes the full Estimate 7.8, the root-to-entry
+self-energy estimate and the final frequency-shell decay. The actual
+terminal-tree contributions and accumulated small errors already satisfy
+their budget bounds, and the weighted tree telescope is proved with an
+explicit hypothesis for the outstanding space-splitting recurrence.
 The fixed-parameter packing development does not establish these estimates
 when the parameters shrink with the terminal scale.
 

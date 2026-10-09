@@ -1209,17 +1209,123 @@ $$
 These are checked analytic and geometric components. Their coefficient sums,
 sign cases and depth regrouping still need assembly for full Estimate 7.8.
 
-## Remaining proof obligations
+## Actual induction Moves 1--3
 
-Estimates 7.5, 7.6 and 7.7 are complete. Estimate 7.8 still requires its
-remaining analytic assembly, followed by the actual induction and frequency
-shell estimate. Fixed-parameter theorems cannot be used at
-scale-dependent parameters without proving the needed uniform dependence.
+The right split contributes the actual projection test to the parent list.
+Every child test has its literal anchor and length inside the shorter
+interval, so full Estimate 7.7 gives
 
-The main target now uses the proved preparation and the actual weighted
-distance carrier. Its one explicit hole is absolute continuity of the
-weighted distance source. Comparator permits only
-`propext`, `Quot.sound`, and `Classical.choice`, so it must reject the current
-target's dependence on `sorryAx`. Registration on Palomar requires the completed
-proof, successful verification of the exact public commit, truthful metadata,
-and the registry review. None of those later statuses is asserted here.
+$$
+D_i(a,t)\le R^{k_p[p,t]+7\varepsilon}D_{i+1}(a,p).
+$$
+
+For a left split, the true high shells first use Mattila inversion and then
+orthogonality at the constructed split point. The numerical budget absorbs
+640 into one tolerance exponent and the finite shell errors into R⁻²⁵:
+
+$$
+D_i(a,t)\le320D_{i+1}(a,t-\delta)
++R^{k_p[a,p]+13\varepsilon}\sum_{t-\delta<v\le t}F_i(a,t,p,v)+R^{-25}.
+$$
+
+When a remaining test is longest and its symmetric interval is large,
+its actual origin supplies the tube test and geometric hypotheses.
+Orthogonality and the true profile-height comparison give
+
+$$
+F_i(b,e,a,v)\le R^{k_p[a,p]+12\varepsilon}F_i(b,e,p,v)+R^{-25}.
+$$
+
+These are proved inequalities for actual analytic states. The finite child
+recurrences retain all longest-test ties.
+
+## Genuine weighted tree telescope
+
+Appending a true transition multiplies the actual path coefficient by its
+Table 1 coefficient. A discrepancy child advances the mask level once;
+a Fourier child keeps it. The proved append identities identify the
+weighted child sum with the exact local recurrence contribution.
+
+The multiset levels preserve every path when branches meet. Summing each
+local inequality over a level and telescoping through the derived finite
+cutoff gives
+
+$$
+\mathcal E_{\mathrm{root}}\le
+\mathcal T_{\mathrm{terminal}}+\mathcal T_{\mathrm{errors}}.
+$$
+
+The already proved terminal and error bounds then give
+
+$$
+\mathcal E_{\mathrm{root}}\le R^{-V(\mathrm{root})+227\kappa}.
+$$
+
+This last implication explicitly requires the outstanding full
+space-splitting recurrence. Moves 1--3 and all tree bookkeeping are proved;
+the hypothesis for Move 4 has not yet been discharged. No such analytic
+hypothesis is added to Theorem 1.1.
+
+## Full annulus and exact original-piece mixture
+
+The prepared-ball Mattila estimate holds on the full symmetric frequency
+annulus [2⁽ᵛ⁻¹⁾, 2⁽ᵛ⁺¹⁾], with both signs. Literal Fourier Cauchy--Schwarz
+bounds each retained-piece cross energy by the geometric mean of its true
+self energies. Full-mass carrier identities place those self energies on
+the actual unit square.
+
+The single global filtered distance measure is exactly the finite mixture
+of local filtered measures, with the original retained-piece masses.
+Their total mass is at most one, so actual Fourier Cauchy--Schwarz introduces
+no loss from the number of types. For the actual 8T masks,
+
+$$
+\operatorname{Annulus}_N(\alpha_N)\le
+2\left(\sum_t m_t\sqrt{F_t}\right)
+\left(\sum_u m_u\sqrt{F_u}\right)+2^{-390N}.
+$$
+
+Here Fₜ is the actual built-symbol self-energy supremum and mₜ is the
+original piece mass. The identity is generic in the smooth mask order;
+the analytic specialization uses 8T to match the finite derivative budget.
+Actual mass-loss bounds are available for this same filter order.
+
+## Opposite-sign kernel and near Schur assembly
+
+Literal stationary coefficients have their proved geometric scale bound.
+The genuine double order sum is at most 100. Combined with the twice
+integrated radial moment, the actual opposite-sign series satisfies
+
+$$
+|\mathcal K_{\mathrm{opp}}|\le
+\frac{2^{25}\,2^v}{\sqrt{d_xd_y}(1+2^v|d_x-d_y|)^2}
+\mathbf1_{Z_{i+1}}(x,x')\mathbf1_{Z_{i+1}}(y,y').
+$$
+
+The indicators are the actual next-level passing pair sets, derived from
+nonzero built-symbol coefficients. Equal-sign radial moments also have
+literal repeated linear-phase decay.
+
+The near relation has actual symmetric degree at most 81². Integrated
+Schur gives the real mass-weighted parent Fourier energy bounded by 81²
+times its genuine fine-cell energies plus the actual far cross integrals.
+The remaining sign and remainder estimates and scalar collision regrouping
+must still control those far cross integrals.
+
+## Remaining proof obligations and verification
+
+Estimates 7.5, 7.6 and 7.7, actual Moves 1--3, exact mixture identities and
+the genuine weighted tree telescope are proved. Full Estimate 7.8, the
+root-to-entry energy decay and final shell reconstruction remain to be
+assembled. The main target's sole hole is absolute continuity of its actual
+prepared weighted distance source.
+
+The hosted check on public commit 74484c4 compiled the development in
+3862 jobs and audited 638 declarations. Only the main theorem used
+sorryAx. Sandboxed Comparator built the export in 3859 jobs and rejected
+that same forbidden axiom. No successful independent proof replay is
+claimed. Later source changes require a new run.
+
+Palomar registration remains pending the completed proof, successful
+verification of the exact public commit, truthful metadata and registry
+review.

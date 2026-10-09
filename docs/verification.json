@@ -5160,6 +5160,1170 @@
         ],
         "forbidden_axioms": []
       },
+      "FalconerThetaGauge.profileScheduledTests_right_split_projection": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileScheduledTests_short_at_finish": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileDistanceStateEnergy_le_linearization": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureStateEnergy_moveOne": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.ProfileMoveChain.append_state_final": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.ProfileMoveChain.append_levelIncrement_before": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.ProfileMoveChain.append_levelIncrement_last": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.ProfileMoveChain.append_maskLevel": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.ProfileMoveChain.append_multiplier_before": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.ProfileMoveChain.append_multiplier_last": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.ProfileMoveChain.append_multiplierProduct": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.ProfileMoveChain.multiplierProduct_nonneg": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.multiset_sum_map_finset_sum": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.multiset_sum_map_filter_eq_ite": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileInductionVisits_telescope": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileTransitionMultiplier": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileTransitionLevelIncrement": {
+        "axioms": [],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileTransitionMultiplier_nonneg": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.ProfileChainMove.upperMultiplier_eq_transition": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.ProfileChainMove.levelIncrement_eq_transition": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureChildrenEnergy": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureChildrenEnergy_nonneg": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureChildrenEnergy_right_split": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureChildrenEnergy_left_split": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureStateEnergy_discrepancy_recurrence": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureStateEnergy_refinement_recurrence": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.ProfileMoveChain.children_sum": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.actualProfileNodeEnergy": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.actualProfileNodeEnergy_root": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.actualProfileNodeEnergy_children": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureStateEnergy_le_actual_tree": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureStateEnergy_le_tree_budget": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureChildrenEnergy_space_split": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.ActualSpaceSplittingRecurrence": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureStateEnergy_recurrence_of_space_split": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureStateEnergy_tree_budget_of_space_split": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileRemainingTests_at_base": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileScheduledTests_left_split_tube": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileSplitPoint_left_shell_geometry": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.directionalLevelWidth_ge_one": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.sum_occupiedCellPairs_normalized_mass_le_one": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.occupiedCellDescendant_mem_occupied": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.sum_maskedFourierEnergy_remaining_le_refined_state": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileRemainingTests_ordered": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileFourierStateEnergy_le_orthogonality": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureStateEnergy_moveTwo_orthogonality": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.moveTwo_high_multiplier_le": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.moveTwo_high_shell_error_le": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureStateEnergy_moveTwo_raw": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureStateEnergy_moveTwo": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileRemainingTests_refinement_tube": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileRemainingTests_refinement_geometry": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileRemainingTests_length_le_longest": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileRemainingTests_refinement_real_geometry": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.profileHeight_refinement_le_parent": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureStateEnergy_moveThree": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularMeasureStateEnergy_moveThree_le_uniform_error": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.scalarFourierAnnulusIntegral_eq_twice_window": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.builtMaskedDistance_mattila_annulus_estimate": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.pairDirection_mem_arc_of_prepared_balls": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.ParameterFacts.mattila_root_gap": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.restrict_eq_self_of_probability_mass_one": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.preparedRoot_mattila_annulus_estimate": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularDyadicPartMeasure_mass_one": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.preparedRegularParts_mattila_annulus_estimate": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.dyadicFrequencyAverage_mul_le_sqrt": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.maskedFourierEnergy_le_sqrt_self": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.scheduledFourierEnergySup_le_sqrt_self": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.maskedCircularSpectrum_probability_carrier_eq": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.maskedFourierEnergy_probability_carrier_eq": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.scheduledFourierEnergySup_probability_carrier_eq": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.measurableSet_mattila_unitSquare": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.preparedRegularParts_mattila_annulus_le_self_energies": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.filteredCrossDistanceMeasure_restrict_carriers": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.filteredCrossDistanceMeasure_congr_on_carriers": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.filteredCrossDistanceMeasure_sum": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.filteredCrossDistanceMeasure_smul": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.restrict_eq_mass_smul_normalizedRestrict": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.filteredCrossDistanceMeasure_finite_carrier_mixture": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedCarrier": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedMass": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedProbability": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedSymbol": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularFilteredDistanceMeasure": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.measurableSet_regularRetainedCarrier": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedCarrier_pairwiseDisjoint": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedMass_ne_zero": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedProbability_probability": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularFilterCarrier_eq_iUnion": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularDirectionalFilter_symbol_eq_retainedSymbol": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularDirectionalFilter_symbol_eq_zero_off_carrier": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularFilteredDistanceMeasure_eq_piece_mixture": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.sum_regularRetainedMass_le_one": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.integrable_scalar_character": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.angularScalarFourier_finite_mixture": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.integrableOn_scalarFourierAnnulus": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.scalarFourierAnnulusIntegral_finite_mixture_le": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.scalarFourierAnnulusIntegral_subprobability_mixture_le": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedPairMeasure": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedPairMass": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedMass_ne_top": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.sum_regularRetainedMass_toReal_le_one": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedPairMass_ne_top": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.sum_regularRetainedPairMass_toReal_le_one": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedSymbol_mem_Icc": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.isFiniteMeasure_regularRetainedPairMeasure": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularFilteredDistanceMeasure_annulus_le_piece_annuli": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedRootSelfEnergy": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedRootSelfEnergy_nonneg": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularFilteredDistanceMeasure_annulus_le_weighted_self_energies": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.finite_pair_weighted_energy_sum": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularRetainedRootSqrtEnergyAverage": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.regularFilteredDistanceMeasure_annulus_le_sqrt_energy_averages": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_stationaryPhaseOperator_le_of_regular": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_stationaryPhaseConjugateOperator_le_of_regular": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_stationaryPhaseOperator_builtPair_le": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_stationaryPhaseConjugateOperator_builtPair_le": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.stationary_coefficient_scaled_le_geometric": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.nat_successor_sq_le_three_two_pow": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.sum_geometric_quarter_le_two": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.sum_successor_sq_geometric_quarter_le_six": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.stationary_order_double_geometric_sum_le_fifty": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.two_stationary_order_double_geometric_sum_le_hundred": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.dyadic_stationary_order_power": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.spaceSplittingOppositeTerm": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_spaceSplittingOppositeTerm_le": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.spaceSplittingOppositeRadialSeries": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_stationaryPhaseOperator_pair_scale": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_stationaryPhaseConjugateOperator_pair_scale": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_spaceSplittingOppositeRadialSeries_le": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.spaceSplittingBuiltOppositeSeries": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.stationaryPhaseCoefficients_eq_zero_of_not_passingPair": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.spaceSplittingBuiltOppositeSeries_eq_zero_of_not_passing": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_spaceSplittingBuiltOppositeSeries_le_passing_kernel": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_iteratedDeriv_mul_le_contDiffAt": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_iteratedDeriv_ofReal_zpow_le_scale": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_iteratedDeriv_spaceSplittingRadialAmplitude_le": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_spaceSplittingRadialMoment_le_linear": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.stationary_orders_abs_le_two_order": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_spaceSplittingEqualSignMoment_le": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.spaceSplittingJointAmplitude": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.measurable_spaceSplittingJointAmplitude": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.norm_spaceSplittingJointAmplitude_le": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.memLp_spaceSplittingJointAmplitude": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.spaceSplittingJointAmplitude_occupiedCellDescendants": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.mass_mul_maskedFourierEnergy_le_near_schur": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
       "FalconerThetaGauge.theorem_one_one": {
         "axioms": [
           "Classical.choice",
@@ -7139,6 +8303,470 @@
       "scope_note": "Evidence is bound to the exact immutable public commit. Later source changes need a new hosted run.",
       "checked_on": "2026-10-09",
       "lean_modules_build_jobs": 3819
+    },
+    {
+      "status": "rejected",
+      "repository": "CoolRmal/falconer-theta-gauge",
+      "commit": "74484c406521cbd3433f81ed51a6094cd8ab2a3e",
+      "workflow": ".github/workflows/verify.yml",
+      "run_id": 37899048401,
+      "run_url": "https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37899048401",
+      "conclusion": "failure",
+      "dependency_setup": "passed for both jobs",
+      "lean_modules_build": "passed",
+      "proof_status_gate": {
+        "status": "rejected",
+        "error": "FAIL FalconerThetaGauge.theorem_one_one: forbidden axioms sorryAx",
+        "foundations": "All 637 audited supporting declarations report standard axioms only; the 638th audited declaration is the unfinished main theorem.",
+        "job_url": "https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37899048401/job/113717054123",
+        "audited_declaration_count": 638
+      },
+      "comparator": {
+        "status": "rejected",
+        "sandbox_enabled": true,
+        "sandbox_setup": "passed",
+        "challenge_build": "passed with intentional statement-hole warning",
+        "solution_build": "passed with unfinished main-theorem warning",
+        "error": "Illegal axiom detected: 'sorryAx'",
+        "job_url": "https://github.com/CoolRmal/falconer-theta-gauge/actions/runs/37899048401/job/113717053992",
+        "scope_note": "Successful statement comparison or independent proof replay is not claimed for this rejected run.",
+        "export_build_jobs": 3859
+      },
+      "full_palomar_preflight": "Not dispatched: the manual workflow jobs were skipped on this push.",
+      "note": "Hosted compilation passed (3862 jobs). The 638-declaration actual proof audit and sandboxed Comparator both rejected the main theorem for sorryAx. The Comparator export build passed (3859 jobs); no completed statement comparison or independent proof replay is claimed.",
+      "files_sha256": {
+        ".github/workflows/verify.yml": "6c8aa09208ec4985a108df853ff9a4cce91e6e92e0f06f6c431630335f597446",
+        "Challenge.lean": "6fdbae1e75d62084453dab63d82cd8f9cebfe0339a502d28acae99694f995e48",
+        "FalconerThetaGauge.lean": "d36958bdb9839008c50ecdd8c7e519d981bbfccddcba8b4a18c9538ecdbbc46a",
+        "FalconerThetaGauge/Asymptotics.lean": "7aa92edd932087928afdab4b421281297cfc52feaaf9b8ce53d3f7debaed2a95",
+        "FalconerThetaGauge/CircularStationaryAway.lean": "3d2aecf98f9ec92de23c562f102fae0c33163c236ac0ce65853b24270472850f",
+        "FalconerThetaGauge/CircularStationaryCutoff.lean": "023244434240ceb0ed0d609e25759ef5d3c25c95a79dbfd4e9607cd0e7860450",
+        "FalconerThetaGauge/CircularStationaryPartition.lean": "290898cf28e79c156a5a025270675067a8caf647d15502741b76eb522030f9bb",
+        "FalconerThetaGauge/CircularStationaryPartitionDerivatives.lean": "dc30ff3b6a09365ebc544083eb7a8283a2d6be9467bbdd69feb6f2431dead4b8",
+        "FalconerThetaGauge/CircularStationaryPartitionIntegrals.lean": "58c4bd5412b1aec1bd3dd6b659c5490cc5e6de7d9feeaf066a0e1d2dda266e88",
+        "FalconerThetaGauge/CircularStationaryPeriodization.lean": "ce45db51e730ab24c79bf0737fd02e87befb3a51509f1c5703af898adb29346b",
+        "FalconerThetaGauge/ComplexMorseJacobian.lean": "babd21ba767b897cc07a2804eb1e016ea70a1eded5055880c9e05589016d996f",
+        "FalconerThetaGauge/DirectionalTestsAverage.lean": "32f2af13ebcb25840aca693786bb3fbf292c08cf11f3e55f6a21edb9c060fdd1",
+        "FalconerThetaGauge/DirectionalTestsAverageAngles.lean": "6e028bc152424212bfe03112b433090910b087b134afaefe1c772376254e2392",
+        "FalconerThetaGauge/DirectionalTestsAverageBands.lean": "434a5bd0e7ce06c472f3882fc7cf053b18dc8f7c0ae307b6e667d9b84a64d3b5",
+        "FalconerThetaGauge/DirectionalTestsAverageGrid.lean": "b19fd4b2642455c34dd3f38d92399e6dd8629284b04d07ca88f89d4c5327a04a",
+        "FalconerThetaGauge/DirectionalTestsAverageGridCount.lean": "d6cef1dad91b3c68ffbd7690425f2c15372ae7958fb409a5407a4b75d6001911",
+        "FalconerThetaGauge/DirectionalTestsAverageGridMass.lean": "73e0749813fe13c423efe4c091e639744f60be09dfdf2aacd173745fe326db07",
+        "FalconerThetaGauge/DirectionalTestsAverageGridTotal.lean": "d884cd8b7139a3a6cf17e54835df2be4ef8b6560d72d35361edf2d9ad5c39a65",
+        "FalconerThetaGauge/DirectionalTestsAveragePairMass.lean": "ec8bae86715e9737b00836e59673916afd0ae7ab1b3bf7db2daaa87860da4926",
+        "FalconerThetaGauge/DirectionalTestsAverageProjection.lean": "aea725148af18950f5e4314e2c662ae3f65e4a4f36f4b2642b20c76642473402",
+        "FalconerThetaGauge/DirectionalTestsAverageProjectionBound.lean": "9a4717a934c0f127a2847e218a61bb1fab38f76f232715bec953e67b962a5e97",
+        "FalconerThetaGauge/DirectionalTestsAverageShells.lean": "a406e1256886db549a50c3005d7a74d94106f072c697167864ddbd38f4b41ae7",
+        "FalconerThetaGauge/DirectionalTestsAverageTube.lean": "a04c7e35143bd6afe1bc41b88a17d6e4f166c7e9c78e603fca0850d47310f277",
+        "FalconerThetaGauge/DirectionalTestsAverageTubeBound.lean": "b4ba780fc53374c1dea9b2598d2655a1fb129cf7c9de36fa9dc578e54417ed1e",
+        "FalconerThetaGauge/DirectionalTestsAverageTubeShells.lean": "45a3dbe43aa47455d18847873bdece4a486d64d650a2c47326d85fdecbb8a062",
+        "FalconerThetaGauge/DirectionalTestsFilter.lean": "6f562c68ae4d42bf5af836c2be87d3cd77255d0d270f001779bd96eecd5dc04a",
+        "FalconerThetaGauge/DirectionalTestsMarkov.lean": "adb5995f5b8006feddb44648634420839bd2340662be95d67dfe105782ef1fd0",
+        "FalconerThetaGauge/DirectionalTestsMaskSupport.lean": "d4ef5deb13c6a17aa455a06c891f7deff301db9bfc9dcdef64538282a2138d43",
+        "FalconerThetaGauge/DirectionalTestsPieces.lean": "4be9c915ac2bde9763f54a65b544e3608cc2646664db6ae1228439e316d22f26",
+        "FalconerThetaGauge/DirectionalTestsPiecesCoverage.lean": "3379c951d05db3f56b747a415026041cc4d3a8aeb7c51b330b9c407c4f7c4619",
+        "FalconerThetaGauge/DirectionalTestsPiecesDerivativeBudget.lean": "582634f30186f46b2f9c9c1f851e7578b511a55907a3f702be3e55156fb460e4",
+        "FalconerThetaGauge/DirectionalTestsPiecesDerivatives.lean": "e5f9e0ff02a44584697467943ab4d8264ad6482a9fd3c28cc3f1a1962cd4d84f",
+        "FalconerThetaGauge/DirectionalTestsPiecesPadding.lean": "a4fd7699398bb889147d2a7f4c6d5c3dbf63cc9a9619335ba072b99cb9246095",
+        "FalconerThetaGauge/DirectionalTestsPiecesPartition.lean": "6bffc2c4765fbdb2b2e8e8065d37a16de7aac99ee3987f3e33d23167d3240983",
+        "FalconerThetaGauge/DirectionalTestsPiecesSmooth.lean": "fabad48cade4d61b919db67d67def94984d8d8d177bdd2c5b4088b2ecbc13227",
+        "FalconerThetaGauge/DirectionalTestsProjection.lean": "f4b8808094d420a3ffa9f546179e5b9b4df38d823c1286e0f6221260b6c5da31",
+        "FalconerThetaGauge/DirectionalTestsRecords.lean": "cebc207700653e25254f908a0d47c7b07d200f4f1326bd469cd873391d7f2e9b",
+        "FalconerThetaGauge/DirectionalTestsTube.lean": "f6f1b25b4b2f92c4a273606359dcd5f62b07d1a8202d28c632842520add35a39",
+        "FalconerThetaGauge/DirectionalTestsWidening.lean": "c9b0c38cd2c670f803baeee530218fa4a02cb7f91f5217ae950896d15b397a64",
+        "FalconerThetaGauge/DirectionalTestsWideningGeometry.lean": "68b55660190364038ff5daebcdc4167546f8e24114db97758abc05cc65d2be5d",
+        "FalconerThetaGauge/DistanceLinearization.lean": "c344b8592e44f06c64943dab734582204f56982da304a869095f027c38615ab0",
+        "FalconerThetaGauge/DistanceLinearizationBinning.lean": "af9613dafe0dffa9eb10465d70a74a106b38621e14e69de9f9bb85a86e3bbca6",
+        "FalconerThetaGauge/DistanceLinearizationCells.lean": "e90ff83df23379a8ce64166a27eaaf61c67c5e47984b9787f44ba3710e107983",
+        "FalconerThetaGauge/DistanceLinearizationCollision.lean": "749c2d95635e02288c7130ab6589a25a839d3ad0cbf964b4e5d563d02b659322",
+        "FalconerThetaGauge/DistanceLinearizationDirections.lean": "0df9d4019157462fea279242f1bb02b39e4e55918cb21ad97609ccd13fe37ff5",
+        "FalconerThetaGauge/DistanceLinearizationEstimate.lean": "7de1361dce41a13c84115c414e77d11fe90cfd917ca48ea1db445c7d4a7c13ad",
+        "FalconerThetaGauge/DistanceLinearizationGroupCarriers.lean": "50fca8e08553842d77b91235e373095a1d31214ea456cfb060308679d03e8e91",
+        "FalconerThetaGauge/DistanceLinearizationGroupGeometry.lean": "9295b5a8624e92c5ce57c3bcb87f58648494063bcb6245b71cf506cc181c1db7",
+        "FalconerThetaGauge/DistanceLinearizationGroupMeasures.lean": "4de0307176a03c9a7dff70ad623ce0c878fa70afe070cc27562cb23712719a4e",
+        "FalconerThetaGauge/DistanceLinearizationGroupSchur.lean": "694d262be30fc6f8b7a1ab80a5b134f4e1065fd8e15342f9f65dd190bdcfbc76",
+        "FalconerThetaGauge/DistanceLinearizationGroups.lean": "52a7bd99966de16869843c55819199905b3dc4b0be8222c9eed5a0ff9a1d0346",
+        "FalconerThetaGauge/DistanceLinearizationMass.lean": "014d8ec98ef669420d7e4128f3c32e041b66f36fd9ceabfe63e623dad1a4ce7c",
+        "FalconerThetaGauge/DistanceLinearizationMassDecomposition.lean": "1a7ac4e6d52b80f9413ca1944fc1d09325c800b9ff47caf29c73c91b98c2e015",
+        "FalconerThetaGauge/DistanceLinearizationMassEnergy.lean": "e84aa62b227cbc761ae8e408230f4273e882d6a009e670f5d00860e2427d8345",
+        "FalconerThetaGauge/DistanceLinearizationMassEstimate.lean": "b34477700c73c6e1e3a7b27f80051132fffd72528763113bda732a96aff3289e",
+        "FalconerThetaGauge/DistanceLinearizationMassGroupBound.lean": "4d092ee3d349ad18bda87ee709d906d96b5aa41f87872d66d1802450194779c3",
+        "FalconerThetaGauge/DistanceLinearizationMassGroups.lean": "5dce644be98d4e6a1d5039ff992ceb5115238873660ff2e051f6e7779f5c11df",
+        "FalconerThetaGauge/DistanceLinearizationMassPassing.lean": "26443f3e593afe195c48e5d1518aa638da8a00a44a70d48e042a93012215a412",
+        "FalconerThetaGauge/DistanceLinearizationMassProjection.lean": "9554afbbf27415a947ccb65e600c961d3186b55da4449addc367fb503560f72f",
+        "FalconerThetaGauge/DistanceLinearizationMassShortened.lean": "7f91747b0743d31fc8bc1ef466b2d6555ffac12132fb90653a6f0b2b02cbad13",
+        "FalconerThetaGauge/DistanceLinearizationMassWeighted.lean": "ede1714912ab91b941d9681138abce8b0148a214c8b282d2acb4ad29d3c46e15",
+        "FalconerThetaGauge/DistanceLinearizationPassing.lean": "41d28de0d871cac0d50af1d84cae9e3fb052f36a3c6c3c70b5c06b0483921aca",
+        "FalconerThetaGauge/DistanceLinearizationRetained.lean": "dac18957b82b2c2db7840caaf18afbd2a458100358d8cd5cf1ec6d34e64e949d",
+        "FalconerThetaGauge/DistanceMeasure.lean": "3d99200c04ca2644a2e87733f38853b699ebc118beb3a52da78917f10668de1c",
+        "FalconerThetaGauge/DistanceScaling.lean": "09a21939395306226db73432b979b12addd18263e4519e57d7527d8ddab98975",
+        "FalconerThetaGauge/EqualAngularCellGeometry.lean": "13c084f2409e670a1379c4953f5eb351a01a4e75c0e98b2a9b6f6a6d876e9643",
+        "FalconerThetaGauge/EqualAngularCells.lean": "4a0d998a8d81e1c29f4a4b63431358005ad9357cfd2da180e29f37566a51da28",
+        "FalconerThetaGauge/EqualAngularPartition.lean": "294a6a516908ed733f00438dc0aa206e87f7719c8ed6bd05bed4364a3eff4c0b",
+        "FalconerThetaGauge/EqualArcCutoff.lean": "0e0d30934f153d5b7666015046a77bc03f7312f71deddc6cd256fc96eb1ad316",
+        "FalconerThetaGauge/EqualArcCutoffRegularity.lean": "0eb7f69efd733484a069d2cfdfcbd97111a2435cd38b8850a2164f529035f9dc",
+        "FalconerThetaGauge/EqualArcSupportMeasure.lean": "ba2715b6f2c0a13fc4682c47a83d923723630c5c01543e3704aa10f853321e36",
+        "FalconerThetaGauge/ExplicitBump.lean": "f784d49b4dc7cf84fb3e94ff7b61cc0a1b9756e0798c3508ccbc0ce40f3343fb",
+        "FalconerThetaGauge/ExplicitBumpBox.lean": "f65045b7aa9b5ba1059ab861d19e7d4b785bf7db262c1e13eaf3d13c43f37fdb",
+        "FalconerThetaGauge/ExplicitBumpCircle.lean": "b5b3641a343c88bbbcd812b467b20f9bfe9adabf7b5205bc642bfc2fd72a6e76",
+        "FalconerThetaGauge/ExplicitBumpCutoff.lean": "f7c755dee07939206e4e6a67c201ec9673b9af4e896a6f6266e5a3b0ca6a3505",
+        "FalconerThetaGauge/ExplicitBumpDerivativeBudget.lean": "73275556704ae5907c30d92ab1274f778f4a7ea125ded4a51515c07759ba99e1",
+        "FalconerThetaGauge/ExplicitBumpPartition.lean": "b83b9ec36d64aec3ac2be44e4c69161e8c4d08eb50405c3ae1abe8e65cf3a8f6",
+        "FalconerThetaGauge/ExplicitBumpPeriodic.lean": "449640a4f5c89ac21d78cb9da578c97fe8c4e58f0fe709ed38bc96e5a933009d",
+        "FalconerThetaGauge/ExplicitBumpProbability.lean": "e7227e8021cd9ecb06c8f2546928de0a5c61dd6d7fb86794d970ff36401cc73b",
+        "FalconerThetaGauge/ExplicitBumpScale.lean": "b499718e7a306fc8567d8a14a323e7c4ed6f708320bb1eeb696fbb32a35f14b5",
+        "FalconerThetaGauge/ExplicitBumpStack.lean": "0dd29545131937c47c13ed64258a7c2713142ef655df5ce967b5b4876b144feb",
+        "FalconerThetaGauge/ExplicitBumpWidths.lean": "67513af153f7b933c0bd09dc9f42e44d459871bcacbcc215bcd66a368852e9c5",
+        "FalconerThetaGauge/FilterSummability.lean": "4052256e67405bf3b5aee62b162bfd20dfaf182f195a8b85f855cc8fd9ccd1b1",
+        "FalconerThetaGauge/FilteredDistanceMeasure.lean": "17712b7aecb069e3bb6a33c72077aaf9223e1cf36e960a34d47a90d1228bed93",
+        "FalconerThetaGauge/FilteredDistanceMeasureApproximation.lean": "78f500b2705bd448e67e05ae3f9448daa250bc6f296262b9d9415a9e8addfeaa",
+        "FalconerThetaGauge/FilteredDistanceMeasureCircle.lean": "7a37853fb5b499da12496a4307047b860dc9bc2614ba62f6465541be6396211c",
+        "FalconerThetaGauge/FilteredDistanceMeasureDirections.lean": "b24a8f5bf7abc02d86be664b6a9c70fa8ee9f82ad140750a8dc88e527c7ff576",
+        "FalconerThetaGauge/FilteredDistanceMeasureFiniteTests.lean": "6734e2e4668f90226e99234330b46b2a795e626aa97fd82202a768430643237e",
+        "FalconerThetaGauge/FilteredDistanceMeasureGeometry.lean": "5689b45f6efb783599fea1b4672c3e0e39245ef51e3074704ffea31b9d436739",
+        "FalconerThetaGauge/FilteredDistanceMeasureLoss.lean": "25dbf71c4769050dccae1948b40fd738b0806f1c843852bbf13eb869dce052e0",
+        "FalconerThetaGauge/FilteredDistanceMeasureParameters.lean": "fd7626ee8a61ca855ff83e272cb34cec624f44ae231ead89e42da438a2c0a183",
+        "FalconerThetaGauge/FilteredDistanceMeasureRegularCarriers.lean": "685833583a3676173446b3dbd423efe98b466998f5ed4c0ba1531fee9abf2869",
+        "FalconerThetaGauge/FilteredDistanceMeasureTests.lean": "3b3429151de94cb3efde72776fd9c82906e3d009a111f331ff4f14728cafd2be",
+        "FalconerThetaGauge/FiniteFiberCount.lean": "10867fb64fa90a077de361932f45530b710d916ed21607ab5d58210d3253cafe",
+        "FalconerThetaGauge/FiniteGraphSchur.lean": "2797453e90d7195441aa51ff04e3495de83c9aec1dffecfbab1032c4646ea3a6",
+        "FalconerThetaGauge/FiniteGraphSchurIntegral.lean": "f0ab0e3cecded4a913432345398287fbb6652b63e0a73b60c9634223f68ee0e8",
+        "FalconerThetaGauge/FourierBilinearCauchySchwarz.lean": "c217219371c70386647b241911d8915ffe521f1f6587b43a294330c9200b8db8",
+        "FalconerThetaGauge/FourierBilinearCoefficientSeries.lean": "54291c636186b084cc03bb4da8386cf1981608f5316cbe1cb3ff9a971d98e6b0",
+        "FalconerThetaGauge/FourierBilinearCoefficientSum.lean": "d741af90f4e8593d3fbad6e66b48dc280ac0473bcfd57270ce167dbf4f42c348",
+        "FalconerThetaGauge/FourierBilinearFiniteExpansion.lean": "1b27bf660214db18b0a53b26c4a537564ae1c29762aa784eb5a2fe7a60bce930",
+        "FalconerThetaGauge/FourierBilinearFrequencyWindow.lean": "f82f76e219cd73da3b069f91cc4932e4268cd33db29bd78299548890f9e960d6",
+        "FalconerThetaGauge/FourierBilinearSeriesExpansion.lean": "555b8eb499297b1f4e666b8d58cfea5c06417c9d5ff337fbd777618239e45142",
+        "FalconerThetaGauge/FourierBilinearSeriesIntegral.lean": "3eca16e993db0d39e36abd62c6ffa8a04f1926cc40cb0e91b745a47106a05f94",
+        "FalconerThetaGauge/FourierReconstruction.lean": "e1ee67a08f147bdc72d6790550fb58b77f9b5eabb4cc624c34af73a19239425d",
+        "FalconerThetaGauge/FourierReconstructionApproximation.lean": "be7721b35eda289a6cc1cca57366b479bdc40298324ea1598caa3d97bc122d6d",
+        "FalconerThetaGauge/FourierReconstructionCutoff.lean": "d8901cbaff089eb20765676810b90b7221949e656faaa965723fa51175724fb3",
+        "FalconerThetaGauge/FourierReconstructionEnergy.lean": "1744a2f15ed8e581a58b29d39fb01ddcd59eb886ad641bb779132e9197c7c245",
+        "FalconerThetaGauge/FourierReconstructionMeasure.lean": "116597f7790dee021936b98fd194ba13e09876bb8d885fef803984330a68133f",
+        "FalconerThetaGauge/FourierReconstructionPairing.lean": "01552ea6b90276563952d315bf06b4992f06699de89df2de99248cc2f5b13410",
+        "FalconerThetaGauge/FourierSeparationBilinear.lean": "cfca765681f3274f7ee99762a53a50bd2b6ddd4e69910544ae68de7d5f9665c4",
+        "FalconerThetaGauge/FourierSeparationCoefficientDecay.lean": "50f2ab791285621d92a9bcc002e93b4c3ddf01a8a01e6caddfeaac558c7952ee",
+        "FalconerThetaGauge/FourierSeparationDerivativeExpansion.lean": "4a7350d7f2ded2e553d5e8f8517b810ff2f837d52a1e212d47844cad70ca0c07",
+        "FalconerThetaGauge/FourierSeparationFrequencyBudget.lean": "ed0f1380a28acbd0f2dcb95c446b0d0990fca902e2316e36096f1c0dfd013242",
+        "FalconerThetaGauge/FourierSeparationFullInversion.lean": "a137b6a88b31088d6989fa5f6907271325c977e0207717198bcb31366f7e1bdc",
+        "FalconerThetaGauge/FourierSeparationFullSeries.lean": "5cc2a9648cb8dcf6459624ca45cb367d65183e0dc29eb94783c8d7d892aa861d",
+        "FalconerThetaGauge/FourierSeparationFullSeriesBudget.lean": "7604b5559aa45fe6447ba1be1edae971c4cfd86a952fa5c9fcac3d6b25a02b5f",
+        "FalconerThetaGauge/FourierSeparationIntegrability.lean": "3e3ddcca947557545e35450fbb9c3851ce370621e5ddeddce8e4fc9c8d682758",
+        "FalconerThetaGauge/FourierSeparationIntegral.lean": "9875140e6f786552de82b3653178d0929f31094a6d20f744efbfb8b0828d8283",
+        "FalconerThetaGauge/FourierSeparationInverseKernel.lean": "8d21a53c8863fdcaab7a3d8220dde1ff3349a23f88d49efb8b71fdebf14134f9",
+        "FalconerThetaGauge/FourierSeparationKernel.lean": "a276efa6ac093448144b622376390626051f2a95f010dfb3d420d12e9fefa9ad",
+        "FalconerThetaGauge/FourierSeparationLeibnizBudget.lean": "c81eb3b544c7b32d07c7d713ac1d6cc0083109fb6fb360e06c3d3044ca6723c4",
+        "FalconerThetaGauge/FourierSeparationOperatorBranches.lean": "c1f014c5bb351614839671d0e74b2acef2e340be8e7a13bed60b107f137dc37b",
+        "FalconerThetaGauge/FourierSeparationOperatorIntegral.lean": "4cd8ab42b5d3a1d2253718106012effca5eebaeee2d9a95d5f16f753810f3d76",
+        "FalconerThetaGauge/FourierSeparationOperatorSeries.lean": "bc56a8ad430e9f67220ec069480ef288d9dc2071f112607c8638aeaca126df12",
+        "FalconerThetaGauge/FourierSeparationOperatorSeriesBudget.lean": "0ff51955f7461b73c10a3171b93a5cc7f944197cb2f886ba1ba49da0f8ee7982",
+        "FalconerThetaGauge/FourierSeparationParameters.lean": "ba6d9840b6bf1c336b38d202650cceea6f0436cead6ab83d56ce76d3f56fd983",
+        "FalconerThetaGauge/FourierSeparationPolynomialSymbols.lean": "bc225ba8a97a5f64bc6ff452d42d079906baa503ac9e26d1791dd96ea252a9df",
+        "FalconerThetaGauge/FourierSeparationSeries.lean": "5cfca1a10aa51171831ac50caf3fb48420923509a331c0f6c533a8ba1da7e2cd",
+        "FalconerThetaGauge/Gauge.lean": "7bfe0d9dbc1c90fd4bda43fdaafc7df1c11d0f53dc1257d56f42a3ede669297c",
+        "FalconerThetaGauge/GaugeFrostman.lean": "4f4f07731de34b06f4a9ffaeb97ffa4a03380ea9c70b897ef7f9047dfd3522ff",
+        "FalconerThetaGauge/GaugeFrostmanDyadic.lean": "1563024235a8e85f5d73f85c73c4c893a4992a37e42ac180236c42503a776c39",
+        "FalconerThetaGauge/GaugeFrostmanLimit.lean": "90fe27a5835a34a678eee0dcaf85fd28282080b6c07d9fda12b7bd0bbf748816",
+        "FalconerThetaGauge/GaugeFrostmanMeasure.lean": "6928a6ee189c119467b4191adc07c3e2f861764936c47080e1413707d05a4993",
+        "FalconerThetaGauge/GaugeFrostmanWeights.lean": "66468f5ea30c4b124af308513d00cf1e4d6a6ba64847594af64c3e8108691bc9",
+        "FalconerThetaGauge/GaugeLogEnergy.lean": "911769512eaaaee34f925814c2434d77e0470167eeddb904074f127819a7eadd",
+        "FalconerThetaGauge/GaugeSeparatedMeasures.lean": "902c159944174b606a8dc60286e16a550c0bef0bd4979844b39dc47946827ec8",
+        "FalconerThetaGauge/GaugeSeparatedMeasuresGeometry.lean": "bfe095f789f99d4e8361dd30a577632e9d0f98ea6ba64d707767f24b9ffd8a41",
+        "FalconerThetaGauge/GaugeSeparatedMeasuresSimilarity.lean": "b0d98ca71720ad8d5872de82a4a387cd619ce6ea1b01bff43983da8d110123b2",
+        "FalconerThetaGauge/ImaginaryTaylor.lean": "8a7a2b0b3d6e8873911aaafbfaf6e167c93c19c3cd6093ead9236831778071cb",
+        "FalconerThetaGauge/LinearPhase.lean": "38fbcb55132d8584444549ac9e7935b30ef164ebc3bf3b4cf434596921cc5bc3",
+        "FalconerThetaGauge/LocalizedStationaryPhase.lean": "9f7dffdc1446c5c73894c06f3ef159a1cb348d29de0f53c64b501590e4da1ff0",
+        "FalconerThetaGauge/Main.lean": "85f981e655c0638a9457cfbdbbd428421f88fe6c70a745c280b194d97da0e11e",
+        "FalconerThetaGauge/MaskedDistanceEnergy.lean": "5008c2127a7169cf9bb5f3b7ceabb927bf8393930695f70913ec44703304dc86",
+        "FalconerThetaGauge/MaskedDistanceEnergyBridge.lean": "5294990a01232fdd1f95aef0d3b9ae2130d38d76abc0268dcdb0748846b0fcd0",
+        "FalconerThetaGauge/MaskedDistanceEnergyCells.lean": "60680727af6cf396386460725c99365230774467ec2be8ec8415f5223924ca21",
+        "FalconerThetaGauge/MaskedDistanceEnergyDyadic.lean": "69090c0accc7f416b9742e2e11f886adcd6d6dbfbe7a82d93ea9738133f230c1",
+        "FalconerThetaGauge/MaskedDistanceEnergyFourier.lean": "96cd1b940c2a63696f642e29a05f1f0a6834b7bfec1840c20c28d11a83cb00c3",
+        "FalconerThetaGauge/MaskedDistanceEnergyLevelMeasures.lean": "0f1ba8f740e7e6347c5a471fac69c3e4648a51eda1bf66eba2bdf31b0b25c671",
+        "FalconerThetaGauge/MaskedDistanceEnergyLevelSymbols.lean": "4ce2f64641a3155951d7e33c6892167273c36df9e1eeea396010a0dde977c4bb",
+        "FalconerThetaGauge/MaskedDistanceEnergyLowHigh.lean": "f0f6f228bffa5437d69b6a098a7decf752a030a14bda1f387645b48991efeac7",
+        "FalconerThetaGauge/MaskedDistanceEnergyOrderedLists.lean": "e87f24d462b766a1a5b2d5a33207b4bc3255411e2d304d4f2c365b46b208f92a",
+        "FalconerThetaGauge/MaskedDistanceEnergyReal.lean": "dbfcf3a4e4ade3473fd971b83a3fb4900a8378eb1739d9d183d5248dcf49c329",
+        "FalconerThetaGauge/MaskedDistanceEnergyTests.lean": "3130c4794dfa65f64aacc73632d3c0fa6d84baa8db0f60a2789ed5e34d469be7",
+        "FalconerThetaGauge/MaskedFourierActiveCells.lean": "388115512821082f2de393b00b7abf88435232cce969827bd1df7b4d171b6f17",
+        "FalconerThetaGauge/MaskedFourierArcEnergy.lean": "0dd773264a7da5976f19d336cacec1dd93ef5a5c98f26d77f03e44d9adb68958",
+        "FalconerThetaGauge/MaskedFourierArcErrorBudget.lean": "77bc5dd3366ea6b0ef9d39d4571980cd5ebc27427a866a17e6ad774f98d7b364",
+        "FalconerThetaGauge/MaskedFourierArcPair.lean": "556d3333cc6927a6c78049a3c9474095e5aa5fa3dffff1bf4e6b7dac172fe9eb",
+        "FalconerThetaGauge/MaskedFourierArcSchur.lean": "a5839543b271f09e02d5462eea91b8d25457fda602612b41ef7f08f00f9b6dc2",
+        "FalconerThetaGauge/MaskedFourierArcSum.lean": "f84c3012aa529688d171bb975e03d2fb21d855526c9ccb2ad85e70ac9730f925",
+        "FalconerThetaGauge/MaskedFourierCells.lean": "6ea99508ecf9158d72a85ab8146581a9f2bbaf8e8a84eb8f48ba2bd5c5cbbabd",
+        "FalconerThetaGauge/MaskedFourierEnergy.lean": "36106230c7680e86db3adb47372d98f39a16079072f7e849beb16408ddb1646d",
+        "FalconerThetaGauge/MaskedFourierEnergyAverage.lean": "aa0a5d540feca96445ec80955910c53dfbce72b20dde54627b488769b697217c",
+        "FalconerThetaGauge/MaskedFourierEnergyCells.lean": "b32496d1ebef593682cceeeeec368e12dd6fe4ea8599a481ef8c39fc9a13a533",
+        "FalconerThetaGauge/MaskedFourierEnergyCutoff.lean": "a80e2d847182a5c97bdfb982946ef746a01527c0c7d9c0c00d7051ee7ba380cb",
+        "FalconerThetaGauge/MaskedFourierEnergyFactors.lean": "e22841a30e2bb10de05f3763f080e2d9bc3584a2a686634165c27f78b5516ea0",
+        "FalconerThetaGauge/MaskedFourierEnergyReached.lean": "0daf5d76892939887f057d9610e8bdb647eff006cb86ad63d2223d1fadf14415",
+        "FalconerThetaGauge/MaskedFourierOrthogonalityArcEstimate.lean": "ed685d113942805dbd922be4d8505488744f456e10bf308c8b9436ce0c9ab7e6",
+        "FalconerThetaGauge/MaskedFourierOrthogonalityEstimate.lean": "f4aa3ffd9bf1da078d3773d55a3b983a57e7bed7ee9f4757aee9a9e27325b818",
+        "FalconerThetaGauge/MaskedFourierOrthogonalityNormalized.lean": "4f998a1d34f9774a5ba1099f4d763db7679a26c7370a77026e9b7e3bef91db1d",
+        "FalconerThetaGauge/MaskedFourierPairEnergy.lean": "04cd07d6108456193e9ffe45128a941e0c4f1d032c3ddc220314057e5220cd48",
+        "FalconerThetaGauge/MaskedFourierRadialMeasure.lean": "04adbf47cfef9aa967d6bb0da5b50e99819b4bfdd39238903ac90fb3381fcb83",
+        "FalconerThetaGauge/MaskedMattilaCellsEstimate.lean": "d4bf27fc88d24ee40d88d3e0321e6ad6e9ef9954e3507d45ec304942742fadae",
+        "FalconerThetaGauge/MaskedMattilaCircleInversion.lean": "5dad4ff52f8c412740c0ed6d87e7ad5d7daf0a9b46576374cfed7cda68c3042a",
+        "FalconerThetaGauge/MaskedMattilaCircleKernel.lean": "ba75463323ee05eff355d93b90caef8be18d9dc1069dac739a00a73ea13c67f0",
+        "FalconerThetaGauge/MaskedMattilaDistanceFourier.lean": "6651ec123aa6098e13179cacdebf14f43b77de5c2f890dbee6aab236a10aeb64",
+        "FalconerThetaGauge/MaskedMattilaGeometry.lean": "ca011ddddba1d188dfb55fc3d6a3cd1fc10c32ac88345ed3bc9ab10cac95c3f3",
+        "FalconerThetaGauge/MaskedMattilaGeometryArc.lean": "7b8b236eb4c2ac81cccefae12e22b2020acacc56705d9b46db53eeb145415c4c",
+        "FalconerThetaGauge/MaskedMattilaIntegratedInversion.lean": "01e8eb14cc94cb5afaa3166c051a5cb9e17a17b3419e748236438e4a76298503",
+        "FalconerThetaGauge/MaskedMattilaNormalizedEstimate.lean": "9387f9cbd4b63ee5430c45752de89c9abcfbe039092fe2a67a93b8b39d2f3d37",
+        "FalconerThetaGauge/MaskedMattilaPointwiseInversion.lean": "2335eac7398c92ad1353a2c8a112d7a3e384481d1e2f359bd4d3aec5d278de52",
+        "FalconerThetaGauge/MaskedMattilaSeriesEnergy.lean": "ce05158eda3e8f48d6c9972e28dc6b18d6ccc01ba1e73e074a34c7eb373895e9",
+        "FalconerThetaGauge/MaskedMattilaShellEstimate.lean": "a135b5f913481db6febcb9f863435daa366dbf5fc2882f41aa58e41aef4fc5ff",
+        "FalconerThetaGauge/MaskedMattilaShellReduction.lean": "5e3d76dd6f491971cbc91d4fbd9b31286dafa41d34ca1ee7517ec4b71952c3a1",
+        "FalconerThetaGauge/MaskedMattilaSymbolInversion.lean": "e967ccd7e29d840975a100cc46c5a4bd4aa3a4438c3999a288521ae537fbb2aa",
+        "FalconerThetaGauge/MaskedMattilaSymbolRegularity.lean": "4d1a7562598160edec76e966fa3ba1503cbcb5ff0ed66a87cebbd706c9c55b60",
+        "FalconerThetaGauge/MaskedMattilaSymbolScale.lean": "63dab9499d70ae252065bc4a717b4aaf7bc79b2ceb407e28251d5a6d60f3e05e",
+        "FalconerThetaGauge/MaskedMattilaWindowEstimate.lean": "a04c0d9d32f928192e793e033caa8269aec7bf0a4734a22931fc944d4a158b0d",
+        "FalconerThetaGauge/MaskedMattilaWindowIntegrability.lean": "6dcb5e744e63cb7affcc5424b6be04bec94e977125cda771441f35f5cd38db28",
+        "FalconerThetaGauge/NonstationaryPhase.lean": "902b5af15830a6f671cf3adf11955543cb8ad0c9f8023af575c47bd931ce70cb",
+        "FalconerThetaGauge/NonstationaryPhaseBounds.lean": "964174165f2c4d57fea5ef8f50b355ec097576963bcdc43c5b204e3aaa7c98e4",
+        "FalconerThetaGauge/NonstationaryPhasePeriodic.lean": "4f6222b71bb569ab9d544d8894dbacb1e7a0cf0dec4e818e8cb26ae6efee1e11",
+        "FalconerThetaGauge/NonstationaryPhasePeriodicSupport.lean": "bb6295dbacd2b2e2f34185f84cca2a3f6ec59ca946ab097b77f246aded920924",
+        "FalconerThetaGauge/NonstationaryPhasePeriodicUniform.lean": "dc9aa0ba5311452c89e25a818509a3e79abdcfcd773a3343efe67caba5c7cf82",
+        "FalconerThetaGauge/NonstationaryPhaseUniform.lean": "15d8c33292dc2df39e3143a2b2441e78479d664c1fd8af1f1aebb278c604d847",
+        "FalconerThetaGauge/NonstationaryReciprocal.lean": "27c37c589966d3fc961371adb8f3e0ecf1b89304c11ec98c01f5e416cc18fefb",
+        "FalconerThetaGauge/OrliczDuality.lean": "3a51ca927798c66fb04f860b5acd24de85d1d9dd556a20bdc491167b07015006",
+        "FalconerThetaGauge/OrliczDualityLayers.lean": "5a4f3f77eae566a32374584d5bd9d6ec77e4eb30085e96f475e37232548e0c30",
+        "FalconerThetaGauge/OrliczEnergy.lean": "8a6c64557ea6dc7302162ff0390ba233dc09f581d3bdb1380b81532bb21bb585",
+        "FalconerThetaGauge/OrliczEnergyFourier.lean": "40619190947de0810572f607b3724674e34aa65965029d80715506b38b62b922",
+        "FalconerThetaGauge/OrliczEnergyFourierGaussian.lean": "703bd9c397e9438d07c618c1b4ebe18af324fa1488ecdae1b47665062a9cc5ab",
+        "FalconerThetaGauge/OrliczEnergyFourierKernel.lean": "98429374355203cb3e1ab356b3d8fdb8220e1a5551d797a6b527ae9de3241635",
+        "FalconerThetaGauge/OrliczEnergyFourierLow.lean": "8328f4b354642cb33f3e1e307f2132f498af4747f14aa50142fab08bebcd40d4",
+        "FalconerThetaGauge/OrliczEnergyFourierSeries.lean": "17daaf0d239914f47a973a31e016b1eb08c111cb0e9e70318c2993f7f7f86d87",
+        "FalconerThetaGauge/OrliczEnergyFourierWeight.lean": "9d5ffeb94170ea13bf2f3f72733f23218a03b8328b3cdce399d1fe86e16d1af4",
+        "FalconerThetaGauge/OrliczEnergyKernel.lean": "338b2076e9c884893cea76cb0e7fc95f0d0392b8abd059e076426cb1dbcc0131",
+        "FalconerThetaGauge/OrliczSmallSet.lean": "2b3e592923cfbead58a2d03d580a94a142e487893bbd0a0ec91c5296fa9b6815",
+        "FalconerThetaGauge/OrthogonalProjection.lean": "a77ea852468286a48bd0811c2d554d8d5f2fbcc9a0047da62cb0b79e6b7e53fa",
+        "FalconerThetaGauge/OrthogonalProjectionAngular.lean": "9825f7dbfdd941596e958abdbbd326d8e5abab3ea2a57010d2678f7f5554602c",
+        "FalconerThetaGauge/OrthogonalProjectionDensity.lean": "c2a62190a36f1876eb821d971e6300cf22c9184ccd4cfefae9512c10ce874c6d",
+        "FalconerThetaGauge/OrthogonalProjectionFourier.lean": "2981348f87a43ba2fef92a06fc472f4f22bb20398d8a218767e558ac90a61a73",
+        "FalconerThetaGauge/OrthogonalProjectionFourierDensity.lean": "00a085eb5a0cb9a93136576e8017747afe745a8536d3c1c26b97bcb2d82d8e4a",
+        "FalconerThetaGauge/OrthogonalProjectionOrlicz.lean": "dd352f2ef3dd688e9a5886ba745a4dbddbfa3c640d6d9806ac96a4ae93f64399",
+        "FalconerThetaGauge/OrthogonalProjectionRadialEstimate.lean": "8810428ef83055cae8436df34cce6575d8f5c0dbaa1b6691e7d55071f4332820",
+        "FalconerThetaGauge/OrthogonalProjectionSmooth.lean": "a8690e2275644b1766aca2fbac6990bb488cb109f916ffbcce63fe3dc2381d62",
+        "FalconerThetaGauge/OrthogonalProjectionSmoothing.lean": "fb3f7cfe87fbd9c148f9f9c04ec9ae83d097ea60c176e5e0ea6a9e93e6412775",
+        "FalconerThetaGauge/OrthogonalProjectionTail.lean": "0ecc3f0117efdb007686fda254c9b5b95757430a94bc61ec2cf7bf577db9839d",
+        "FalconerThetaGauge/OrthogonalityAngularBudget.lean": "ba8522cf14178879bd8f8c10582d2b35c0d8563fdc5142807d8d3891b649fa15",
+        "FalconerThetaGauge/OrthogonalityAngularDecay.lean": "8941a6bb38c5726565eb91001c55cf9af961f1ff09593574979841c2072e2105",
+        "FalconerThetaGauge/OrthogonalityAngularFrequency.lean": "bfdda03ede7cebe40aac65ad1fff5dbcb03cf126fc6585a27b81cf5372ae2cda",
+        "FalconerThetaGauge/OrthogonalityAngularNonstationary.lean": "2c5cef5ffdb149be7a6807eebf22db550a1e867a282c17e4aa2155bac1541f3a",
+        "FalconerThetaGauge/OrthogonalityAngularPhase.lean": "d1ab32f387804e277886a56a1ea0900c9d91f7010b12e94dcafa9eea2ff57727",
+        "FalconerThetaGauge/OrthogonalityAngularSource.lean": "1d74581af110b4f7efeea37bed9c7ee7fd452c64205382f98cdffb9b45c06f72",
+        "FalconerThetaGauge/OrthogonalityCircleBounds.lean": "9b3bdb155e55a07e39efb84121ea520bb211c4315664daaf1f98534dfa68fa25",
+        "FalconerThetaGauge/OrthogonalityCircleKernel.lean": "1af21b656d31fb735ede9720fae81224f778cd36632e311c9448a3c0c20d8948",
+        "FalconerThetaGauge/OrthogonalityFirstLinks.lean": "69a8e6cbc6597c8fe901a62903f8c58ea42ab416a84df6d339b5c235b645d3c2",
+        "FalconerThetaGauge/OrthogonalityGeometry.lean": "ced3e4caf42e375cb58d1ee556c441e56a04b2ba9601e204526bdd6fdda10fc5",
+        "FalconerThetaGauge/OrthogonalityGridCount.lean": "ed6a9648d8709d1e8bf69cb5e48e8c22965bbcc8678e66c7cc48359929e0a1c5",
+        "FalconerThetaGauge/OrthogonalityKernelAngularBound.lean": "74a8178c79195d81b5df3809b9a928d988ca2d5b5871033b7d3a0f4a1e9610da",
+        "FalconerThetaGauge/OrthogonalityKernelAngularSource.lean": "4073069bd0a8d33315a421d3282ee6819ff81b539a9f85e550240e16c0084f0f",
+        "FalconerThetaGauge/OrthogonalityKernelCrossBound.lean": "aea4ea0410503e2a6ea9b45cc0125bd69383d308499a2623cfae390fb02f0767",
+        "FalconerThetaGauge/OrthogonalityKernelCrossFubini.lean": "794368c35ec2efd80b3b8a8952f306c4e9e412282efa7898cd939d7de8890d8f",
+        "FalconerThetaGauge/OrthogonalityKernelCrossIdentity.lean": "5ed5cdd0d42350c3ad735feab9c241968f041862b1d9b2a7e6dc83d961fcb89d",
+        "FalconerThetaGauge/OrthogonalityKernelFubini.lean": "7c4b46fccb3f520ab35dac87da2f4b151f1a1ba9e0a86e6fa1f43d358d408d73",
+        "FalconerThetaGauge/OrthogonalityKernelRadialBound.lean": "cf5b933bbf996898a832a208a266e040b7b814c51b119af517de2fbae600bded",
+        "FalconerThetaGauge/OrthogonalityKernelRadialPhase.lean": "dbbf4429d2fa1e9f1f9817a8cde74480ee325a1a06bb993a9d5d4bf1c7683de7",
+        "FalconerThetaGauge/OrthogonalityKernelRadialSource.lean": "ede30ec6f2ac8a6ccab2be04e9644f8affcc61515a1e8c532d60c79725b43af3",
+        "FalconerThetaGauge/OrthogonalityKernelSpatial.lean": "ef3b85c756233ecb60c1d64c94ed5e5038471c1cac1ef5e554f21fe2d94aa013",
+        "FalconerThetaGauge/OrthogonalityKernelUnlinked.lean": "e9557997aa24b87fedfd656a4c48245b1c69216ebc906a6dae7a33454ca8263b",
+        "FalconerThetaGauge/OrthogonalityLinkDegree.lean": "b31e8298b2e20d9e976e0ed643e0fd9a9a42771e521a074d7780128a80ef4a07",
+        "FalconerThetaGauge/OrthogonalityLinks.lean": "aebd3e5840b7965e6b337b5c1de73676cb9ce20fe5b8917cce6d1485f349fe30",
+        "FalconerThetaGauge/OrthogonalityPhaseSeparation.lean": "690721e7b4e5df9bc3af4e84246ea4b44d62bfb2521edbf94628d0be0d334cad",
+        "FalconerThetaGauge/OrthogonalityRadialAmplitude.lean": "5783b91f5d43e3eeb8b64ed7bcb88e598119505d09ab6d4a363faa909e1836e2",
+        "FalconerThetaGauge/OrthogonalityRadialBudget.lean": "403bcad54ee52f507c590be7e0f7d5d0d4c6440afd104d576ccf8402c154caa8",
+        "FalconerThetaGauge/OrthogonalityRadialDecay.lean": "56876c2464d12be16f7b62bdd4fd4c75983460d942cfb14b1f133163b60f2802",
+        "FalconerThetaGauge/OrthogonalityRadialDerivatives.lean": "f0a364f3c3c9a3902bfa2e4dc9ff91975faa61d61bbb2770e9be263b1c4dc1d0",
+        "FalconerThetaGauge/OrthogonalityRadialRegularity.lean": "f40a7a529e0061064a4e6582f7458604deb0fb340b78818a016eb719e5b2ea20",
+        "FalconerThetaGauge/OrthogonalitySecondLinks.lean": "d74886640afbd155455e5fc0480f7b76117b6ea3a9f927d97d81ed3f3d5cef17",
+        "FalconerThetaGauge/OrthogonalitySymbolLinks.lean": "6b2f732e907ee86d542b42ca98ee748268d244186ac93d9025119fb6ba1c2ffe",
+        "FalconerThetaGauge/OrthogonalityTubeCount.lean": "287096492adae0e8bda804f08e8b134beb43c5365797439ae819de45bcea7fcd",
+        "FalconerThetaGauge/OrthogonalityTubeGeometry.lean": "a1a75d2f4954f6f3cffb3b0aeb0b8f78b50c7cf6827353af14e3aae8bcb5767f",
+        "FalconerThetaGauge/ParameterBudgets.lean": "225192154e460ff26b9d52a608b36d17c4a3da0664315933c84e79a854017021",
+        "FalconerThetaGauge/Parameters.lean": "dced0426acd27bb2a2ef05fe000ea0437a769c7898b02c70015d6ba9eff17673",
+        "FalconerThetaGauge/PolynomialDifferentialActionFinite.lean": "5074c8998954e317959e51162f2c45619deb2ed28c1fdfcac9eaf0602b865ec0",
+        "FalconerThetaGauge/PolynomialWeightedNorm.lean": "bafdb2f5849bb07aaec3fffd640f14f4f3fa516c7011567678f964dc0861ce95",
+        "FalconerThetaGauge/QuadraticGaussian.lean": "50b765e54dc8585e498997b7f11457a7c57e4a243c60d3c1467cd62a7056fa1a",
+        "FalconerThetaGauge/QuadraticGaussianLimit.lean": "c320c6d1bb82c52683cf9540c9d12fba997e10cc1c3faca2afe2b09f5af02856",
+        "FalconerThetaGauge/QuadraticPhaseCompact.lean": "7247fbc01a26745445f5bfda6ff19a1f3d3060c51a0124e639e99231dd9e1ef6",
+        "FalconerThetaGauge/QuadraticPhaseDuality.lean": "3818d1fef803d2bfe3991f991c0c6f72213452582b52d9deffaff9a4c431cd0e",
+        "FalconerThetaGauge/QuadraticPhaseExpansion.lean": "727461a01fb6b209914750e9b198dcdd8641e906498b9e795ce711a12beda327",
+        "FalconerThetaGauge/QuadraticPhaseFourier.lean": "38565fc077315ba8ededa5abea281c6e2f6af7fa6918708131c26e5fe97df967",
+        "FalconerThetaGauge/QuadraticPhasePrefactor.lean": "ae57f780be7935d7b6ff0fb5109890797a79e6e93268e2c345c0fdea183747cb",
+        "FalconerThetaGauge/RadialProjectionContinuity.lean": "a3c444cf7a44ebd13303375819a94d95d33a4c73893a8b4e7bd74873cb9b6632",
+        "FalconerThetaGauge/RadialProjectionDefinitions.lean": "2986a07cfd9293902aff6feeaa683ad87997531d35f371820512b34372c37d2f",
+        "FalconerThetaGauge/RadialProjectionEndpoint.lean": "e63a7b3134792074b305f0afcfdcd1ba22e287f714163d65f39fabfb3a7855f0",
+        "FalconerThetaGauge/RadialProjectionLimit.lean": "3cf3d57073a99758a4f462ddd730ba37f4865384cbd9301326401a678d612a11",
+        "FalconerThetaGauge/RadialProjectionLimitAssembly.lean": "a5e509c1f2d41959c3e7abd776ab94bc47ed3a1be6f5e0681217ca229989fb4d",
+        "FalconerThetaGauge/RadialProjectionLimitConvergence.lean": "0f28ecac7377c6e427f228ba938f532c6c1c0d988e890eb4551643263ed04322",
+        "FalconerThetaGauge/RadialProjectionLimitEndpoint.lean": "6c2a10f49b83939d4b5c8c65bf8389db5dc9b2bebd6047eb4bf7077c31b49249",
+        "FalconerThetaGauge/RadialProjectionLimitJoint.lean": "4b6a24d256f89ad15f5535ea5219515937bf3ccfea0bf8cc5220503be1644f49",
+        "FalconerThetaGauge/RadialProjectionLimitOrlicz.lean": "1211f00d5cbfd91732a7e64d552d975b21a2b9c7ff0769ad53a68728be104817",
+        "FalconerThetaGauge/RadialProjectionLimitPrepared.lean": "5d28247218f4b299fbb868ee7a5920d7806e0b7a17ee16340740a1a515a7d6ec",
+        "FalconerThetaGauge/RadialProjectionLimitSmoothing.lean": "bc4739e1c7abfaa4952fdbc229d07f7f025e7dee13b8db0d3441ceb7bd84b99d",
+        "FalconerThetaGauge/RadialProjectionLimitTails.lean": "b90f5f91b12e571cb5f9ec74e46c597935acc0c4aa199ef0433d3e9541db67d6",
+        "FalconerThetaGauge/RadialProjectionLine.lean": "9fe3c53d27e790f95069b95af472e59f73b7dc6c7c96261033033a7f0913910c",
+        "FalconerThetaGauge/RadialProjectionOrlicz.lean": "9a73d780338c7991ae76f872a083930af6eeae903cae50b71344b2bf5ebb05a6",
+        "FalconerThetaGauge/RadialProjectionPolar.lean": "da298c5921caf9837932d1b7ad919178d60c85fd44f6a08450a6ef52cc4d8862",
+        "FalconerThetaGauge/RadialProjectionPreparation.lean": "f7a78a058cca60723158c2b6f94c16f778097060fa9820dbd90d6693f16839ab",
+        "FalconerThetaGauge/RadialProjectionRay.lean": "98f22bc18e9e378ece5513b8a8871ee8eb113b0b57f6a993227744a905e1170f",
+        "FalconerThetaGauge/RadialProjectionSpread.lean": "aed67e28f6d3de65dd3195a85df164745c4f5e036aae99db1da060fd982a4286",
+        "FalconerThetaGauge/RadialProjectionSpreadGoodPins.lean": "2e29576d00e390543d0455227730ea80aae71932b3c6cd276c0de00aaac26865",
+        "FalconerThetaGauge/RadialProjectionSpreadRN.lean": "85afad5f5e68791682ee57f051e61f21aab980eec346d08d862913e0b900b9e4",
+        "FalconerThetaGauge/RadialProjectionSpreadRestriction.lean": "9ed7bafcf10ff32acfe0092f2f4569ed624630d23f8147ff0b8843d4d1390c8f",
+        "FalconerThetaGauge/RadialProjectionUniformBound.lean": "7c56309f80120c402e4ccc5648f11c5b4021d190d0c127fbdb9b1154c24b2b91",
+        "FalconerThetaGauge/RadialProjectionUniformIntegrability.lean": "506d7238d20797aaeedc8d70fa3097ac8d675f0abce948c26b3345fa559b29f3",
+        "FalconerThetaGauge/ReconstructionDensity.lean": "cec58fddd0fb5f3d05ad860fe71dc9a9074611c19ea1f7ec620275571e7236bb",
+        "FalconerThetaGauge/RegularDecompositionCells.lean": "4a0eb548daf0af6a5f50164509477951a159aa44f9c53b89d6603d82404b5e45",
+        "FalconerThetaGauge/RegularDecompositionCounting.lean": "390e40be4396be72e5b99cd388a7db73a1a695cd0e6ac991d8ee53c28be253df",
+        "FalconerThetaGauge/RegularDecompositionDiscard.lean": "88528760b28ea96773189593ab5e5ec1f4e85c1f666bfb887ebd5f6aba53be03",
+        "FalconerThetaGauge/RegularDecompositionDyadicTypes.lean": "19d29ef200412f07a2b606383da149acc8e9b0336e44812bca404909521e974f",
+        "FalconerThetaGauge/RegularDecompositionFinite.lean": "344f4b11cab59c414504bce76b6177e44c17cfae394aff33f918d6bbd7767e4a",
+        "FalconerThetaGauge/RegularDecompositionInterpolation.lean": "479383213d1ee041d4f2c9e128ef7e65dc21a050f5736d4adee520431127ecce",
+        "FalconerThetaGauge/RegularDecompositionMass.lean": "fabc125292c9ef283beaf1de90a5d6bd231f99b6204cd8615d4de0b2ae483762",
+        "FalconerThetaGauge/RegularDecompositionMeasures.lean": "2b8a0fc7c1d4c7627cc2ba8509d178ff7be725c71f898c6e7aa123b3789dfc48",
+        "FalconerThetaGauge/RegularDecompositionParameters.lean": "a011029aabda27fcbff70fa9b41b540829c7828bd275f88e3b17640d112835df",
+        "FalconerThetaGauge/RegularDecompositionSchedule.lean": "9a74c24d1bae09b450aa83ff44f7abde687027b28ecf77362b66933e6ee82e11",
+        "FalconerThetaGauge/RegularDecompositionTypes.lean": "949015788b95c89a38ee8f5a52197423eeca853c6f31b9a37d047af663248038",
+        "FalconerThetaGauge/RegularFunctions.lean": "e67506eb1d25a2fc5235f9ce15bf481f99b1f821616616a8feded435a91a92fb",
+        "FalconerThetaGauge/RegularMeasureEntry.lean": "c8b19dcf0565713ac788332d9949086820e8339f33f5c690e6edd3de9f4cc348",
+        "FalconerThetaGauge/RegularMeasureEntryActual.lean": "a490e8e8b248d5106805da3afe2ca5bf07e72267741f4eca350c64a4ee9ffe5b",
+        "FalconerThetaGauge/RegularMeasureEntryBudget.lean": "3d5df9ea62011c033c06263252ebe1da3519f3eea638f31ad2cd53c9acdd3d98",
+        "FalconerThetaGauge/RegularMeasureEntryChainBudget.lean": "bc3ddb39298c1f6f06ca5865466821abede30912ababd96454ea4160a397f906",
+        "FalconerThetaGauge/RegularMeasureEntryChainCosts.lean": "6f4c9d912e9f385815417e806e8916c8ddcd20310600b29678d4a4ff934564b4",
+        "FalconerThetaGauge/RegularMeasureEntryChainCount.lean": "9fd4b8324626be6f43763648d7dd0e0d00fcde7c26141b92cfbce81abdf794ec",
+        "FalconerThetaGauge/RegularMeasureEntryChainMultipliers.lean": "7c82312af06a3705b4901b899c2d1914d7bc31e52f926c0e9cecfdcdb2549474",
+        "FalconerThetaGauge/RegularMeasureEntryChainNumbers.lean": "e196a7ccb41b0af0623034c3ec12b04d013e9eeecf3d25d48c906051d03d0651",
+        "FalconerThetaGauge/RegularMeasureEntryChainShort.lean": "a5ebaed1cd8cfa651914b891e213db97fdd19098c5a2f0d894b11a3280403152",
+        "FalconerThetaGauge/RegularMeasureEntryChainStates.lean": "3d887ec3c2192ff9bacc5823fe6d3763184b02c683a1bd44e659cc6d5453bd9f",
+        "FalconerThetaGauge/RegularMeasureEntryChainSteps.lean": "ffcffabf9ceb4756dbbcfcb23b7663d07871bc6f1f04c853d26bc2135121011a",
+        "FalconerThetaGauge/RegularMeasureEntryChains.lean": "c2487b80c9cd4583f802317bb1e6b379a64b14a36990050a4bb98bb280abca0c",
+        "FalconerThetaGauge/RegularMeasureEntryChildren.lean": "caf2a4973ca22e78715027493fcecd9f7868140b1f7ba1fc08e1a8dfc8e44b62",
+        "FalconerThetaGauge/RegularMeasureEntryIntervals.lean": "6d2ca8414ea8c6f578e5c46631c4a30cc7b6c774be737c7bf1b7f1747fb4bb84",
+        "FalconerThetaGauge/RegularMeasureEntryPieceLists.lean": "ec4a16ec46779f5933fef891ad6817b4f69d4eaddf3a9cc604ada57df62a4370",
+        "FalconerThetaGauge/RegularMeasureEntrySchedule.lean": "4ef7b10c81239b6ea3415c9e331f4b2efa2ec9abd02645a3cab6ca0ac37a5fb3",
+        "FalconerThetaGauge/RegularMeasureEntryScheduleBlocks.lean": "8a7f49de4605c01a9e5cd18dd12a6b9c656627aa0c471b5c14d3d975df9b6aec",
+        "FalconerThetaGauge/RegularMeasureEntryScheduleGains.lean": "ad43cd01174a34b50cb12c12350cdcceba26c3ae2239e411a5d708100819b0a2",
+        "FalconerThetaGauge/RegularMeasureEntryShellNumbers.lean": "4b23e5d0c5c39792e9947dfbe503a6bce35eb036dd252b93e724703ada26bc9f",
+        "FalconerThetaGauge/RegularMeasureEntryTestLists.lean": "2936076cc779a40cb43a8526ff63e07440563edff4a5f1293c55cacf463685cc",
+        "FalconerThetaGauge/RegularMeasureEntryTests.lean": "ab1dca11ab92784f43fa4858e117789a4133df83347198576c8c378157f61650",
+        "FalconerThetaGauge/RegularMeasureEntryTree.lean": "1b78cb7e2d28844b2ae8c697be96c0bb2167a23d767f40ef60bc9a096d520c5c",
+        "FalconerThetaGauge/RegularMeasureEntryTreeLevels.lean": "b7e6d92f21b630af080a7b759f88f3a1bd26fe10a4ab2d230650c44e67074504",
+        "FalconerThetaGauge/RegularMeasureEntryTreeVisits.lean": "a6fdd11ac0c9d35ce1b69151fc3a8fe8ab8780ace17ede76904a62124c9d535d",
+        "FalconerThetaGauge/RegularMeasureExcess.lean": "9007e07c0388084b00a824e46b57cbd7cad2965f781b4d82e55f1d2a1be6443c",
+        "FalconerThetaGauge/RegularMeasureExcessCount.lean": "d3289a74d6ccaa68d534077ff3497e7d2d5b8458b645a3f43177fd9a0e296a72",
+        "FalconerThetaGauge/RegularMeasureExcessGauge.lean": "b3f9da1169a37da644d64c08a550feb36556d5dc6885130cf35fe60a54312ed6",
+        "FalconerThetaGauge/RegularMeasureExcessMass.lean": "08657434a3d0fd1ebeda4e02267a8f4e4e421838f60b686550869cbd931271d7",
+        "FalconerThetaGauge/RegularizedReciprocal.lean": "0d91fdc1db4089d8fc1d72143cd189165426963b10b8794750b2ee09c0c5e295",
+        "FalconerThetaGauge/ScalarEnergyBinning.lean": "b98d275c965dbb8cdf0f2ce9cdb04cf02b79cb3096055e7f0207faf0a4b5f59e",
+        "FalconerThetaGauge/ScalarEnergyBinningFourier.lean": "e15246bbd2099a1ca2afbbf786015023ab9e9a9b9f88ab8081d7ecfbb367fdfd",
+        "FalconerThetaGauge/ScalarEnergyBinningFourierAverages.lean": "2a063113d70a1573eec2b69ecd87f72ef513d452eaa39585190912a03389b36c",
+        "FalconerThetaGauge/ScalarEnergyBinningFourierKernel.lean": "d127078dfc813f440510275910cfd8ec23ff394687c35aeb18c3887b8cc83384",
+        "FalconerThetaGauge/ScalarEnergyBinningKernel.lean": "02373f3cc4dee4233ee052b66e5576f1b28d71789714f0c66b99f524e274e195",
+        "FalconerThetaGauge/ScalarEnergyBinningShift.lean": "45da1000ebb234a4205dfdc7a7482966e951ffc308109f332387bef2a1bad486",
+        "FalconerThetaGauge/ScheduledStateEnergies.lean": "f3d547878707aa89cf463efc6522ff651b6156c2e7a4547d6f66900d68aa7e4f",
+        "FalconerThetaGauge/ScheduledStateEnergiesBounds.lean": "c0666953a2eb09664e0403a7f6d2283b0453cf3039d1c6569463674144ba6fbd",
+        "FalconerThetaGauge/ScheduledStateEnergiesErrors.lean": "c8f40903d201f6a44769c9961a757685f9dc9f369c92c34dec38f271fdbdb352",
+        "FalconerThetaGauge/ScheduledStateEnergiesLeaf.lean": "57685970909e462afa2640cdb4567fe00cd6c65ac74dae6338f7b7fd64934912",
+        "FalconerThetaGauge/ScheduledStateEnergiesLowHigh.lean": "2e95573bfab9e969b3675eac9f96071b1cd2145835c405c490c91b8286e82377",
+        "FalconerThetaGauge/ScheduledStateEnergiesMattila.lean": "7ef8d846f0ce3b637585ec681dad9c91161ba2bd52ca2676194aae00eea707f8",
+        "FalconerThetaGauge/ScheduledStateEnergiesMoveTwo.lean": "e96b481f927762648d458149eb3622c4108f731df09faa3b91ed4473ea4c6008",
+        "FalconerThetaGauge/ScheduledStateEnergiesMoveTwoMattila.lean": "87e96e62a7cfbacade54d517fe094efb4feb77fa6cce3ada4c991f97d8736573",
+        "FalconerThetaGauge/ScheduledStateEnergiesReached.lean": "899e95dd5337f99115a6eed7c85716a272c75dd573f62889c9cdc999757f9130",
+        "FalconerThetaGauge/ScheduledStateEnergiesShort.lean": "6cfb01e890c151993af742ee213d4ff38a8e75bfa05983a6d1d4a1e85beb6411",
+        "FalconerThetaGauge/ScheduledStateEnergiesTree.lean": "5ea76ca1d8a144bb63910abccab47b1f3eb20cf9360b8f90d0675655f8a0510d",
+        "FalconerThetaGauge/ScheduledSymbolAssembly.lean": "cd54b18b4305814679c511b2cf473222eb6c7352d07e9ae64190360b8f4877b0",
+        "FalconerThetaGauge/ScheduledSymbolBudget.lean": "d842fa14005260c2324687654e5aff4d3fa70a1dfb5ce57b4146f8b837ef4131",
+        "FalconerThetaGauge/ScheduledSymbolClass.lean": "a1455af059fbaa17caa01d22530f99508b0b769b89dcef5aec86fad1abf8f53c",
+        "FalconerThetaGauge/ScheduledSymbolDerivatives.lean": "40ce86061e5416ef4124dcea95d906b0f40dd67b4941ef6aba80fe12c855e013",
+        "FalconerThetaGauge/ScheduledSymbolEnergy.lean": "4b1426d3feb268fc0f31a6e5d24a92d23bab98c970b3bb124f84c46302a1fbde",
+        "FalconerThetaGauge/ScheduledSymbolEnergyCells.lean": "c74c3be6abf420fc7dfa1621ddff1b9dca33d2fa353f15b8619b058e09001ee4",
+        "FalconerThetaGauge/ScheduledSymbolExpansion.lean": "9375bdb60e1c2abc90a58ec2d9b83f1756186a9434334a349bf177aa97226e1b",
+        "FalconerThetaGauge/ScheduledSymbolFactors.lean": "5112a9856286ad7df40c9ae2b25853981833d73bbf2021cbe60abdc57738ebb0",
+        "FalconerThetaGauge/ScheduledSymbolOneStep.lean": "2d87d685baeb2cf3d6237467db8d7271d9f0cc305c89115dde96974f55e39c7d",
+        "FalconerThetaGauge/ScheduledSymbolReached.lean": "19197d0ba18a2f563c9763b4843078ac9bcb42228ec487ce2d27b2b0d563e265",
+        "FalconerThetaGauge/ScheduledSymbolRegularity.lean": "828b3775ad111db3340ac81d8a39dfe21a078eeeaa6ea059548ee4908fc4971f",
+        "FalconerThetaGauge/ScheduledSymbolSupport.lean": "4a448c70193f1175e5806364bf1e3aaf5c589fffcaa187c588eeef91d16d9400",
+        "FalconerThetaGauge/SchwartzDerivatives.lean": "064772081fad78ff33f8f3cd3e5308fb5b7bcd4e107c95333fe56eb8bcfac266",
+        "FalconerThetaGauge/SchwartzMomentBounds.lean": "72398624d26ff176898754e35c259ce10dd6398a351824e73e071267bed66864",
+        "FalconerThetaGauge/SeparatedDirectionsArc.lean": "5bd6e21e1b3e4d0bf128cf1ee8746eaafafbb471793b630eb2433ef7f9fdf8e2",
+        "FalconerThetaGauge/SeparatedDirectionsCutoff.lean": "7376f3ad5e3c6731d9751e7e40ab86229b98a35f116ca203301e2937bef7393e",
+        "FalconerThetaGauge/SeparatedDirectionsNeighborhood.lean": "70da1f1d95a4217286e0b6a875d375751b30a380c7952cb38046af6d305f0f70",
+        "FalconerThetaGauge/SmoothAngularPartition.lean": "785f9259758079922a00171283c851c34c715b35da3d3b27931b31c74fc7b251",
+        "FalconerThetaGauge/SmoothMeasureApproximation.lean": "889c972758fa84861f44975f7465edc81395dcfdd1a49bc0d5e2b2851b2bec99",
+        "FalconerThetaGauge/SmoothProbabilityApproximation.lean": "c9064f1477c885914980cf8d09fbcad2d86e4505ad9560a63ae4c63096d4a80a",
+        "FalconerThetaGauge/SpaceSplittingCircle.lean": "1a53839441172241d2e3c5779f8a62a6c952a85cfe5438c78434deda7331f0bf",
+        "FalconerThetaGauge/SpaceSplittingGeometry.lean": "73f4014b4a097e4643fb462dc41c50dff08719cca78379c9d4e692339777cbf6",
+        "FalconerThetaGauge/SpaceSplittingNearCells.lean": "f519e32c61412118031b17b6d8058de39c067b81e175d3bbabd0d96ce5b2f0a4",
+        "FalconerThetaGauge/SpaceSplittingRadialDecay.lean": "d08533371370caaee65e00bf4aca3b4490df1999ab95c501f3191b07a18cca86",
+        "FalconerThetaGauge/SpaceSplittingRadialDerivatives.lean": "1a5c47eb5c719cb373cc3e58de7b04b45d29b052f502c0936ddf56aa0f2dc3fa",
+        "FalconerThetaGauge/SpaceSplittingRadialOrders.lean": "f9a254588834c2abffdf79f92169e7b5d08a8169a51819597f52fc2cd0bc0801",
+        "FalconerThetaGauge/SpaceSplittingRadialPower.lean": "ec9e0a4a41fdc10e70237a28b76629a2281ebc01df067ecdd0bd5ab3fc468765",
+        "FalconerThetaGauge/SpaceSplittingSupport.lean": "e1016e0dadb928f14a546704288c2eea21364f7130c29fa6ba1ffd45bd6f6390",
+        "FalconerThetaGauge/SpatialInversePowerAtoms.lean": "ebb61fc1e06b08f4b0a203383b0de8d517204a0d2df7f2eb3d4a415d3695dad5",
+        "FalconerThetaGauge/SpatialInversePowerBinomial.lean": "2c3b4519a86857a5635fed3f30968eb653af6913649d3ed06c3747315149fac8",
+        "FalconerThetaGauge/SpatialInversePowerBinomialSharp.lean": "6c62c5de303606065d3187168c1f2cecdf719ca7158d4f849c9f1eb43bf531e8",
+        "FalconerThetaGauge/SpatialInversePowerCoefficientBudget.lean": "765e272168811d229cff98dcec92b97a7ec3f92e5879d346849139b5889c275b",
+        "FalconerThetaGauge/SpatialInversePowerGeometry.lean": "40f328e448988200c2601cbe4a70f1a6c37c7d846c0161feb0cc3d68c3d0a565",
+        "FalconerThetaGauge/SpatialInversePowerSeparation.lean": "e6405e0f0f0ee86fcaa96024e3d6efc32cb4417232949a32ddd5deb5cac93d3f",
+        "FalconerThetaGauge/SpatialInversePowerSequence.lean": "60a291a56b126415360cc28da220c73784074a36373ed9bb431a6821cf20b4a0",
+        "FalconerThetaGauge/SpatialInversePowerWordSeries.lean": "e57d015a9c8997a4ef934e4b78c76ec9f6c620b1f684b6511875b61b38f9aa28",
+        "FalconerThetaGauge/Statement.lean": "863ae240688d06db67b5eb519703bececd203e6f1d991286097bce1dae8be880",
+        "FalconerThetaGauge/StationaryCircularConjugate.lean": "5ebdb14efdf1ad4e06cef96f74289c808f564d5dbe9f1b6f27851cbd3ac7d445",
+        "FalconerThetaGauge/StationaryCircularExpansion.lean": "e0564fb1481437a41dcb9692ffbabf83cad82c055d0650ae328349872baa2e21",
+        "FalconerThetaGauge/StationaryCircularFactorialBudget.lean": "be5bf4ffa69609e2dfa5b70ca7e385ee563a3bd08ef15c08be4d6b96f58feb50",
+        "FalconerThetaGauge/StationaryCircularInversion.lean": "2f2350f36259e4a9e7cb39fcbfcefbbe82077edc62faeeb2a5e062d78a725d49",
+        "FalconerThetaGauge/StationaryCircularInversionBound.lean": "a37adf670dedb81040e9427ecfc23787bad6acc177c82b6edd8a93c11302f44e",
+        "FalconerThetaGauge/StationaryCircularInversionDecay.lean": "4aa18a2607602758ea66344ae8b7e58dde75918cc9b62f8f4410bde820fb20bb",
+        "FalconerThetaGauge/StationaryCircularInversionGeometric.lean": "777179a3afc0d66abf9419856c121c1c1e63da309d16dbab15fc8198be8f4f64",
+        "FalconerThetaGauge/StationaryCircularInversionNormalized.lean": "8f92620e8f314b1c99c6efc4ae2d96226bb728fa03786708d1b02a91b6474122",
+        "FalconerThetaGauge/StationaryCircularInversionScale.lean": "40e9ca51f4408b9c529a24a330ac96230df1bf493afc058e07e461b45a743b96",
+        "FalconerThetaGauge/StationaryCircularInversionTerminal.lean": "6ad62a01c98546b5492a1e19ad8f8c1bcc4bd7f06004b6af4cfaa712fb1f96ca",
+        "FalconerThetaGauge/StationaryCircularPeriodic.lean": "b73e0488ed340b299fd260600b095140aa72b034e0b39a07b0a65896e5cc7315",
+        "FalconerThetaGauge/StationaryCircularPreparedArc.lean": "92ae8e32eeb20f9adc6742dfcf0d28673c3402922d6667705686e25a5177feff",
+        "FalconerThetaGauge/StationaryCircularPreparedExpansion.lean": "491df39d4166f9ba32ac501d775dcdc46e426e53809dac8d7b453a17ec725daa",
+        "FalconerThetaGauge/StationaryCircularRemainderBudget.lean": "bd46a4e27b49dbfa3a820ea9565872a11590c43b64804616d9f08bd7d894a976",
+        "FalconerThetaGauge/StationaryCircularSource.lean": "73fbce4236ae7aab712d167dda0d25086f87a6fcafabaf40299248aed01cfa4c",
+        "FalconerThetaGauge/StationaryCircularSourceBudget.lean": "dc55119b6668f6f8502a2289632d12e25fefe41f7f489bae862f946f4fff27d3",
+        "FalconerThetaGauge/StationaryGevreyComposition.lean": "847f28ef3ac4813a1645f8eff90b37e725d21cc07df57352b1a5566f22f47166",
+        "FalconerThetaGauge/StationaryGevreyProduct.lean": "bdb578ec4757f0de7a232df4743f663e4a031908bc9a8e4f02ed98793d3489f7",
+        "FalconerThetaGauge/StationaryMorseAmplitude.lean": "f90b29cc9a01365a5055c6dd9b1dbcf176ebfef0132c29a31e51ed13e92213f5",
+        "FalconerThetaGauge/StationaryMorseAngle.lean": "412893683261adb1c9127ea23676706de77a01f62ab76108833beb62e474d855",
+        "FalconerThetaGauge/StationaryMorseDerivativeBudget.lean": "ff4f40d15bebe1c7a458e3ee21c1996a194b0a90b2bb4cf31facce0d25a15271",
+        "FalconerThetaGauge/StationaryMorseL1Budget.lean": "08674c645241f44fbdb712342d70eae8366bb4a79dffba5cb80c1f7b44f00eab",
+        "FalconerThetaGauge/StationaryMorseOperatorExpansion.lean": "a031df797ebc4540f5b8165b72e2bda6738dc3004e0296527e4271084238a436",
+        "FalconerThetaGauge/StationaryMorseSubstitution.lean": "0c150684c35f7aae169a8d69a59e0ff7c6557e9254625d089036b0fd0992d533",
+        "FalconerThetaGauge/StationaryPartitionCycles.lean": "6e6c340cd5afc65d69e5d89a815f6a66deee3cfb6cdcfb3c38bd501328b6ec6d",
+        "FalconerThetaGauge/StationaryPartitionWeights.lean": "df11efcee3a17314ade185e45a75ca30fc9e2825a59be8420b44e603da014470",
+        "FalconerThetaGauge/StationaryPhaseCompositionNorms.lean": "00f6114acf61087a6d8f839655a374306bca293f077c73ee26310fafa1b4e5f0",
+        "FalconerThetaGauge/StationaryPhaseFiniteInversion.lean": "7115bb09d1c2526a702c4128186e5d8b5fcc9b9f9ec4984497a109c0eb2f558c",
+        "FalconerThetaGauge/StationaryPhaseFiniteTailBudget.lean": "610437838ca1625a123db983b519e8d6ba341898eeac300f81dbaaada82cc019",
+        "FalconerThetaGauge/StationaryPhaseInverseOperatorBudget.lean": "61d1ed1e66eece4bfbe3e6cb154907fa6e092747ca54fcb34c60e67984e5c73c",
+        "FalconerThetaGauge/StationaryPhaseInverseOperators.lean": "3cdc7baa6799371e6062152c9ecffdc65c6e89ab44439b36edfc7afd3a04d7b6",
+        "FalconerThetaGauge/StationaryPhaseInverseOperatorsAction.lean": "02329f5e5548ae44ee211195dd4b9b403808b647b54a3824c3910403157a9ea3",
+        "FalconerThetaGauge/StationaryPhaseInverseOperatorsConjugate.lean": "d77af775dfcd8ffaec45b4afda06baf84b0de473abbc4f273e112e4d1353db4c",
+        "FalconerThetaGauge/StationaryPhaseInverseOperatorsRegularity.lean": "07ae3fcba5b20e90aa2a2a4bad92a86e6d923b7ac7523120420ab5b7d55280d6",
+        "FalconerThetaGauge/StationaryPhaseInverseOperatorsRegularityBudget.lean": "62fa3a5859622c9d4a8e673f93c1da027755e53e8382a4a50fd7ff80756fd2b8",
+        "FalconerThetaGauge/StationaryPhaseOperatorBudget.lean": "b56eef8eadf96520556b88832ad74f37f65b24fdbccd6427ee7f60af1aed3e24",
+        "FalconerThetaGauge/StationaryPhaseOperators.lean": "a4b3e5752ccf6b7d7d7efc7969257bb39d62bb464adf990881e4d3d1bba7e74a",
+        "FalconerThetaGauge/StationaryPhaseOperatorsComplex.lean": "9c8047127a6c7df5456479d01e75c70e673446f2cea1d1802e70890bc574f428",
+        "FalconerThetaGauge/StationaryPhaseTruncatedConvolution.lean": "cbd6cfc413be200795edaea395cda3f460d5d19b48e9a504fc65d2e4acec2d22",
+        "FalconerThetaGauge/StationaryPhaseWeightedNorms.lean": "0ea051394cf274c8f06818c5c11f3cc378bcc63f46232e4896691aa825103375",
+        "FalconerThetaGauge/SummableReconstruction.lean": "3cf841a3615022be970935a061bf7cb7525c210410faca9df5fbf18ff49e8777",
+        "Solution.lean": "e590c2bcc095cb7a77e59a067ebc3bf94d86cf641035bfa3e53f182a890c47ae",
+        "comparator.json": "3f94bf769e79f0c38e77ea0f27bca21282c7dd895f42b89e29ff9c84f431322b",
+        "lake-manifest.json": "c3a0b4703d79f8f753c46bcb565d7032475a25a37816f813ea48e24ab8117f05",
+        "lakefile.toml": "ae472c47e4c052284f596ad58f3ada37b7df03600d1446a8a8c4a47d1630014b",
+        "lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+        "scripts/check-proof-status.py": "242404f9f186f12be5e7850b139dbbd080bc7d4965aca00045e249ae701f5208",
+        "scripts/verify-comparator.sh": "ab5e9c2590fb3e8cf86ab65c9f112666247dd6535b4a798040728bd84c9bfdfb"
+      },
+      "scope_note": "Evidence is bound to the exact immutable public commit. Later source changes need a new hosted run.",
+      "checked_on": "2026-10-09",
+      "lean_modules_build_jobs": 3862
     }
   ]
 }

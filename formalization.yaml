@@ -33,8 +33,11 @@ project:
     has summable coefficients with bound 11/10; actual nonzero-symbol graph
     degrees and angular and radial cancellation budgets are proved.
     The actual far-cell geometry, circular formula, passing support and
-    twice-integrated radial kernel are proved. Estimate 7.8 and the final
-    induction remain unfinished.
+    twice-integrated radial kernel, opposite-sign coefficient sum and near
+    Schur bound are proved. Actual induction Moves 1--3 and the weighted
+    multiplicity-preserving tree telescope are proved. The global filtered
+    annulus has its exact original-mass regular-piece mixture bound.
+    Full Estimate 7.8 and final frequency-shell decay remain unfinished.
   authors:
     - "Yongxi Lin"
   license: "Apache-2.0"
