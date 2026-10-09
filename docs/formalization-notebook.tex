@@ -1,0 +1,132 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{proposition}{Proposition}
+\newcommand{\HH}{\mathcal H}
+\newcommand{\LL}{\mathcal L}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+\begin{document}
+\begin{center}
+{\Large\bfseries Theorem 1.1: formal statement\\[3pt] and initial verified lemmas}\\[9pt]
+Falconer distance-gauge formalization project\\
+October 8, 2026
+\end{center}
+
+\textbf{Status.} This is an incomplete formalization notebook. The main theorem
+is an explicit proof obligation; it has not passed Comparator and is not
+registered on Palomar. The results below record the proved foundation.
+
+\section*{The exact target}
+The uploaded manuscript defines
+\[
+h_\theta(r)=r\exp\!\left(-\bigl(\log(1/r)\bigr)^\theta\right)
+\quad(0<r<1),\qquad h_\theta(0)=0.
+\]
+Its Theorem 1.1 asserts that, for a compact set $E\subseteq\mathbb R^2$,
+\[
+\frac23<\theta<1,\qquad \HH^{h_\theta}(E)>0
+\quad\Longrightarrow\quad \LL^1(\Delta(E))>0.
+\]
+\[
+\Delta(E)=\{\lVert x-y\rVert:x,y\in E\}.
+\]
+The formalization uses the Euclidean norm and Mathlib's arbitrary-gauge
+Hausdorff measure constructor. For radii at least one, the gauge is extended
+by the identity; this does not affect its small-radius Hausdorff measure.
+The covering characterization has been proved:
+\[
+\HH^{h_\theta}(E)=
+\sup_{\rho>0}\ \inf_{\substack{E\subseteq\bigcup_{n\ge0}U_n\\
+\operatorname{diam}(U_n)\le\rho}}
+\sum_{\substack{n\ge0\\U_n\ne\varnothing}}
+h_\theta\bigl(\operatorname{diam}(U_n)\bigr).
+\]
+The independent \texttt{Challenge.lean} imports only Mathlib and repeats all
+custom definitions. The solution does not import Challenge. The theorem
+statement has no auxiliary Frostman, projection, or energy hypothesis.
+
+\section*{The geometric foundation}
+\begin{proposition}
+For $0<r<1$, the gauge is positive and satisfies $h_\theta(r)\le r$.
+Consequently $\HH^{h_\theta}(E)\le\HH^1(E)$, and countable sets have zero
+gauge measure. Positive gauge measure supplies two distinct points of $E$.
+\end{proposition}
+\begin{proof}
+The exponential is strictly positive. The logarithm and its real power are
+nonnegative, so the exponential is at most one. Mathlib's gauge comparison
+theorem gives the measure inequality. Singletons are null for $\HH^1$,
+hence also for the gauge measure; countable subadditivity gives the countable
+case. A set containing at most one point is countable.
+\end{proof}
+The all-pairs distance map is continuous. It therefore maps the compact
+product $E\times E$ to a compact, Lebesgue-measurable distance set. Two distinct
+points give a positive distance; that fact alone does not give positive length.
+
+\newpage
+\section*{The scalar summability foundation}
+\begin{proposition}
+For every $s,c>0$, one has $\log n\le c n^s$ for all sufficiently large
+natural numbers $n$. For every $\theta,c>0$,
+\[
+\sum_{n=0}^{\infty}\exp(-c n^\theta)<\infty.
+\]
+\end{proposition}
+\begin{proof}
+Mathlib proves $\log x=o(x^s)$ as $x\to\infty$ for $s>0$. Restricting its
+eventual norm bound to natural numbers proves the first assertion. Applying
+that assertion with coefficient $c/2$ gives
+\[
+\log n\le\frac c2 n^\theta
+\quad\Longrightarrow\quad
+\exp(-c n^\theta)\le\exp(-2\log n)=n^{-2}.
+\]
+The inverse-square series converges. The omitted finite initial segment has
+no effect on summability, so comparison proves the claim.
+\end{proof}
+
+\begin{proposition}
+The branch-counting exponent and filter-error power obey
+\[
+3\theta-2>0\ \Longleftrightarrow\ \theta>\frac23,
+\qquad
+\theta>\frac23\ \Longrightarrow\ -8(2\theta-1)<-1.
+\]
+Consequently, in the theorem's parameter range, every positive coefficient
+eventually absorbs the logarithm into $n^{3\theta-2}$, and
+\[
+\sum_{n=0}^{\infty}n^{-8(2\theta-1)}<\infty.
+\]
+\end{proposition}
+\begin{proof}
+The exponent inequalities are linear arithmetic. Apply the logarithmic
+domination result with exponent $3\theta-2$, and apply Mathlib's real-power
+series criterion to the filter-error exponent.
+\end{proof}
+
+These results justify scalar convergence once suitable shell energies and
+filter errors are supplied. They do not establish the geometric estimates
+that produce those bounds.
+
+\section*{Remaining analytic work and verification}
+The proof still needs the gauge Frostman construction, logarithmically
+weighted Fourier and projection estimates, endpoint Orlicz radial projection
+control, the summable Fourier reconstruction criterion, quantitative regular
+decomposition, the four uniform energy estimates, and the multiscale budget
+induction. Fixed-parameter estimates require new uniform bounds before they
+can be used with parameters that shrink as the terminal scale grows.
+
+The main theorem currently has one explicit proof hole. Comparator permits
+the three standard axioms and must reject the target's proof hole.
+A successful ordinary build of this skeleton is not a successful theorem
+verification.
+
+The public project includes a separate sandboxed Comparator job and a manual
+full Palomar preflight. Registration requires a completed proof, verification
+of the exact public commit, truthful metadata, and the registry review.
+
+\smallskip
+\href{https://github.com/CoolRmal/falconer-theta-gauge}{Public project: CoolRmal/falconer-theta-gauge}
+\end{document}

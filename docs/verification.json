@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "status": "incomplete",
+  "checked_on": "2026-10-08",
+  "date_timezone": "America/New_York",
+  "main_theorem": "FalconerThetaGauge.theorem_one_one",
+  "source": {
+    "path": "docs/falconer-theta-gauge-proof.pdf",
+    "theorem": "Theorem 1.1, pages 2-3",
+    "sha256": "820db3291bf9ebc45ea67abf597f60d46c127ab2844e2eea8c3754c81e284fb3"
+  },
+  "environment": {
+    "toolchain": "leanprover/lean4:v4.35.0-rc2",
+    "lean_version": "4.35.0-rc2",
+    "lean_commit": "11acb17ec6b07a8f9e9173e6845197929540936b",
+    "platform": "arm64-apple-darwin24.6.0",
+    "mathlib_repository": "https://github.com/leanprover-community/mathlib4.git",
+    "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55"
+  },
+  "snapshot": {
+    "basis": "Final local source SHA-256 hashes for the first checkpoint; local build passed, proof audit and preliminary Comparator rejected the unfinished target. Hosted verification is separate.",
+    "files_sha256": {
+      "Challenge.lean": "6fdbae1e75d62084453dab63d82cd8f9cebfe0339a502d28acae99694f995e48",
+      "Solution.lean": "e590c2bcc095cb7a77e59a067ebc3bf94d86cf641035bfa3e53f182a890c47ae",
+      "FalconerThetaGauge.lean": "a501be3d1603fca41441b36b865157c1c00b327d5b81d1f020b9cde6e783f823",
+      "FalconerThetaGauge/Asymptotics.lean": "4f32f76ec47110622f701651808485f5261a3028d9f81c9073724f3231833299",
+      "FalconerThetaGauge/Gauge.lean": "7bfe0d9dbc1c90fd4bda43fdaafc7df1c11d0f53dc1257d56f42a3ede669297c",
+      "FalconerThetaGauge/GaugeFrostman.lean": "ce71bd1503a54e61c1a53ef0403c0ddd501388fbbde374cfa7e0e266494c82b1",
+      "FalconerThetaGauge/GaugeFrostmanDyadic.lean": "1563024235a8e85f5d73f85c73c4c893a4992a37e42ac180236c42503a776c39",
+      "FalconerThetaGauge/GaugeFrostmanWeights.lean": "66468f5ea30c4b124af308513d00cf1e4d6a6ba64847594af64c3e8108691bc9",
+      "FalconerThetaGauge/Main.lean": "30539fa8ab3350d661008e2ecf4b2cc20a3abf91c310e1da74528ba9a6449d63",
+      "FalconerThetaGauge/Parameters.lean": "00847060fe6f8e9a4314057b88391605f804ec2dccdadd60052eb4314f26b41d",
+      "FalconerThetaGauge/Statement.lean": "863ae240688d06db67b5eb519703bececd203e6f1d991286097bce1dae8be880",
+      "FalconerThetaGauge/SummableReconstruction.lean": "3cf841a3615022be970935a061bf7cb7525c210410faca9df5fbf18ff49e8777",
+      "comparator.json": "3f94bf769e79f0c38e77ea0f27bca21282c7dd895f42b89e29ff9c84f431322b",
+      "lake-manifest.json": "c3a0b4703d79f8f753c46bcb565d7032475a25a37816f813ea48e24ab8117f05",
+      "lakefile.toml": "ae472c47e4c052284f596ad58f3ada37b7df03600d1446a8a8c4a47d1630014b",
+      "lean-toolchain": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+      "scripts/verify-comparator.sh": "ab5e9c2590fb3e8cf86ab65c9f112666247dd6535b4a798040728bd84c9bfdfb",
+      "scripts/check-proof-status.py": "16400d4e0ae79c0b45263651be941c27feda9d9d3e57cf409405ad7374bafa86",
+      ".github/workflows/verify.yml": "6c8aa09208ec4985a108df853ff9a4cce91e6e92e0f06f6c431630335f597446"
+    }
+  },
+  "preliminary_comparator": {
+    "command": "./scripts/verify-comparator.sh --preliminary",
+    "exit_code": 1,
+    "status": "rejected",
+    "sandbox_enabled": false,
+    "cache_downloaded_by_script": false,
+    "challenge_build": "passed with the deliberate specification-hole warning",
+    "solution_build": "passed with the unfinished main-theorem warning",
+    "error": "Illegal axiom detected: 'sorryAx'",
+    "statement_comparison": "The source definitions and theorem signatures were independently inspected and match. This rejected run did not explicitly certify completion of the statement-comparison phase.",
+    "kernel_replays": "No successful Lean, NanoDa, or con-ron proof replay is claimed for this rejected run.",
+    "scope_warning": "The local check disabled the Linux sandbox using --inadvisably-no-sandbox. Its result is preliminary and is not a Palomar mechanical report."
+  },
+  "proof_status_audit": {
+    "status": "fail",
+    "method": "Lean #print axioms on declarations imported through Solution",
+    "toolchain": "leanprover/lean4:v4.35.0-rc2",
+    "permitted_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "main_theorem": "FalconerThetaGauge.theorem_one_one",
+    "challenge_imported": false,
+    "declarations": {
+      "FalconerThetaGauge.realGauge": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.thetaGauge": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.gaugeMeasure": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.distanceSet": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.thetaGauge_zero": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.thetaGauge_pos": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.thetaGauge_le": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.measurableSet_distanceSet": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.gaugeMeasure_le_hausdorffMeasure_one": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.eventually_log_le_mul_rpow": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.summable_exp_neg_mul_nat_rpow": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.summable_filter_power": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.gain_eq_mul_rpow": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.realGauge_double_le": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.gaugeContent_pos_of_gaugeMeasure_pos": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.GaugeFrostman.exists_finite_gauge_weights": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.summable_l2_of_dyadicFrequencyShell_support": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.reconstruction_of_summable_errors_and_square_bound": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "forbidden_axioms": []
+      },
+      "FalconerThetaGauge.theorem_one_one": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext",
+          "sorryAx"
+        ],
+        "forbidden_axioms": [
+          "sorryAx"
+        ]
+      }
+    },
+    "scope_note": "Axiom-dependency audit only; full sandboxed Comparator verification is separate."
+  },
+  "hosted_verification": {
+    "status": "pending",
+    "workflow": ".github/workflows/verify.yml",
+    "run_url": null,
+    "note": "The build job includes a proof-status gate that rejects the current main theorem; Comparator separately verifies the same final theorem."
+  },
+  "palomar": {
+    "full_mechanical_preflight": "pending",
+    "pipeline_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
+    "submitted": false,
+    "registered": false,
+    "note": "The main theorem remains unfinished. No successful full mechanical report, editorial review, or registration is claimed."
+  },
+  "scope_warnings": [
+    "The independent Challenge contains an intentional statement hole and is not imported by Solution.",
+    "Theorem 1.1 in Main still uses sorryAx; proving foundations does not complete the geometric theorem.",
+    "Only the named declarations in proof_status_audit have been audited for axiom dependencies by that script.",
+    "Definition and statement fidelity was inspected by an AI agent; no independent human mathematical review is recorded."
+  ]
+}
